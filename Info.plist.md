@@ -1,4 +1,6 @@
+<style>
 h4 em {font-weight:normal;}
+</style>
 
 ### Overview
 The Info.plist file within a stack defines the basic attributes of the stack like its title and version number, the custom properties the stack will display when selected, and file names of each of the templates and assets.
