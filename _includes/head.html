@@ -10,8 +10,9 @@
     {% endif %}
   </title>
 
-  <link rel="stylesheet" href="/stylesheets/styles.css">
-  <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+  <link rel="stylesheet" href="{{ "/stylesheets/styles.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/stylesheets/pygment_trac.css" | prepend: site.baseurl }}">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 </head>
