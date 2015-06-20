@@ -8,7 +8,6 @@ relative_permalinks: true
 title:               Stacks API
 tagline:             Simple. Fast. Awesome.
 url:                 http://api.yourhead.com
-paginate:            0
 baseurl:             ""
 
 # Assets
