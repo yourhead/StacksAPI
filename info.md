@@ -1,11 +1,10 @@
-
 ---
 title: This is my title
-layout: post
+layout: page
 ---
 
 ### just testings
 if this will work
 
 
-wow
+
