@@ -1,9 +1,9 @@
 ---
-title: This is my title
+title: This is another title
 layout: page
 ---
 
-### just testings
+### just testing
 if this will work
 
 
