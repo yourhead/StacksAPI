@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               Stacks API
 tagline:             Simple. Fast. Awesome.
 url:                 http://api.yourhead.com
-baseurl:             "http://yourhead.github.io/StacksAPI"
+# baseurl:             "http://yourhead.github.io/StacksAPI"
 
 # Assets
 #
@@ -28,3 +28,19 @@ version:             7
 repo:                https://github.com/yourhead/StacksAPI
 highlighter: 		 pygments
 github: 		     [Repository metadata]
+
+# Collections
+collections:
+  properties:
+      output:	true
+  controls:
+      output:	true
+  
+
+#defaults
+defaults:
+  - scope:
+      path: ""
+      type: "controls"
+    values:
+      layout: "control"

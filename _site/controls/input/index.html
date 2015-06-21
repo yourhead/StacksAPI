@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>
+    
+       &middot; Stacks API
+    
+  </title>
+
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+  <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+</head>
+
+
+  <body>
+
+
+    <div class="container content">
+      <footer class="footer">
+        <small>
+        </small>
+      </footer>
+    </div>
+
+
+
+
+
+
+ <div class="wrapper">
+
+    <header>
+<h1><a href="/" title="Home">Stacks API</a></h1>
+        <p>Simple. Fast. Awesome.</p>
+        <hr>
+<ul>
+
+<li>
+	<a href='#id'>ID</a>
+	<a href='#id'><code>id</code></a></li>
+
+<li>
+	<a href='#title'>Title</a>
+	<a href='#title'><code>title</code></a></li>
+
+<li>
+	<a href='#default'>Default Value</a>
+	<a href='#default'><code>default</code></a></li>
+
+<li>
+	<a href='#clearValue'>Clear Value</a>
+	<a href='#clearValue'><code>clearValue</code></a></li>
+
+<li>
+	<a href='#enable'>Enable</a>
+	<a href='#enable'><code>enable</code></a></li>
+
+<li>
+	<a href='#toolTip'>Tool Tip</a>
+	<a href='#toolTip'><code>toolTip</code></a></li>
+
+</ul>
+</header>
+
+<section>
+ 
+
+
+<h2>Text Input</h2>
+<h3>Overview</h3>
+
+
+
+<p>A single line text entry. The string value is returned. 
+Like all string value properties, you can retrieve an encoded value with escapes for specific languages (e.g., <code>%id=textInput -encodeJS%</code>).</p>
+
+
+
+<h5><i>Available: Stacks API v1</i></h5>
+
+<hr>
+
+
+
+
+
+
+<h3 id='id'>ID</h3>
+
+<ul>
+<li>Key: <code>id</code></li>
+<li>Type: <code>string</code></li>
+
+<li>Required</li>
+</ul>
+
+The ID for this control. This ID must be unique within this stack. The ID is used to refer to the control's property.  IDs should be alpha-numeric (dashes and underscores are allowed), but should not contain special characters.
+
+
+
+
+
+
+
+
+
+<br><br>
+<hr>
+
+
+
+<h3 id='title'>Title</h3>
+
+<ul>
+<li>Key: <code>title</code></li>
+<li>Type: <code>string</code></li>
+<li>Default Value: <code>"Untitled"</code></li>
+<li>Required</li>
+</ul>
+
+When the stack is placed onto the page, the default value will be used. If no default is provided, 0 will be used.
+
+
+
+
+
+
+
+
+
+<br><br>
+<hr>
+
+
+
+<h3 id='default'>Default Value</h3>
+
+<ul>
+<li>Key: <code>default</code></li>
+<li>Type: <code>string</code></li>
+<li>Default Value: <code>""</code></li>
+
+</ul>
+
+When the stack is placed onto the page, the text field will be set to this value.
+
+
+
+
+
+
+
+
+
+<br><br>
+<hr>
+
+
+
+<h3 id='clearValue'>Clear Value</h3>
+
+<ul>
+<li>Key: <code>clearValue</code></li>
+<li>Type: <code>string</code></li>
+<li>Default Value: <code>""</code></li>
+
+</ul>
+
+When all the content is cleared out of a text input area (the user deletes all the text), the control will automatically fill with this value. This is useful for applications where a non-empty string is required.
+
+
+
+
+
+
+
+
+
+<br><br>
+<hr>
+
+
+
+<h3 id='enable'>Enable</h3>
+
+<ul>
+<li>Key: <code>enable</code></li>
+<li>Type: <code>dictionary</code></li>
+<li>Default Value: <code>enabled</code></li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+<p>Hide or show the control based on the value of another property.</p>
+
+<p>Enables allow a stack to show only the controls needed by the user to achieve a specific task.</p>
+
+<p>The enable dictionary defines the ID of another control and the value that other control must equal. When the other control’s value is not equal to the provided value, this control is hidden.</p>
+
+<h4 id="enable-dictionary">Enable Dictionary</h4>
+<ul>
+  <li><code>id</code> — the ID of another control on which this control (Popup Menu) should depend.</li>
+  <li><code>value</code> — when the value of the other control is equal to this value, this control is displayed, otherwise it is hidden.</li>
+</ul>
+
+<blockquote>
+  <p><strong>Warning</strong>: creating infinite loops in enable dependencies has undefined behavior but will likely result in a crash.</p>
+</blockquote>
+
+
+
+
+
+<br><br>
+<hr>
+
+
+
+<h3 id='toolTip'>Tool Tip</h3>
+
+<ul>
+<li>Key: <code>toolTip</code></li>
+<li>Type: <code>string</code></li>
+<li>Default Value: <code>No tooltip is displayed.</code></li>
+
+</ul>
+
+The tooltip value is used to display hints for the user on the use of each control. If the function of the control is obvious, then a tooltip should be avoided. Simply re-displaying redundant information, like the title, has no value to the user.
+
+
+
+
+
+
+
+
+
+<br><br>
+<hr>
+
+
+
+<!--
+hey
+<article class="page">
+  <h1 class="page-title"></h1>
+  <h3 class="page-title"></h3>
+
+Text Input/Users/iac/Sites/github/StacksAPI/_controls/input/index.md
+
+</article>
+
+
+% endcapture %
+
+{ stuff | markdownify }
+-->
+
+
+</section>
+      
+
+
+      
+
+      <footer>
+                  &copy; <time datetime="2015-06-21T03:30:31-05:00">2015</time>. YourHead Software all rights reserved.
+
+    
+      </footer>
+
+
+
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+
+
+  </body>
+</html>

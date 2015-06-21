@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+
+<header>
+{% include sidebar-title.html %}
+<ul>
+{% for property in page.properties %}
+<li>
+	<a href='#{{ property.key }}'>{{ property.title }}</a>
+	<a href='#{{ property.key }}'><code>{{ property.key }}</code></a></li>
+{% endfor %}
+</ul>
+</header>
+
+<section>
+ 
+
+
+<h2>{{ page.name }}</h2>
+<h3>Overview</h3>
+
+
+
+{{ content }}
+
+{% if page.available %}<h5><i>Available: Stacks API v{{ page.available }}</i></h5>{% endif %}
+
+<hr>
+
+
+
+
+{% for property in page.properties %}
+
+<h3 id='{{ property.key }}'>{{ property.title }}</h3>
+
+<ul>
+<li>Key: <code>{{ property.key }}</code></li>
+<li>Type: <code>{{ property.type }}</code></li>
+{% if property.default %}<li>Default Value: <code>{{ property.default }}</code></li>{% endif %}
+{% if property.required %}<li>Required</li>{% endif %}
+</ul>
+
+{{ property.description }}
+
+
+{% if property.markdown %}
+{% capture description %}
+{% include_relative properties/{{property.key}}.md %}
+{% endcapture %}
+{{ description | markdownify }}
+{% endif %}
+
+
+{% if property.generic-markdown %}
+{% capture description %}
+{% include property-{{property.key}}.md %}
+{% endcapture %}
+{{ description | markdownify }}
+{% endif %}
+
+
+
+<br><br>
+<hr>
+
+{% endfor %}
+
+<!--
+hey
+<article class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <h3 class="page-title">{{ path }}</h3>
+
+{{ page.name }}{{ url }}{{ page.path }}{{ collection.name }}
+
+</article>
+
+
+% endcapture %
+
+{ stuff | markdownify }
+-->
+
+
+</section>

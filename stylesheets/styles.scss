@@ -104,6 +104,7 @@ header {
   position:fixed;
 }
 
+/*
 header ul {
   list-style:none;
   height:40px;
@@ -141,10 +142,6 @@ header ul a {
   height:40px;
 }
 
-strong {
-  color:#222;
-  font-weight:700;
-}
 
 header ul li + li {
   width:88px;
@@ -160,6 +157,30 @@ header ul a strong {
   font-size:14px;
   display:block;
   color:#222;
+}
+
+
+
+*/
+
+header ul {
+  list-style:none;
+  padding:0;
+  margin:0 0 2em 0;
+}
+
+header li a {
+  display:inline-block;
+  min-width:7em;
+}
+
+header .required {
+  margin: 0 3em;
+}
+
+strong {
+  color:#222;
+  font-weight:700;
 }
 
 section {

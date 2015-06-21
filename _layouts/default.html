@@ -20,19 +20,11 @@
 
  <div class="wrapper">
 
-
-      <header>
-        <h1><a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a></h1>
-        <p>{{ site.tagline }}</p>
-        <hr>
-        <p>{{ site.pages }}<p>
-      </header>
+    {{ content }}
+      
 
 
-      <section>
-         {{ content }}
-      </section>
-
+      
 
       <footer>
                   &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. YourHead Software all rights reserved.
