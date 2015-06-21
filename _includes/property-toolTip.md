@@ -1,0 +1,2 @@
+The tooltip value is used to display hints for the user on the use of each control. 
+If the function of the control is obvious, then a tooltip should be avoided. Simply re-displaying redundant information like the title has no value to the user.
