@@ -57,11 +57,12 @@ layout: default
 {{ description | markdownify }}
 {% endif %}
 
+{% include property-id.md %}
 
 {% if property.generic-markdown %}
 {% capture description %}
 {{property.key}}.md
-{% include property-{{property.key}}.md %}
+{ include property-{{property.key}}.md }
 {% endcapture %}
 {{ description | markdownify }}
 {% endif %}
