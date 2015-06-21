@@ -1,4 +1,0 @@
-# StacksAPI
-Stacks API Documentation
-
-
