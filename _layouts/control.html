@@ -48,6 +48,7 @@ layout: default
 {% if property.required %}<li><span class='propertyTitle'>Required</span></li>{% endif %}
 </ul>
 
+{{ property.description }}
 
 {% comment %}
 {% if property.markdown %}
@@ -57,7 +58,7 @@ layout: default
 {{ description | markdownify }}
 {% endif %}
 
-{{ property.description }}
+{% endcomment %}
 
 {% if property.generic-markdown %}
 {% capture description %}
@@ -66,7 +67,6 @@ layout: default
 {{ description | markdownify }}
 {% endif %}
 
-{% endcomment %}
 
 <br>
 <br>
