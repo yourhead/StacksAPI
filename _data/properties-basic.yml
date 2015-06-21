@@ -1,0 +1,25 @@
+  - title: ID
+    key: id
+    type: string
+    required: true
+    generic-markdown: true
+
+  - title: Title
+    key: title
+    type: string
+    default: '"Untitled"'
+    required: true
+    generic-markdown: true
+
+  - title: Enable
+    key: enable
+    type: dictionary
+    default: enabled
+    generic-markdown: true
+
+  - title: Tool Tip
+    key: toolTip
+    type: string
+    generic-markdown: true
+    default: No tooltip is displayed.
+    

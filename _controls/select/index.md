@@ -2,19 +2,14 @@
 name: Popup Menu
 type: select
 available: 3
+generics: yes
 properties:
-  - title: ID
-    key: id
-    type: string
-    required: true
-    generic-markdown: true
 
-  - title: Title
-    key: title
-    type: string
-    default: '"Untitled"'
+  - title: Menu Items
+    key: items
+    type: Array of menu item dictionaries
     required: true
-    generic-markdown: true
+    markdown: true
 
   - title: Default Value
     key: default
@@ -28,23 +23,6 @@ properties:
     default: '""'
     description: When all the content is cleared out of a text input area (the user deletes all the text), the control will automatically fill with this value. This is useful for applications where a non-empty string is required.
 
-  - title: Enable
-    key: enable
-    type: dictionary
-    default: enabled
-    generic-markdown: true
-
-  - title: Menu Items
-    key: items
-    type: Array of menu item dictionaries
-    required: true
-    markdown: true
-
-  - title: Tool Tip
-    key: toolTip
-    type: string
-    default: No tooltip is displayed.
-    generic-markdown: true
     
 
 ---

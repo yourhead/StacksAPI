@@ -4,20 +4,8 @@ name: Text Input
 type: input
 value: string
 available: 1
+generics: yes
 properties:
-  - title: ID
-    key: id
-    type: string
-    required: true
-    generic-markdown: true
-
-  - title: Title
-    key: title
-    type: string
-    default: '"Untitled"'
-    required: true
-    generic-markdown: true
-
   - title: Default Value
     key: default
     type: string
@@ -29,22 +17,7 @@ properties:
     type: string
     default: '""'
     description: When all the content is cleared out of a text input area (the user deletes all the text), the control will automatically fill with this value. This is useful for applications where a non-empty string is required.
-
-  - title: Enable
-    key: enable
-    type: dictionary
-    default: enabled
-    generic-markdown: true
-
-  - title: Tool Tip
-    key: toolTip
-    type: string
-    generic-markdown: true
-    default: No tooltip is displayed.
     
-
-
-
 ---
 
 

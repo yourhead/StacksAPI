@@ -11,8 +11,21 @@ layout: default
 {% for property in page.properties %}
 <li>
 	<a href='#{{ property.key }}'>{{ property.title }}</a>
-	<a href='#{{ property.key }}'><code>{{ property.key }}</code></a></li>
+	<a href='#{{ property.key }}'><code>{{ property.key }}</code></a>
+</li>
 {% endfor %}
+
+{% if page.generics %}
+<br>
+<small>Basic</small>
+{% for property in site.data.properties-basic %}
+<li>
+	<a href='#{{ property.key }}'>{{ property.title }}</a>
+	<a href='#{{ property.key }}'><code>{{ property.key }}</code></a>
+</li>
+{% endfor %}
+{% endif %}
+
 </ul>
 </header>
 
@@ -34,43 +47,12 @@ layout: default
 
 <hr>
 
-
-
-
 {% for property in page.properties %}
+{% include property.html %}
+{% endfor %}
 
-<h3 id='{{ property.key }}'>{{ property.title }}</h3>
-
-<ul class='propertyList'>
-<li><span class='propertyTitle'>Key:</span><code>{{ property.key }}</code></li>
-<li><span class='propertyTitle'>Type:</span><code>{{ property.type }}</code></li>
-{% if property.default %}<li><span class='propertyTitle'>Default Value:</span><code>{{ property.default }}</code></li>{% endif %}
-{% if property.required %}<li><span class='propertyTitle'>Required</span></li>{% endif %}
-</ul>
-
-{{ property.description }}
-
-{% if property.markdown %}
-{% capture description %}
-{% include_relative properties/{{property.key}}.md %}
-{% endcapture %}
-{{ description | markdownify }}
-{% endif %}
-
-
-{% if property.generic-markdown %}
-{% capture description %}
-{{property.key}}.md
-{% include property-{{property.key}}.md %}
-{% endcapture %}
-{{ description | markdownify }}
-{% endif %}
-
-
-<br>
-<br>
-<hr>
-
+{% for property in site.data.properties-basic %}
+{% include property.html %}
 {% endfor %}
 
 </section>

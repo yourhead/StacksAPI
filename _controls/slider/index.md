@@ -3,6 +3,7 @@ name: Slider
 type: slider
 value: integer/float
 available: 3
+generics: true
 properties:
   - title: Minimum
     key: min
@@ -34,19 +35,6 @@ properties:
     default: No units are displayed.
     description: The units string is displayed next to the slider value. The units is strictly for the user interface, it will not be included in template output value.
 
-  - title: ID
-    key: id
-    type: string
-    required: true
-    generic-markdown: true
-
-  - title: Title
-    key: title
-    type: string
-    default: '"Untitled"'
-    required: true
-    generic-markdown: true
-
   - title: Default Value
     key: default
     type: string
@@ -58,20 +46,6 @@ properties:
     type: string
     default: '""'
     description: When all the content is cleared out of a text input area (the user deletes all the text), the control will automatically fill with this value. This is useful for applications where a non-empty string is required.
-
-  - title: Enable
-    key: enable
-    type: dictionary
-    default: enabled
-    generic-markdown: true
-
-  - title: Tool Tip
-    key: toolTip
-    type: string
-    default: No tooltip is displayed.
-    generic-markdown: true
-
-
 
     
 
