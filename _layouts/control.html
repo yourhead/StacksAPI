@@ -50,7 +50,7 @@ layout: default
 
 {{ property.description }}
 
-
+{% comment %}
 {% if property.markdown %}
 {% capture description %}
 {% include_relative properties/{{property.key}}.md %}
@@ -66,7 +66,7 @@ layout: default
 {{ description | markdownify }}
 {% endif %}
 
-
+{% endcomment %}
 
 <br>
 <br>
