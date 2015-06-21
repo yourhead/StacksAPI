@@ -2,8 +2,7 @@
 url:                  "http://api.yourhead.com"
 baseurl:              "http://yourhead.github.io/StacksAPI"
 reloader:             NO
-gems:
-  - jekyll-sitemap
+github:               [Repository metadata]
 
 
 # Everything below here should be identical in both local and github setups
