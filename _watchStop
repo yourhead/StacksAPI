@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+
+# just kill all the ruby and node
+# pipe the noise to the bitbucket
+killall ruby 2>/dev/null
+killall node 2>/dev/null

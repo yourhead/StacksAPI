@@ -1,0 +1,54 @@
+#!/bin/sh
+
+RELOAD="/usr/local/bin/reload"
+JEKYLL="/usr/bin/jekyll"
+
+
+
+
+# check to make sure tools are available
+if [ ! -f "${RELOAD}" ]; then
+echo "You need to install reload."
+echo "For more info see: https://www.npmjs.com/package/reload"
+echo ">>>>  % npm -g reload"
+exit 1
+fi
+
+
+
+# check to make sure tools are available
+if [ ! -f "${JEKYLL}" ]; then
+echo "You need to install Jekyll."
+echo "For more info see: http://jekyllrb.com"
+echo ">>>>  % gem install jekyll"
+exit 1
+fi
+
+
+
+# Brute force make sure jekyll 
+# and reload are not already running
+killall ruby 2>/dev/null
+killall node 2>/dev/null
+
+
+# start up jekyll as a server
+# set the config to the local config
+${JEKYLL} serve --config _config-local.yml &
+JEKYLLPID=`echo $!`
+echo "Found PID: '${JEKYLLPID}'"
+
+# set up trap so we can shut down cleanly
+trap "kill -9 ${JEKYLLPID}; exit 0" SIGHUP SIGINT SIGTERM
+
+#after a couple seconds, start the browser
+bash -c 'sleep 2; open "http://localhost:8080"' &
+
+# now start live reload on the generated site
+${RELOAD} --time 500 --dir _site
+
+
+
+
+
+

@@ -1,16 +1,15 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           	pretty
+
+title:                Stacks API
+tagline:              Simple. Fast. Awesome.
+url:                  "http://localhost:8080"
+baseurl:              ""
+
+safe:                 true      # enable safe mode to match github pages
+permalink:           	pretty    # make prettty link
 relative_permalinks: 	true
-safe:					true
 
 
 # Setup
-title:        			Stacks API
-tagline:      			Simple. Fast. Awesome.
-url:                 	"http://api.yourhead.com"
-baseurl:             	"http://yourhead.github.io/StacksAPI"
 
 # Assets
 #
