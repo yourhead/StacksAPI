@@ -8,15 +8,18 @@ layout: default
 
 <h3>{{ page.name }} &mdash; <code>{{page.type}}</code></h3>
 <ul>
+{% if page.properties %}
+<small>{{ page.name }}</small>
 {% for property in page.properties %}
 <li>
 	<a href='#{{ property.key }}'>{{ property.title }}</a>
 	<a href='#{{ property.key }}'><code>{{ property.key }}</code></a>
 </li>
 {% endfor %}
+<br>
+{% endif %}
 
 {% if page.generics %}
-<br>
 <small>Basic</small>
 {% for property in site.data.properties-basic %}
 <li>
@@ -51,8 +54,10 @@ layout: default
 {% include property.html %}
 {% endfor %}
 
+{% if page.generics %}
 {% for property in site.data.properties-basic %}
 {% include property.html %}
 {% endfor %}
+{% endif %}
 
 </section>

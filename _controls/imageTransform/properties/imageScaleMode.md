@@ -1,0 +1,6 @@
+The scale mode defines how the image is cropped to fit within the specified scale, width, and height. To get a visual idea of how these modes works, double click an image in Stacks and adjust the scale settings there.
+
+ - **0 — Scale to Fit** — The image will be scaled proportionally until its entire contents fits inside the max width, max height, or the scale percent. The largest value that meets all criteria will be used.
+ - **1 — Scale to Fill** — The image will be scaled proportionally until either the height or the width fills the entire specified height or width. The other dimension will be cropped. This produces an image that is exactly the specified dimensions and is completely filled with the input image. In this mode the Scale will not be used.
+ - **2 — Stretch to Fill** — The image width and height will be stretched until they exactly fill the given width and height. In this mode the Scale will not be used.
+ - **3 — Center (no scaling)** — The input image will be centered inside an output image of the specified dimensions. If the input image is smaller than the specified dimensions, transparent/white will be filled in around the image. If the input image is larger than the specified dimensions, then it will be cropped.

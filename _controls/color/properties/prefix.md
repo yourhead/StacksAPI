@@ -1,0 +1,3 @@
+The default prefix for the returned string is #, this means that if no prefix is specified then the returned color string will be a standard HTML RGB Hex string (e.g. `#1F2F3F`). 
+
+For some applications such as Flash the raw hex value is needed without the hash character prefix. Setting the prefix to the empty-string `""` will return the six character hex value without any prefix (a format commonly used in Flash).

@@ -1,8 +1,8 @@
 ---
-name: Slider
-type: slider
+name: Number
+type: number
 value: number
-available: 3
+available: 2
 generics: true
 properties:
   - title: Minimum
@@ -22,12 +22,6 @@ properties:
     type: Boolean
     default: True
     markdown: true
-
-  - title: Ticks
-    key: ticks
-    type: number
-    default: 0
-    description: The number of tick marks to display on the slider. This includes the left and rightmost tick mark. Setting this value to 1 has undefined behavior.
 
   - title: Units
     key: units
