@@ -163,6 +163,17 @@ header ul a strong {
 
 */
 
+
+ul.propertyList {
+  list-style:none;
+  padding:0;
+}
+
+ul.propertyList .propertyTitle {
+  display:inline-block;
+  min-width:8em;
+}
+
 header ul {
   list-style:none;
   padding:0;
@@ -190,7 +201,7 @@ section {
 }
 
 small {
-  font-size:11px;
+  font-size:0.8em;
 }
 
 hr {

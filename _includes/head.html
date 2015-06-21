@@ -2,20 +2,12 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
-
-  <link rel="stylesheet" href="{{ "/stylesheets/styles.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/stylesheets/pygment_trac.css" | prepend: site.baseurl }}">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-<script src="/reload/reload.js"></script>
+  <title>{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ "/stylesheets/styles.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/stylesheets/pygment_trac.css" | prepend: site.baseurl }}">
 
+  {% if site.reloader %}<script src="/reload/reload.js"></script>{% endif %}
 
 </head>

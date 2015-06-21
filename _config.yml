@@ -1,48 +1,49 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           	pretty
-relative_permalinks: 	true
-safe:					true
+
+url:                  "http://api.yourhead.com
+baseurl:              "http://yourhead.github.io/StacksAPI"
+reloader:             NO
+gems:
+  - jekyll-sitemap
 
 
-# Setup
-title:        			Stacks API
-tagline:      			Simple. Fast. Awesome.
-url:                 	"http://api.yourhead.com"
-baseurl:             	"http://yourhead.github.io/StacksAPI"
+# Everything below here should be identical in both local and github setups
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
+safe:                true      # enable safe mode to match github pages
+permalink:           pretty    # make prettty link
+relative_permalinks: true
+highlighter:         pygments
 
-sass:
-  sass_dir:          _sass
-  style:            :compressed
 
-# About/contact
+title:               Stacks API
+tagline:             Simple. Fast. Awesome.
+version:             7
+stacksVersion:       3
 author:
-  name:              Isaiah Carew
+  name:              YourHead Software
   url:               http://yourhead.com
 
-# Custom vars
-version:             7
-repo:                https://github.com/yourhead/StacksAPI
-highlighter: 		 pygments
-github: 		     [Repository metadata]
 
-# Collections
+
+# sass needs to be be setup for some lame reason
+sass:
+  sass_dir:          _sass
+  style:             :compressed
+
+
+# Collections -- seriously, couldn't this just the be default
 collections:
   properties:
-      output:	true
+      output: true
   controls:
-      output:	true
+      output: true
   
 
-#defaults
+# Default layouts for various things
 defaults:
   - scope:
       path: ""
       type: "controls"
     values:
       layout: "control"
+
+

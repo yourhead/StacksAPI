@@ -5,6 +5,8 @@ layout: default
 
 <header>
 {% include sidebar-title.html %}
+
+<h3>{{ page.name }} &mdash; <code>{{page.type}}</code></h3>
 <ul>
 {% for property in page.properties %}
 <li>
@@ -18,10 +20,13 @@ layout: default
  
 
 
-<h2>{{ page.name }}</h2>
+<h2>{{ page.name }} &mdash; <code>{{page.type}}</code></h2>
 <h3>Overview</h3>
 
-
+<ul class='propertyList'>
+<li><span class='propertyTitle'>Type:</span><code>{{ page.type }}</code></li>
+<li><span class='propertyTitle'>Output Value:</span><code>{{ page.value }}</code></li>
+</ul>
 
 {{ content }}
 
@@ -36,11 +41,11 @@ layout: default
 
 <h3 id='{{ property.key }}'>{{ property.title }}</h3>
 
-<ul>
-<li>Key: <code>{{ property.key }}</code></li>
-<li>Type: <code>{{ property.type }}</code></li>
-{% if property.default %}<li>Default Value: <code>{{ property.default }}</code></li>{% endif %}
-{% if property.required %}<li>Required</li>{% endif %}
+<ul class='propertyList'>
+<li><span class='propertyTitle'>Key:</span><code>{{ property.key }}</code></li>
+<li><span class='propertyTitle'>Type:</span><code>{{ property.type }}</code></li>
+{% if property.default %}<li><span class='propertyTitle'>Default Value:</span><code>{{ property.default }}</code></li>{% endif %}
+{% if property.required %}<li><span class='propertyTitle'>Required</span></li>{% endif %}
 </ul>
 
 {{ property.description }}
@@ -64,25 +69,9 @@ layout: default
 
 
 <br>
+<br>
 <hr>
 
 {% endfor %}
-
-<!--
-hey
-<article class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  <h3 class="page-title">{{ path }}</h3>
-
-{{ page.name }}{{ url }}{{ page.path }}{{ collection.name }}
-
-</article>
-
-
-% endcapture %
-
-{ stuff | markdownify }
--->
-
 
 </section>

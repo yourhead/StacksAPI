@@ -1,6 +1,8 @@
 ---
+title: Text Input Control
 name: Text Input
-type: select
+type: input
+value: string
 available: 1
 properties:
   - title: ID
