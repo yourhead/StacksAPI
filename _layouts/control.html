@@ -61,7 +61,7 @@ layout: default
 {% if property.generic-markdown %}
 {% capture description %}
 {{property.key}}.md
-{ include property-{{property.key}}.md }
+{% include property-{{property.key}}.md %}
 {% endcapture %}
 {{ description | markdownify }}
 {% endif %}
