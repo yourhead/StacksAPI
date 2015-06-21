@@ -7,14 +7,14 @@ properties:
     key: id
     type: string
     required: true
-    description: The ID for this control. This ID must be unique within this stack. The ID is used to refer to the control's property.  IDs should be alpha-numeric (dashes and underscores are allowed), but should not contain special characters.
+    generic-markdown: true
 
   - title: Title
     key: title
     type: string
     default: '"Untitled"'
     required: true
-    description: The title displayed next to the control. Long titles will be truncated, so keep it short.
+    generic-markdown: true
 
   - title: Default Value
     key: default
@@ -44,7 +44,7 @@ properties:
     key: toolTip
     type: string
     default: No tooltip is displayed.
-    description: The tooltip value is used to display hints for the user on the use of each control. If the function of the control is obvious, then a tooltip should be avoided. Simply re-displaying redundant information, like the title, has no value to the user.
+    generic-markdown: true
     
 
 ---

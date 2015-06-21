@@ -1,0 +1,1 @@
+The title displayed next to the control. Long titles will be trancated, so keep it short.
