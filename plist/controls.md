@@ -24,7 +24,7 @@ back:
     {% endif %}
   {% endif %}
 
-<li><a href='{{ control.url }}'>{{ control.name }}</a> &mdash; {{ control.description }}</li>
+<li><a href='{{ site.baseurl }}{{ control.url }}'>{{ control.name }}</a> &mdash; {{ control.description }}</li>
 
 {% endfor %}
 </ul>
