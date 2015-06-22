@@ -1,6 +1,7 @@
 ---
 title: Text Input Control
 name: Text Input
+description: A simple text input.
 type: input
 value: string
 available: 1

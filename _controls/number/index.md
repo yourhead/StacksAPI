@@ -2,6 +2,8 @@
 name: Number
 type: number
 value: number
+group: numbers
+description: A number entry field, with a small up/down control for adjustment.
 available: 2
 generics: true
 properties:

@@ -1,6 +1,8 @@
 ---
 name: Math
 type: math
+group: numbers
+description: Perform basic calculations in your controls.
 value: number
 available: 2
 properties:

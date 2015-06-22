@@ -1,6 +1,8 @@
 ---
 name: Image Transform
 type: imageTransform
+group: images
+description: A virtual control that modifies images.
 value: "string: the path to the image"
 available: 3
 generics: false

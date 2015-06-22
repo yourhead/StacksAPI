@@ -2,7 +2,51 @@
 layout: default
 ---
 
-<article class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
-</article>
+<header>
+{% include sidebar-title.html %}
+
+
+<h3>Contents</h3>
+<ul>
+{% if page.links %}
+
+{% for link in page.links %}
+
+{% if link.top %}
+	{% for topLink in site.data.links-top %}
+		{% if topLink.url == link.top %}
+			{% assign l = topLink %}
+		{% endif %}
+	{% endfor %}
+{% else %}
+	{% assign l = link %}
+{% endif %}
+
+<li><a href='{{ l.url }}'>{{ l.title }}</a>{% if l.description %}<br>{{ l.description }}<br><br>{% endif %} </li>
+
+{% endfor %}
+<br>
+{% endif %}
+
+{% if page.generics %}
+<small>Basic</small>
+{% for property in site.data.properties-basic %}
+<li>
+	<a href='#{{ property.key }}'>{{ property.title }}</a>
+	<a href='#{{ property.key }}'><code>{{ property.key }}</code></a>
+</li>
+{% endfor %}
+{% endif %}
+
+</ul>
+
+
+</header>
+
+<section>
+
+<h2>{{ page.title}}</h2>
+
+{{ content }}
+
+</section>

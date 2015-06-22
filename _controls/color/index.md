@@ -1,6 +1,7 @@
 ---
 name: Color
 type: color
+description: A color well for choosing colors.
 value: HTML Color String
 available: 2
 generics: true

@@ -1,6 +1,7 @@
 ---
 name: Checkbox
 type: checkbox
+description: A simple checkbox for enabling/disabling properties.
 value: any value
 available: 1
 generics: true

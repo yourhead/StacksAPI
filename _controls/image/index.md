@@ -1,6 +1,8 @@
 ---
 name: Image
 type: image
+group: images
+description: An image well for choosing images. Use it with image transforms.
 value: "string: an img tag"
 available: 3
 generics: true

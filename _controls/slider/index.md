@@ -1,6 +1,8 @@
 ---
 name: Slider
 type: slider
+group: numbers
+description: A slider control for picking a number from a limited range.
 value: number
 available: 3
 generics: true
