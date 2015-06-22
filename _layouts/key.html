@@ -1,0 +1,64 @@
+---
+layout: default
+links:
+  - top: /plist
+---
+
+
+<header>
+{% include sidebar-title.html %}
+
+<h3>{{ page.name }} &mdash; {% if page.humanReadableKey %}{{ page.humanReadableKey }}{% else %}{{ page.key }}{% endif %}</h3>
+
+<hr>
+
+{% include sidebar-links.html %}
+
+<ul>
+{% if page.properties %}
+<small>{{ page.name }}</small>
+{% for property in page.properties %}
+<li>
+	<a href='#{{ property.key }}'>{{ property.title }}</a>
+	<a href='#{{ property.key }}'><code>{{ property.key }}</code></a>
+</li>
+{% endfor %}
+<br>
+{% endif %}
+
+{% if page.generics %}
+<small>Basic</small>
+{% for property in site.data.properties-basic %}
+<li>
+	<a href='#{{ property.key }}'>{{ property.title }}</a>
+	<a href='#{{ property.key }}'><code>{{ property.key }}</code></a>
+</li>
+{% endfor %}
+{% endif %}
+
+</ul>
+</header>
+
+<section>
+ 
+
+
+<h2>{{ page.name }} &mdash; <code>{{page.key}}</code></h2>
+
+<h3>Overview</h3>
+
+<ul class='propertyList'>
+<li><span class='propertyTitle'>Key:</span><code>{{ page.key }}</code></li>
+{% if page.humanReadableKey %}<li><span class='propertyTitle'>Readable Key:</span><code>{{ page.humanReadableKey }}</code></li>{% endif %}
+<li><span class='propertyTitle'>Type:</span><code>{{ page.type }}</code></li>
+{% if page.value %}<li><span class='propertyTitle'>Value:</span><code>{{ page.value }}</code></li>{% endif %}
+{% if page.required %}<li><span class='propertyTitle'>Required</span></li>{% endif %}
+</ul>
+
+{{ content }}
+
+{% if page.available %}<h5><i>Available: Stacks API v{{ page.available }}</i></h5>{% endif %}
+
+<hr>
+
+</section>

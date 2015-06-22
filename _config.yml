@@ -31,7 +31,7 @@ sass:
 
 # Collections -- seriously, couldn't this just the be default
 collections:
-  properties:
+  keys:
       output: true
   controls:
       output: true
@@ -44,5 +44,10 @@ defaults:
       type: "controls"
     values:
       layout: "control"
+  - scope:
+      path: ""
+      type: "keys"
+    values:
+      layout: "key"
 
 
