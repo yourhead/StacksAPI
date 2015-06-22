@@ -17,11 +17,11 @@ The bundle of a stack follows the standard Mac OS X bundle structure. It looks l
 
 - MyStackName.stack - the folder for the stack.
   - Contents - all bundles store their contents in a Contents folder.
-    - [Info.plist](/plist) - the bundle property-list that describes the stack. This will define all of the properties, templates, and assets your stack uses.
-    - [Resources](/resources) - all of the templates and assets your stack uses will be stored here.
+    - [Info.plist]({{ site.baseurl }}/plist) - the bundle property-list that describes the stack. This will define all of the properties, templates, and assets your stack uses.
+    - [Resources]({{ site.baseurl }}/resources) - all of the templates and assets your stack uses will be stored here.
       - icon@50.png - a 50px icon file that will be used in the grid view of the Stacks library
       - icon@58.png - a 58px icon file that will be used in the detail view of the Stacks library
-      - [template.html](/templates) - a stack may contain many template files for HTML, CSS, JS, etc., but it must contain at least one HTML tempalate.
+      - [template.html]({{ site.baseurl }}/templates) - a stack may contain many template files for HTML, CSS, JS, etc., but it must contain at least one HTML tempalate.
       - assetfile.xxx - a stack may contain many asset files. Each asset will be exported with the Stacks page when the site is published.
       - assetfolder - a stack may contain an asset folder. All the hierarchical contents of the folder will be exported with the Stacks page when the site is published.
 

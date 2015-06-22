@@ -22,7 +22,7 @@ layout: default
 	{% assign l = link %}
 {% endif %}
 
-<li><a href='{{ l.url }}'>{{ l.title }}</a>{% if l.description %}<br>{{ l.description }}<br><br>{% endif %} </li>
+<li><a href='{{ site.baseurl}}{{ l.url }}'>{{ l.title }}</a>{% if l.description %}<br>{{ l.description }}<br><br>{% endif %} </li>
 
 {% endfor %}
 <br>
