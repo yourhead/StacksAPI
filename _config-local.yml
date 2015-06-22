@@ -14,8 +14,8 @@ highlighter:         pygments
 
 title:               Stacks API
 tagline:             Simple. Fast. Awesome.
-version:             7
-stacksVersion:       3
+version:             6
+stacksVersion:       2.5
 author:
   name:              YourHead Software
   url:               http://yourhead.com

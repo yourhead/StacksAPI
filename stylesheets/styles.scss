@@ -182,7 +182,7 @@ header ul {
 
 header li a {
   display:inline-block;
-  min-width:7em;
+  min-width:8em;
 }
 
 header .required {
@@ -212,10 +212,9 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:auto;
   float:left;
-  position:fixed;
-  bottom:50px;
+  clear:both;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -225,21 +224,25 @@ footer {
     margin:0;
   }
 
-  header, section, footer {
-    float:none;
+  section, footer {
+    float:left;
     position:static;
     width:auto;
+    clear:both;
   }
 
   header {
-    padding-right:320px;
+    float:left;
+    display:block;
+    position:relative;
+    width:auto;
   }
 
   section {
-    border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
+    clear:both;
   }
 
   header a small {
@@ -247,9 +250,7 @@ footer {
   }
 
   header ul {
-    position:absolute;
-    right:50px;
-    top:52px;
+    display: block;
   }
 }
 
