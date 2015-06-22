@@ -5,6 +5,7 @@ humanReadableKey: Bundle versions string, short
 type: string
 description: The version number.
 available: 2
+group: version
 
 links:
   - top: /plist

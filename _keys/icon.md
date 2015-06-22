@@ -1,5 +1,5 @@
 ---
-name: icon
+name: Icon File
 key: icon
 type: string
 description: The base of you icon files.
@@ -17,22 +17,25 @@ The library displays a smaller 50x50 pixel icon image in the grid view. When a u
 Each icon file should be PNG format and have the .png extension. A unique app-shaped icon with a transparent background is recommended. The file names for the icons should be in the format:
 
 
-`<base_name>@<size>.png`
+```
+<base_name>@<size>.png
+```
 
 
-`<base_name>` is the name that you provide in the property. 
-`<size>` is the width of the image. Current supported sizes are: 50 and 58.
+ * `<base_name>` is the name that you provide in the property. 
+ * `<size>` is the width of the image. Current supported sizes are: 50 and 58.
 
 Example
 In the plist file: 
 
-```html
+```xml
 <key>icon</key>
 <string>MyGreatIcon</string>
 ```
 
 Files in the resources folder: 
 
+```
 MyGreatIcon@50.png 
-
 MyGreatIcon@58.png 
+```

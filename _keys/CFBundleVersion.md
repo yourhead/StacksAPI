@@ -5,6 +5,7 @@ humanReadableKey: Bundle version
 type: string
 description: The the current build number.
 available: 2
+group: version
 
 links:
   - top: /plist

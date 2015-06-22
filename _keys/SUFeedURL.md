@@ -1,20 +1,21 @@
 ---
-name: ID
-key: CFBundleIdentifier
-humanReadableKey: Bundle Identifier
+name: Sparkle Appcast URL
+key: SUFeedURL
 type: string
-description: The unique ID for your stack.
-required: yes
+description: The Appcast URL for updates.
+available: 2
+group: URLs
 
 links:
   - top: /plist
-  - plist: controls
-  - plist: templates
-  - plist: assets
 
 ---
 
-The ID is the unique identifier for your stack. To ensure unqueness, it's recommended you use [reverse DNS format](http://en.wikipedia.org/wiki/Reverse-DNS). 
-This should be a string consisting of just lowercase characters, periods, and underscores. ***There should be no spaces in the ID.*** It must uniquely identify your stack.
+The URL used by the Sparkle automatic updater to locate the stack's update appcast. 
 
-> Note: This value is used to bind the user's content to your stack. For this reason ***the ID must never change.***
+You can provide a URL to an XML appcast on your own server. The appcast will be read and compared to the version information in the currently installed stack. If the appcast version is newer, then the appcast info will be used to install the new version. 
+
+You can find more information about creating an appcast and publishing an update on the [Sparkle website](http://wiki.github.com/andymatuschak/Sparkle/publishing-an-update).
+
+> Note: Setting up an appcast for the first time can be challenging. There are many details required before it all begins to work. Stacks will output some information about update failures to the developer log. If you need help getting things set up please post of the [Stack Developers Group](http://groups.google.com/group/stack_developers?hl=en) with details and questions. Others have been through the process and can offer some assistance.
+

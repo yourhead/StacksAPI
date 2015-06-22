@@ -1,20 +1,17 @@
 ---
-name: ID
-key: CFBundleIdentifier
-humanReadableKey: Bundle Identifier
-type: string
-description: The unique ID for your stack.
-required: yes
+name: Minimum Stacks API Version
+key: minAPIVersion
+type: number
+group: version
+description: The minimum API version.
 
 links:
   - top: /plist
-  - plist: controls
-  - plist: templates
-  - plist: assets
 
 ---
 
-The ID is the unique identifier for your stack. To ensure unqueness, it's recommended you use [reverse DNS format](http://en.wikipedia.org/wiki/Reverse-DNS). 
-This should be a string consisting of just lowercase characters, periods, and underscores. ***There should be no spaces in the ID.*** It must uniquely identify your stack.
+The minimum API version required by your stack. 
+You can use the minimum version to detect a specific version of the API that your stack requires. Values should be a simple integer of the major version number required. If you are using the Stacks API 2.0 features, you should set the minAPIVersion to 2.
 
-> Note: This value is used to bind the user's content to your stack. For this reason ***the ID must never change.***
+> Warning: Only use a min API version if there is a known incompatibility. Do not blindly add min limits.
+

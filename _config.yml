@@ -11,6 +11,7 @@ safe:                true      # enable safe mode to match github pages
 permalink:           pretty    # make prettty link
 relative_permalinks: true
 highlighter:         pygments
+markdown:            redcarpet
 
 
 title:               Stacks API

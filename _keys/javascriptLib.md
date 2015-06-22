@@ -1,20 +1,21 @@
 ---
-name: ID
-key: CFBundleIdentifier
-humanReadableKey: Bundle Identifier
-type: string
-description: The unique ID for your stack.
-required: yes
+name: Javascript Library
+key: javascriptLib
+type: String
+description: Load a JS library.
+group: javascript
+available: 2
 
 links:
   - top: /plist
-  - plist: controls
-  - plist: templates
-  - plist: assets
 
 ---
 
-The ID is the unique identifier for your stack. To ensure unqueness, it's recommended you use [reverse DNS format](http://en.wikipedia.org/wiki/Reverse-DNS). 
-This should be a string consisting of just lowercase characters, periods, and underscores. ***There should be no spaces in the ID.*** It must uniquely identify your stack.
+The Javascript base library to be included for the page. 
+Stacks will include a Javascript base library for all the stacks to share. There are three supported libraries:
 
-> Note: This value is used to bind the user's content to your stack. For this reason ***the ID must never change.***
+ * jQuery
+ * MooTools
+ * jQuery UI *(Available: Stacks API v3)*
+
+The library will be included by using the Google AJAX Libraries API. This is a convenient and reliable source of the most recently released versions of the libraries. However it does come with some important implications:

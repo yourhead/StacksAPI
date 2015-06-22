@@ -1,20 +1,17 @@
 ---
-name: ID
-key: CFBundleIdentifier
-humanReadableKey: Bundle Identifier
-type: string
-description: The unique ID for your stack.
-required: yes
+name: Javascript Closure
+key: javascriptClosure
+type: Boolean
+description: Disable the default JS closure.
+group: javascript
+available: 2
 
 links:
   - top: /plist
-  - plist: controls
-  - plist: templates
-  - plist: assets
 
 ---
 
-The ID is the unique identifier for your stack. To ensure unqueness, it's recommended you use [reverse DNS format](http://en.wikipedia.org/wiki/Reverse-DNS). 
-This should be a string consisting of just lowercase characters, periods, and underscores. ***There should be no spaces in the ID.*** It must uniquely identify your stack.
+Javascript closures are enabled by default. If you would like to disable them you can set this plist entry to false.
 
-> Note: This value is used to bind the user's content to your stack. For this reason ***the ID must never change.***
+> Warning: Please only disable closures if there is no alternative. Disabling closures will almost certainly cause incompatabilities with some RapidWeaver themes.
+

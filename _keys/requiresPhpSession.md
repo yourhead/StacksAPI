@@ -1,20 +1,16 @@
 ---
-name: ID
-key: CFBundleIdentifier
-humanReadableKey: Bundle Identifier
-type: string
-description: The unique ID for your stack.
-required: yes
+name: Php Session Enable
+key: requiresPhpSession
+type: Boolean
+description: Enable php session.
+available: 5
+group: php
 
 links:
   - top: /plist
-  - plist: controls
-  - plist: templates
-  - plist: assets
 
 ---
 
-The ID is the unique identifier for your stack. To ensure unqueness, it's recommended you use [reverse DNS format](http://en.wikipedia.org/wiki/Reverse-DNS). 
-This should be a string consisting of just lowercase characters, periods, and underscores. ***There should be no spaces in the ID.*** It must uniquely identify your stack.
+The php session enable. 
 
-> Note: This value is used to bind the user's content to your stack. For this reason ***the ID must never change.***
+This will add the call to the php sessionstart function. You can get more information about how to use php sessions and the sessionstart function on the [php reference page](http://www.php.net/manual/en/function.session-start.php).

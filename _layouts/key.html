@@ -45,8 +45,6 @@ links:
 
 <h2>{{ page.name }} &mdash; <code>{{page.key}}</code></h2>
 
-<h3>Overview</h3>
-
 <ul class='propertyList'>
 <li><span class='propertyTitle'>Key:</span><code>{{ page.key }}</code></li>
 {% if page.humanReadableKey %}<li><span class='propertyTitle'>Readable Key:</span><code>{{ page.humanReadableKey }}</code></li>{% endif %}
@@ -54,6 +52,8 @@ links:
 {% if page.value %}<li><span class='propertyTitle'>Value:</span><code>{{ page.value }}</code></li>{% endif %}
 {% if page.required %}<li><span class='propertyTitle'>Required</span></li>{% endif %}
 </ul>
+
+<hr>
 
 {{ content }}
 

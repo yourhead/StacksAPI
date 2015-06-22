@@ -1,20 +1,16 @@
 ---
-name: ID
-key: CFBundleIdentifier
-humanReadableKey: Bundle Identifier
+name: Title
+key: title
 type: string
-description: The unique ID for your stack.
+description: The title.
 required: yes
+available: 1
 
 links:
   - top: /plist
-  - plist: controls
-  - plist: templates
-  - plist: assets
 
 ---
 
-The ID is the unique identifier for your stack. To ensure unqueness, it's recommended you use [reverse DNS format](http://en.wikipedia.org/wiki/Reverse-DNS). 
-This should be a string consisting of just lowercase characters, periods, and underscores. ***There should be no spaces in the ID.*** It must uniquely identify your stack.
+The title of your stack. 
 
-> Note: This value is used to bind the user's content to your stack. For this reason ***the ID must never change.***
+The title is the displayed in the library so should be human readable. If your title is too long it may get truncated in some view modes, so please keep it short and simple.

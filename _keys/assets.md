@@ -1,10 +1,10 @@
 ---
-name: Asset Dictionary
+name: Asset Files 
 key: assets
 type: array
 group: content
 value: An array of asset dictionaries.
-description: Declare your static assets here.
+description: Declare your static assets files here.
 available: 2
 
 links:
