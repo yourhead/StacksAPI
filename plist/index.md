@@ -30,7 +30,7 @@ The Info.plist file within a stack defines the basic attributes of the stack lik
     {% endif %}
   {% endif %}
 
-<li><a href='{{ control.url }}'>{{ control.name }}</a> &mdash; <code>{{ control.key }}</code> &mdash; {{ control.description }}</li>
+<li><a href='{{ site.baseurl }}{{ control.url }}'>{{ control.name }}</a> &mdash; <code>{{ control.key }}</code> &mdash; {{ control.description }}</li>
 
 {% endfor %}
 </ul>
