@@ -1,8 +1,6 @@
 ---
 title: Controls
 layout: page
-back:
-  - top: /plist
 ---
 
 

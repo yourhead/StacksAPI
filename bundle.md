@@ -1,11 +1,11 @@
 ---
 title: The Stacks Bundle
 layout: page
-links:
+back:
   - top: /
+links:
   - top: /plist
   - top: /templates
-  - top: /resources
 
 ---
 

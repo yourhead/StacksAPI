@@ -5,7 +5,6 @@ links:
   - top: /bundle
   - top: /plist
   - top: /templates
-  - top: /resources
 ---
 
 

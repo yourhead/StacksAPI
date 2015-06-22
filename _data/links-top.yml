@@ -7,11 +7,11 @@
     url: /bundle
     description: What goes where and why inside a stack bundle.
 
-  - title: Property List
+  - title: Property List Reference
     url: /plist
     description: The property list is where your stack is configured.
 
-  - title: Templates
+  - title: Templates Variable Reference
     url: /templates
     description: The Stacks templating system.
 

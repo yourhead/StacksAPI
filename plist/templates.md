@@ -1,48 +1,101 @@
 ---
-title: The Stacks API
+title: Template Files Dictionary
 layout: page
-links:
-  - top: /bundle
+back:
   - top: /plist
-  - top: /templates
-  - top: /resources
 ---
 
 
 ### Overview
-
-The Stacks library comes with a set of built-in, general purpose stacks that are great for creating a page layout, but if you're familiar with Mac OS X, HTML and CSS you can create your own stacks to add to the Stacks library.
-
-This document describes how to build your own stacks and gives a reference to the available options in the API.
-
-There's an active community of stack developers that discuss how to build and market stacks in [this Google group](http://groups.google.com/group/stack_developers). If you have questions, it's a good place to ask.
-
-
-### What is a stack
-A stack is one element in a Stacks layout. Any item that can be added to a Stacks layout comes from the library. Each item in the library is a stack. An outside container (usually two divs) that Stacks provides and the inner content of the stack, which comes from stack's bundle. The bundle of each stack has a number of files which specify the custom properties, the HTML/CSS/JS/PHP content, and any other file assets the stack needs.
-
-> Note: In this document we will use the term **Stacks** (capitalized and plural) to refer to the plugin. We will use the term **stack** (lowercase and singular) to refer to the layout elements that you create with the Stacks API.
-
-
-### Where do Stacks get installed
-Each default stack resides inside of the Stacks plugin bundle. You can view them (but you should not modify them) by right-clicking on the Stacks.rwplugin file and choosing **Show Package Contents**. To install your own stacks into you should add them to the Stacks folder.
-
-The Stacks folder can be found in: `~/Library/Containers/com.realmacsoftware.rapidweaver6/Data/Library/Application Support/RapidWeaver`
-
-If this folder doesn't yet exist, it will be created the first time you use Stacks.
-
-
-### Working with bundles
-On Mac OS X, a bundle is a folder with a file extension that belongs to an application. These folders appear as a single file to the user. Double clicking them launches the owning app rather than opening the folder. RapidWeaver has graciously done this for folders with the .stack extension. So if you have RapidWeaver installed any stack you create should immediately gain the stack icon and open RapidWeaver when double-clicked.
-
-> Note: RapidWeaver will install a double-clicked stack into the Stacks folder.
-
-
-### What's inside a stack
-A stack is built as a standard Mac OS X bundle. This means that it's a folder with a very specific structure. Inside the folder you'll find a Contents folder and inside of that you'll find the property list and the stack's resources. You can use this reference to build your own from scratch, but it's probably easier to start from a copy of one of the built-in stacks.
+All of the template files that your stack uses must be declared in the Info.plist inside the templates array. Each item in the array is a dictionary that defines the name, type, and scope of the template.
 
 
 
+
+
+### Contents
+
+##### Basic
+  * [File Name][] — *filename (required)*
+  * [Type][] — *type (required)*
+  * [Scope][] — *scope*
+
+
+
+
+
+
+
+### Reference
+
+___
+[File Name]: #filename
+<a name='filename'></a>
+####File Name *— filename*
+ * *Key* <br> filename
+ * *Type* <br> String
+ * *Required*
+
+#####Description
+The file name of template. This should be only the name, not the complete path.
+
+
+
+___
+[Type]: #type
+<a name='type'></a>
+####Type *— type*
+ * *Key* <br> type
+ * *Type* <br> String
+ * *Required*
+
+#####Description
+The type of template.  This must be one of: `html`, `css`, `js`, `php`, or `file`.
+
+
+
+___
+[Scope]: #scope
+<a name='scope'></a>
+####Scope *— scope*
+ * *Key* <br> scope
+ * *Type* <br> String, either `each` or `page`
+ * *Default* <br> `each`
+ * *Optional*
+
+#####Description
+The scope of the template defines how the template will be added to the page.
+
+  * each — Templates with the each scope are added to the page once fore each instance of a stack on the page and in the order that the stack instances appear on the page.
+  * page — Templates with the page scope are added to the page only once, no matter how many instances of a stack are on the page. All of the page scoped templates precede any each scoped templates.
+  
+##### HTML Page Scope
+Page scoped HTML templates will be place in the &lt;head> tag of the page following the CSS and JS links. This is useful for including links to external CSS and libraries.  
+Just as in each scoped templates, CSS is included in Edit Mode but Javascript will be disabled.
+**Use the feature sparingly as linking to external resources can slow down page loads**
+
+> Note: For improved performance disable external CSS links in Edit Mode.
+
+##### CSS Page Scope
+Page scope CSS templates will be added to the pages CSS file and will preceed the each scoped CSS.  This allows you to define the base styes once for all stack instances in the page scope and override the styles when necessary in the each scoped templates.
+
+##### Javascript Page Scope
+Page scoped Javascript is included in its own closure separate from the closure for the each scoped Javascript. This allows you to define Javascript functions once for all instances of the stack on the page which will speed up the page and reduce the memory footprint.
+
+##### PHP Page Scope
+Page scoped PHP will be included in the linked php. It will preceed the each scoped PHP.
+
+___
+### File templates
+
+#### Assets are faster than templates
+Most files that are exported with the page should be added as an asset. Assets are included without any sort of template processing so there is no performance penalty for adding them.
+
+#### Templates are processed
+There are times when it is helpful to inject properties from your stack into included files. You can add a template with the type of `file` for this purpse. File templates can be any text file (UTF-8).
+
+#### Not for edit mode
+Because template files may be very slow to process, they will not be processed for edit mode.  Only HTML and CSS templates are processed for edit mode.
 
 
 

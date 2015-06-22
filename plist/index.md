@@ -1,8 +1,9 @@
 ---
 title: The Property List
 layout: page
-links:
+back:
   - top: /bundle
+links:
   - plist: controls
   - plist: templates
   - plist: assets

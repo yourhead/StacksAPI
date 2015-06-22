@@ -4,50 +4,10 @@ layout: default
 
 <header>
 {% include sidebar-title.html %}
-
-
-<h3>Contents</h3>
-<ul>
-{% if page.links %}
-
-{% for link in page.links %}
-
-{% assign l = link %}
-{% assign base = "" %}
-
-{% if link.top %}
-	{% for topLink in site.data.links-top %}
-		{% if topLink.url == link.top %}
-			{% assign l = topLink %}
-		{% endif %}
-	{% endfor %}
-{% endif %}
-
-
-{% if link.plist %}
-	{% for topLink in site.data.links-plist %}
-		{% if topLink.url == link.plist %}
-			{% assign l = topLink %}
-		{% endif %}
-	{% endfor %}
-	{% assign base = "/plist/" %}
-{% endif %}
-
-<li><a href='{{ site.baseurl}}{{base}}{{ l.url }}'>{{ l.title }}</a>{% if l.description %}<br>{{ l.description }}<br><br>{% endif %} </li>
-
-{% endfor %}
-<br>
-{% endif %}
-
-</ul>
-
-
+{% include sidebar-links.html %}
 </header>
 
 <section>
-
 <h2>{{ page.title}}</h2>
-
 {{ content }}
-
 </section>

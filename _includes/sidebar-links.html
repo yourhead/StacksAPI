@@ -1,5 +1,43 @@
 
+{% if page.back %}
+
+{% for link in page.back limit=1 %}
+
+{% assign l = link %}
+{% assign base = "" %}
+
+{% if link.top %}
+	{% for topLink in site.data.links-top %}
+		{% if topLink.url == link.top %}
+			{% assign l = topLink %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
+
+{% if link.plist %}
+	{% for topLink in site.data.links-plist %}
+		{% if topLink.url == link.plist %}
+			{% assign l = topLink %}
+		{% endif %}
+	{% endfor %}
+	{% assign base = "/plist/" %}
+{% endif %}
+
+&nbsp; <span style='font-size:16px'>&lt; &nbsp; </span><a href='{{ site.baseurl}}{{base}}{{ l.url }}'>{{ l.title }}</a><br>
+
+{% endfor %}
+<br>
+
+
+<hr>
+{% endif %}
+
+
 <ul>
+{% if page.back %}
+{% endif %}
+
 {% if page.links %}
 
 {% for link in page.links %}
