@@ -5,8 +5,7 @@ group: properties and controls
 description: The ID of the current stack.
 available: 2
 
-back:
-  - top: /templates
+
 
 ---
 
