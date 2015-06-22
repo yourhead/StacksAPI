@@ -5,9 +5,6 @@ group: properties and controls
 description: Property values from controls.
 available: 2
 
-back:
-  - top: /templates
-
 ---
 
 

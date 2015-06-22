@@ -5,8 +5,6 @@ group: expressions and conditionals
 description: Simple math operations.
 available: 3
 
-back:
-  - top: /templates
 
 ---
 

@@ -4,9 +4,6 @@ syntax: "%rapidweaverAssetPath%"
 group: paths
 description: The path to exported RapidWeaver assets
 available: 2
-
-back:
-  - top: /templates
   
 links:
   - plist: assets

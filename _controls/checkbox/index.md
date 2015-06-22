@@ -6,6 +6,7 @@ description: A simple checkbox for enabling/disabling properties.
 value: any value
 available: 1
 generics: true
+
 properties:
   - title: True Value
     key: min
@@ -31,7 +32,7 @@ properties:
     default: '""'
     description: When all the content is cleared out of a text input area (the user deletes all the text), the control will automatically fill with this value. This is useful for applications where a non-empty string is required.
 
-    
+
 
 ---
 

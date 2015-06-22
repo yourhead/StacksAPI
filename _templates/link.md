@@ -5,8 +5,6 @@ group: properties and controls
 description: The output of link controls.
 available: 3
 
-back:
-  - top: /templates
 
 ---
 

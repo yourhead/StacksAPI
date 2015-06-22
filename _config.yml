@@ -52,15 +52,22 @@ defaults:
       type: "controls"
     values:
       layout: "control"
+      back: 
+        - plist: "controls"
+      layout: "control"
   - scope:
       path: ""
       type: "keys"
     values:
       layout: "key"
+      back: 
+        - top: "/plist"
   - scope:
       path: ""
       type: "templates"
     values:
       layout: "template"
+      back: 
+        - top: "/templates"
 
 

@@ -5,9 +5,6 @@ group: expressions and conditionals
 description: Conditional content based a property value.
 available: 3
 
-back:
-  - top: /templates
-
 ---
 
 

@@ -5,8 +5,6 @@ group: properties and controls
 description: Output of a color control.
 available: 3
 
-back:
-  - top: /templates
 
 ---
 

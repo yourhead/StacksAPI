@@ -5,9 +5,6 @@ group: expressions and conditionals
 description: Enable content only for Edit, Preview, or Publish.
 available: 2
 
-back:
-  - top: /templates
-
 ---
 
 

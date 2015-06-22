@@ -5,9 +5,6 @@ group: special
 description: Repeating Content. Please see warnings before using.
 available: 2
 
-back:
-  - top: /templates
-
 ---
 
 

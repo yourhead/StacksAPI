@@ -6,13 +6,12 @@ links:
 
 
 <header>
-{% include sidebar-title.html %}
+{% include sidebar-top.html %}
 
 <h3>{{ page.name }} &mdash; {% if page.humanReadableKey %}{{ page.humanReadableKey }}{% else %}{{ page.key }}{% endif %}</h3>
 
 <hr>
 
-{% include sidebar-links.html %}
 
 <ul>
 {% if page.properties %}
@@ -37,6 +36,7 @@ links:
 {% endif %}
 
 </ul>
+{% include sidebar-bottom.html %}
 </header>
 
 <section>

@@ -5,9 +5,6 @@ group: expressions and conditionals
 description: String comparison operations.
 available: 3
 
-back:
-  - top: /templates
-
 ---
 
 

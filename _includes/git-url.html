@@ -1,40 +1,6 @@
-
-
 {% if page.collection %}
-
-	{% comment %}
-		There appears to be a bug in jekyll that causes the path to collections to return the absolute file path rather than the local file path. Stranger still, on github it behaves differently. Instead of the full path it returns '/repo/'...
-
-		The barf below is to strip out that garbage and get a nice path to the collection
-	{% endcomment %}
-
-	{% if page.path contains '/repo/' %}
-		{% assign newPath = page.path | remove_first: '/repo/' %}
-	{% else %}
-
-		{% assign cPath = page.path | split:"/" %}
-
-		{% assign newPath = "" %}
-		{% for c in cPath reversed %}
-		{% assign newPath = newPath | append:c | append:'/' %}
-		{% endfor %}
-
-		{% assign cPath = newPath | split:"/" %}
-
-		{% assign newPath = "" %}
-		{% for c in cPath limit:3 %}
-		{% assign newPath = newPath | prepend:c | prepend:'/' %}
-		{% endfor %}
-
-		{% assign newPath = newPath | remove_first:'/' %}
-
-	{% endif %}
-
+	{% assign newPath = page.relative_path %}
 {% else %}
-
 	{% assign newPath = page.path %}
-
 {% endif %}
-
-
 https://{{site.git_host}}/{{site.git_host_user}}/{{site.git_project}}/blob/{{site.git_branch}}/{{newPath}}

@@ -4,9 +4,6 @@ syntax: "%slice%"
 description: A container for other stacks.
 available: 1
 
-back:
-  - top: /templates
-
 ---
 
 

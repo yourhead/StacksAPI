@@ -5,9 +5,6 @@ group: paths
 description: The path to exported assets
 available: 2
 
-back:
-  - top: /templates
-  
 links:
   - plist: assets
 

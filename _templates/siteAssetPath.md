@@ -5,9 +5,6 @@ group: paths
 description: The path to assets shared site-wide
 available: 2
 
-back:
-  - top: /templates
-  
 links:
   - plist: assets
 

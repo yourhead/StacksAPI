@@ -4,9 +4,6 @@ syntax: "%text%"
 description: The content of an Text stack.
 available: 1
 
-back:
-  - top: /templates
-
 ---
 
 

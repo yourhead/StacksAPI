@@ -4,9 +4,6 @@ syntax: "%stack%"
 group: special
 description: Reserved for internal use.
 
-back:
-  - top: /templates
-
 ---
 
 ### Description

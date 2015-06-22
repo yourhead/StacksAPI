@@ -4,9 +4,6 @@ syntax: "%html%"
 description: The content of an HTML stack.
 available: 1
 
-back:
-  - top: /templates
-
 ---
 
 

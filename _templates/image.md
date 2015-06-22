@@ -4,9 +4,6 @@ syntax: "%image%"
 description: The content of an Image stack.
 available: 1
 
-back:
-  - top: /templates
-
 ---
 
 
