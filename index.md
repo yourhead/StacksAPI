@@ -4,6 +4,7 @@ layout: page
 links:
   - top: /bundle
   - top: /plist
+  - plist: /controls
   - top: /templates
 ---
 

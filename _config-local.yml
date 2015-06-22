@@ -21,6 +21,12 @@ author:
   url:               http://yourhead.com
 
 
+git_host:            github.com
+git_host_user:       yourhead
+git_project:         StacksAPI
+git_branch:          gh-pages
+
+
 
 # sass needs to be be setup for some lame reason
 sass:
