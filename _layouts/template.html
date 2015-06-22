@@ -1,0 +1,28 @@
+---
+layout: default
+links:
+  - top: /plist
+---
+
+
+<header>
+{% include sidebar-title.html %}
+{% include sidebar-links.html %}
+
+<h3>{{ page.name }}</h3>
+<code>{{ page.syntax }}</code></h3>
+<br>
+<br>
+</header>
+
+<section>
+<h2>{{ page.name }}</h2>
+<code>{{ page.syntax }}</code></h3>
+<br>
+<br>
+ 
+
+
+{% if page.available %}<h5><i>Available: Stacks API v{{ page.available }}</i></h5>{% endif %}
+{{ content }}
+</section>

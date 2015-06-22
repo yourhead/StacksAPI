@@ -42,10 +42,10 @@ echo "Found PID: '${JEKYLLPID}'"
 trap "kill -9 ${JEKYLLPID}; exit 0" SIGHUP SIGINT SIGTERM
 
 #after a couple seconds, start the browser
-bash -c 'sleep 2; open "http://localhost:8080"' &
+bash -c 'sleep 3; open "http://localhost:8080"' &
 
 # now start live reload on the generated site
-${RELOAD} --time 500 --dir _site
+${RELOAD} --time 600 --dir _site
 
 
 

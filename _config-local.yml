@@ -34,6 +34,8 @@ collections:
       output: true
   controls:
       output: true
+  templates:
+      output: true
   
 
 # Default layouts for various things
@@ -48,5 +50,10 @@ defaults:
       type: "keys"
     values:
       layout: "key"
+  - scope:
+      path: ""
+      type: "templates"
+    values:
+      layout: "template"
 
 
