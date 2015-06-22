@@ -1,12 +1,12 @@
 
   - title: Controls
-    url: controls
+    url: controls/
     description: The sidebar UI controls and their properties.
 
   - title: Templates
-    url: templates
+    url: templates/
     description: Define each template your stack will use here.
 
   - title: Assets
-    url: assets
+    url: assets/
     description: Define all the static assets your stack will export.

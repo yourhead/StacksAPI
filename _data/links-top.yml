@@ -4,17 +4,17 @@
     description: An overview of the API.
 
   - title: Stacks Bundle
-    url: /bundle
+    url: /bundle/
     description: What goes where and why inside a stack bundle.
 
   - title: Property List
-    url: /plist
+    url: /plist/
     description: The property list is where your stack is configured.
 
   - title: Templates
-    url: /templates
+    url: /templates/
     description: The Stacks templating system.
 
   - title: Resources
-    url: /resources
+    url: /resources/
     description: All the other stuff that's included in a stack.
