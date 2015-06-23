@@ -51,6 +51,27 @@ a small {
 }
 
 
+.new {
+  padding:2px 4px;
+  margin:2px -4px;
+  border-radius:4px;
+  background-color: rgba(48,144,192,0.2);
+}
+
+.new:after { 
+  content: "S3"; 
+  float:right;
+  font-weight:800;
+  color:white;
+  background-color: rgba(48,144,192,1);
+  padding:2px 4px;
+  margin:-2px -4px;
+  border-radius:0 4px 4px 0;
+
+}
+
+
+
 
 
 
@@ -102,7 +123,7 @@ img {
 
 
 
-ul.propertyList {
+section>ul, ul.propertyList {
   list-style:none;
   padding:0;
 }

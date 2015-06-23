@@ -29,7 +29,14 @@ Templates are files that define the content of your stack. You can have any numb
     {% endif %}
   {% endif %}
 
-<li><a href='{{ site.baseurl }}{{ template.url }}'>{{ template.name }}</a> &mdash; {{ template.description }}</li>
+
+{% if template.available == 7 %}
+    <li class='new'>
+{% else %}
+    <li>
+{% endif %}
+
+<a href='{{ site.baseurl }}{{ template.url }}'>{{ template.name }}</a> &mdash; {{ template.description }}</li>
 
 {% endfor %}
 </ul>

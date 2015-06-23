@@ -14,8 +14,8 @@ markdown:            redcarpet
 
 title:               Stacks API
 tagline:             Come build with us.
-version:             6
-stacksVersion:       2.5
+version:             7
+stacksVersion:       3.0
 author:
   name:              YourHead Software
   url:               http://yourhead.com

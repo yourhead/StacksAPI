@@ -34,7 +34,14 @@ layout: default
  
 
 
-{% if page.available %}<h5><i>Available: Stacks API v{{ page.available }}</i></h5>{% endif %}
+{% if page.available %}
+	{% if page.available == 7 %}
+		<h5 class='new'><i>Available: Stacks API v{{ page.available }}</i></h5>
+	{% else %}
+		<h5><i>Available: Stacks API v{{ page.available }}</i></h5>
+	{% endif %}
+{% endif %}
+
 {{ content }}
 </section>
 
