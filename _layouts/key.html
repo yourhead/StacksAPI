@@ -1,7 +1,5 @@
 ---
 layout: default
-links:
-  - top: /plist
 ---
 
 
@@ -11,9 +9,6 @@ links:
 <div class='row'>
 	<header>
 {% include sidebar-top.html %}
-
-<h3>{{ page.name }} &mdash; {% if page.humanReadableKey %}{{ page.humanReadableKey }}{% else %}{{ page.key }}{% endif %}</h3>
-
 {% include sidebar-bottom.html %}	
 </header>
 </div>
@@ -21,14 +16,7 @@ links:
 
 
 <div class='row'>
-	<section>
-
-
-
-
-
- 
-
+<section>
 
 <h2>{{ page.name }} &mdash; <code>{{page.key}}</code></h2>
 
@@ -40,13 +28,9 @@ links:
 {% if page.required %}<li><span class='propertyTitle'>Required</span></li>{% endif %}
 </ul>
 
-<hr>
+{% include availability.html %}
+<br>
 
 {{ content }}
-
-{% if page.available %}<h5><i>Available: Stacks API v{{ page.available }}</i></h5>{% endif %}
-
-<hr>
-
 </section>
 </div>

@@ -19,11 +19,11 @@ The Info.plist file within a stack defines the basic attributes of the stack lik
 
 <ul>
 <h3>{{ currentGroup | capitalize }}</h3>
-{% for control in groups %}
+{% for property in groups %}
 
-  {% if control.group %}
-    {% if currentGroup != control.group %}
-      {% assign currentGroup = control.group %}
+  {% if property.group %}
+    {% if currentGroup != property.group %}
+      {% assign currentGroup = property.group %}
 <br>      
 <br>      
 <h3>{{ currentGroup | capitalize }}</h3>
@@ -31,7 +31,17 @@ The Info.plist file within a stack defines the basic attributes of the stack lik
     {% endif %}
   {% endif %}
 
-<li><a href='{{ site.baseurl }}{{ control.url }}'>{{ control.name }}</a> &mdash; <code>{{ control.key }}</code> &mdash; {{ control.description }}</li>
+{% if property.available == site.version %}
+    <li class='new'>
+{% else %}
+    {% if property.deprecated == site.version %}
+        <li class='new deprecation'>
+    {% else %}
+        <li>
+    {% endif %}
+{% endif %}
+
+<a href='{{ site.baseurl }}{{ property.url }}'>{{ property.name }}</a> &mdash; <code>{{ property.key }}</code> &mdash; {{ property.description }}</li>
 
 {% endfor %}
 </ul>
