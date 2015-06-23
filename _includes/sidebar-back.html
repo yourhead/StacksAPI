@@ -1,8 +1,7 @@
-{% if page.links %}
-<ul class='links'>
-<br>
 
-{% for link in page.links %}
+{% if page.back %}
+
+{% for link in page.back limit=1 %}
 
 {% assign l = link %}
 {% assign base = "" %}
@@ -25,9 +24,11 @@
 	{% assign base = "/plist/" %}
 {% endif %}
 
-<li><a href='{{ site.baseurl}}{{base}}{{ l.url }}'>{{ l.title }}</a>{% if l.description %}<br><span class='description'>{{ l.description }}<br><br></span>{% endif %} </li>
+&nbsp; <span style='font-size:16px'>&lt; &nbsp; </span><a href='{{ site.baseurl}}{{base}}{{ l.url }}'>{{ l.title }}</a><br>
 
 {% endfor %}
-</ul>
-{% endif %}
+<br>
 
+
+<hr>
+{% endif %}

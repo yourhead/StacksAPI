@@ -2,11 +2,20 @@
 layout: default
 ---
 
-<header>
-{% include sidebar.html %}
-</header>
 
-<section>
-<h2>{{ page.title}}</h2>
-{{ content }}
-</section>
+
+<div class='fixed'>
+<div class='row'>
+	<header>
+		{% include sidebar.html %}
+	</header>
+</div>
+</div>
+
+
+<div class='row'>
+	<section>
+		<h2>{{ page.title}}</h2>
+		{{ content }}
+	</section>
+</div>

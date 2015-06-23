@@ -2,9 +2,10 @@
 layout: default
 ---
 
-
+<div class='fixed'>
+<div class='row'>
 <header>
-{% include sidebar.html %}	
+{% include sidebar-top.html %}	
 
 <h3>{{ page.name }} &mdash; <code>{{page.type}}</code></h3>
 <ul>
@@ -32,9 +33,11 @@ layout: default
 </ul>
 {% include sidebar-bottom.html %}	
 </header>
+</div>
+</div>
 
 
-
+<div class='row'>
 <section>
  
 
@@ -64,3 +67,4 @@ layout: default
 {% endif %}
 
 </section>
+</div>

@@ -2,16 +2,31 @@
 layout: default
 ---
 
-<header>
-{% include sidebar.html %}
+
+
+
+
+
+
+
+
+<div class='fixed'>
+<div class='row'>
+	<header>
+{% include sidebar-top.html %}
 
 <h3>{{ page.name }}</h3>
 <code>{{ page.syntax }}</code></h3>
 <br>
 <br>
+{% include sidebar-bottom.html %}
 </header>
+</div>
+</div>
 
-<section>
+
+<div class='row'>
+	<section>
 <h2>{{ page.name }}</h2>
 <code>{{ page.syntax }}</code></h3>
 <br>
@@ -22,3 +37,5 @@ layout: default
 {% if page.available %}<h5><i>Available: Stacks API v{{ page.available }}</i></h5>{% endif %}
 {{ content }}
 </section>
+
+</div>

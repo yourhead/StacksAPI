@@ -5,41 +5,28 @@ links:
 ---
 
 
-<header>
+
+
+<div class='fixed'>
+<div class='row'>
+	<header>
 {% include sidebar-top.html %}
 
 <h3>{{ page.name }} &mdash; {% if page.humanReadableKey %}{{ page.humanReadableKey }}{% else %}{{ page.key }}{% endif %}</h3>
 
-<hr>
-
-
-<ul>
-{% if page.properties %}
-<small>{{ page.name }}</small>
-{% for property in page.properties %}
-<li>
-	<a href='#{{ property.key }}'>{{ property.title }}</a>
-	<a href='#{{ property.key }}'><code>{{ property.key }}</code></a>
-</li>
-{% endfor %}
-<br>
-{% endif %}
-
-{% if page.generics %}
-<small>Basic</small>
-{% for property in site.data.properties-basic %}
-<li>
-	<a href='#{{ property.key }}'>{{ property.title }}</a>
-	<a href='#{{ property.key }}'><code>{{ property.key }}</code></a>
-</li>
-{% endfor %}
-{% endif %}
-
-</ul>
-{% include sidebar-bottom.html %}
+{% include sidebar-bottom.html %}	
 </header>
+</div>
+</div>
 
-<section>
+
+<div class='row'>
+	<section>
+
+
+
+
+
  
 
 
@@ -62,3 +49,4 @@ links:
 <hr>
 
 </section>
+</div>

@@ -3,12 +3,9 @@
   {% include head.html %}
 
   <body>
-    <div class="wrapper">
     {{ content }}
-      
-    <footer>
-      <small>&copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. YourHead Software all rights reserved.</small>
-    </footer>
 
-    </div>
+    <small class='footer copyright'>&copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. YourHead Software all rights reserved.</small>
+
+  </body>
 </html>
