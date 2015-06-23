@@ -30,10 +30,15 @@ Templates are files that define the content of your stack. You can have any numb
   {% endif %}
 
 
-{% if template.available == 7 %}
+
+{% if template.available == site.version %}
     <li class='new'>
 {% else %}
-    <li>
+    {% if template.deprecated == site.version %}
+        <li class='new deprecation'>
+    {% else %}
+        <li>
+    {% endif %}
 {% endif %}
 
 <a href='{{ site.baseurl }}{{ template.url }}'>{{ template.name }}</a> &mdash; {{ template.description }}</li>

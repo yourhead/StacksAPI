@@ -3,22 +3,10 @@ layout: default
 ---
 
 
-
-
-
-
-
-
-
 <div class='fixed'>
 <div class='row'>
 	<header>
 {% include sidebar-top.html %}
-
-<h3>{{ page.name }}</h3>
-<code>{{ page.syntax }}</code></h3>
-<br>
-<br>
 {% include sidebar-bottom.html %}
 </header>
 </div>
@@ -28,19 +16,36 @@ layout: default
 <div class='row'>
 	<section>
 <h2>{{ page.name }}</h2>
-<code>{{ page.syntax }}</code></h3>
+{% if page.deprecated %}<span class='deprecated'>{% endif %}
+<code>{{ page.syntax }}</code>
+{% if page.deprecated %}</span>{% endif %}
 <br>
 <br>
  
 
 
-{% if page.available %}
-	{% if page.available == 7 %}
-		<h5 class='new'><i>Available: Stacks API v{{ page.available }}</i></h5>
+{% if page.deprecated %}
+	{% if page.deprecated == site.version %}
+		<h5 class='new deprecation'>
 	{% else %}
-		<h5><i>Available: Stacks API v{{ page.available }}</i></h5>
+		<h5 class='deprecation'>
 	{% endif %}
+		<i>Deprecated: Stacks API v{{ page.deprecated }}</i></h5>
+		This template will be available for at lest 12 months after deprecation.
 {% endif %}
+
+
+
+{% if page.available %}
+	{% if page.available == site.version %}
+		<h5 class='new'>
+	{% else %}
+		<h5>
+	{% endif %}
+		<i>Available: Stacks API v{{ page.available }}</i></h5>
+{% endif %}
+
+
 
 {{ content }}
 </section>

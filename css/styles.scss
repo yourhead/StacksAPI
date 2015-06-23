@@ -70,7 +70,29 @@ a small {
 
 }
 
+.deprecation.new {
+  padding:2px 4px;
+  margin:2px -4px;
+  border-radius:4px;
+  background-color: rgba(200,40,40,0.2);
+}
 
+.deprecation.new:after { 
+  content: "S3"; 
+  float:right;
+  font-weight:800;
+  color:white;
+  background-color: rgba(200,40,40,1);
+  padding:2px 4px;
+  margin:-2px -4px;
+  border-radius:0 4px 4px 0;
+
+}
+
+.deprecated {
+  text-decoration: line-through;
+  color: red;
+}
 
 
 
