@@ -20,4 +20,4 @@ available: 2
 ### Description
 
 
-This is replaced with the path to the Javscript file for the current page.
+This is replaced with the path to the Javascript file for the current page.

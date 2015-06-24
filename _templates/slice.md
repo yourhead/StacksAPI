@@ -25,8 +25,8 @@ or
 
 A generic stack container (the Drop Stacks Here). This is the core of the One Column stack.
 
-***New in API v7***
-
+{% include newstuff.html %}
+#### Add Types
 Slice accepts properties that define how the slice container will behave.  These properties can alone, but they are designed to be used together.  See the open source [Image Fun](https://github.com/yourhead/ImageFunStack) stack on GitHub for a complete detailed example of these properties.
 
 - **Add Types** - `addTypes` - This will add a + (plus) button to the UI of the stack.  When the user presses the button a new stack of the specified ID will be added to the container.  This encourages (but does not limit) the user to use a specific type of stack with this container.

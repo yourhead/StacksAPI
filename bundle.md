@@ -21,7 +21,7 @@ The bundle of a stack follows the standard Mac OS X bundle structure. It looks l
     - [Resources]({{ site.baseurl }}/resources) - all of the templates and assets your stack uses will be stored here.
       - icon@50.png - a 50px icon file that will be used in the grid view of the Stacks library
       - icon@58.png - a 58px icon file that will be used in the detail view of the Stacks library
-      - [template.html]({{ site.baseurl }}/templates) - a stack may contain many template files for HTML, CSS, JS, etc., but it must contain at least one HTML tempalate.
+      - [template.html]({{ site.baseurl }}/templates) - a stack may contain many template files for HTML, CSS, JS, etc., but it must contain at least one HTML template.
       - assetfile.xxx - a stack may contain many asset files. Each asset will be exported with the Stacks page when the site is published.
       - assetfolder - a stack may contain an asset folder. All the hierarchical contents of the folder will be exported with the Stacks page when the site is published.
 
@@ -30,6 +30,6 @@ All of the properties that will be used for your stack are stored in the Info.pl
 
 
 ### Resources
-All of the files (other than the Info.plist) used by your stack should be stored inside the Rsources folder. This includes all of the templates, assets, and anything else your stack requires.
+All of the files (other than the Info.plist) used by your stack should be stored inside the `Resources` folder. This includes all of the templates, assets, and anything else your stack requires.
 
 Note: You can place a complete stack bundle inside the Resources folder of another stack. This allows a number of related stacks to be installed from a single Finder icon.

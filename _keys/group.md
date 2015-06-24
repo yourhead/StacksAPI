@@ -6,7 +6,7 @@ description: The library group for your stack.
 available: 3
 ---
 
-Note:  Group is provided only for compatability.  Tags is prefered.  This key is superceded by the Tags key.  If your stack uses tags, then the group will be ignored.
+Note:  Group is provided only for compatibility.  Tags are preferred.  This key is superseded by the Tags key.  If your stack uses tags, then the group will be ignored.
 
 The library group for your stack.  
 

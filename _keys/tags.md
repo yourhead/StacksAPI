@@ -13,4 +13,4 @@ When the user chooses to organize their library by group (the default) the first
 
 You can provide any number of tags, but only the first few will be displayed in the UI. Short, simple, commonly used words make the best tags.
 
-If no tags are provided, Stacks will fall back to teh v6 API and use the group (if provided) as the only tag.
+If no tags are provided, Stacks will fall back to the v6 API and use the group (if provided) as the only tag.

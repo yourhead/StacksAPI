@@ -29,7 +29,7 @@ properties:
     key: imageScale
     type: Number
     default: 100
-    description: When the Scale Mode property is set to 1 (Scale to Fill), you may either define a scale percent, width/height maximums, or both. If both or set, then the Max Width and Max Height properties take precidence.
+    description: When the Scale Mode property is set to 1 (Scale to Fill), you may either define a scale percent, width/height maximums, or both. If both or set, then the Max Width and Max Height properties take precedence.
 
 
 
@@ -38,12 +38,12 @@ properties:
   - title: Max Width
     key: imageMaxWidth
     type: Number
-    description: The Max Width will add a maxium width contraint to the image. This constraint is only applied if the value is non-zero and the Max Width Enable property is enabled. This contraint will take precedence over other properties (such as the Scale property.)
+    description: The Max Width will add a maximum width constraint to the image. This constraint is only applied if the value is non-zero and the Max Width Enable property is enabled. This constraint will take precedence over other properties (such as the Scale property.)
 
   - title: Max Height
     key: imageMaxHeight
     type: Number
-    description: The Max Height will add a maxium height contraint to the image. This constraint is only applied if the value is non-zero and the Max Height Enable property is enabled. This contraint will take precedence over other properties (such as the Scale property.)
+    description: The Max Height will add a maximum height constraint to the image. This constraint is only applied if the value is non-zero and the Max Height Enable property is enabled. This constraint will take precedence over other properties (such as the Scale property.)
 
 
 
@@ -51,13 +51,13 @@ properties:
     key: imageMaxWidthEnable
     type: Boolean
     default: Disabled
-    description: Enabling the Max Width will add the maxium width contraint to the image specified in the Max Width property.  This contraint will take precedence over other properties (such as the Scale property.)
+    description: Enabling the Max Width will add the maximum width constraint to the image specified in the Max Width property.  This constraint will take precedence over other properties (such as the Scale property.)
 
   - title: Max Height Enable
     key: imageMaxHeightEnable
     type: Boolean
     default: Disabled
-    description: Enabling the Max Height will add the maxium height contraint to the image specified in the Max Height property.  This contraint will take precedence over other properties (such as the Scale property.)
+    description: Enabling the Max Height will add the maximum height constraint to the image specified in the Max Height property.  This constraint will take precedence over other properties (such as the Scale property.)
 
 
 
@@ -111,7 +111,7 @@ properties:
     type: "string: HTML RGB Hex string"
     default: Black
     required: yes
-    description: The offset of the shadow in the vertical driction. Shadows are rendered into the image (not CSS).
+    description: The offset of the shadow in the vertical direction. Shadows are rendered into the image (not CSS).
 
 
 ---

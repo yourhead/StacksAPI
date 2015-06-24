@@ -77,13 +77,13 @@ Just as in each scoped templates, CSS is included in Edit Mode but Javascript wi
 > Note: For improved performance disable external CSS links in Edit Mode.
 
 ##### CSS Page Scope
-Page scope CSS templates will be added to the pages CSS file and will preceed the each scoped CSS.  This allows you to define the base styes once for all stack instances in the page scope and override the styles when necessary in the each scoped templates.
+Page scope CSS templates will be added to the pages CSS file and will precede the each scoped CSS.  This allows you to define the base styes once for all stack instances in the page scope and override the styles when necessary in the each scoped templates.
 
 ##### Javascript Page Scope
 Page scoped Javascript is included in its own closure separate from the closure for the each scoped Javascript. This allows you to define Javascript functions once for all instances of the stack on the page which will speed up the page and reduce the memory footprint.
 
 ##### PHP Page Scope
-Page scoped PHP will be included in the linked php. It will preceed the each scoped PHP.
+Page scoped PHP will be included in the linked php. It will precede the each scoped PHP.
 
 ___
 ### File templates
@@ -92,7 +92,7 @@ ___
 Most files that are exported with the page should be added as an asset. Assets are included without any sort of template processing so there is no performance penalty for adding them.
 
 #### Templates are processed
-There are times when it is helpful to inject properties from your stack into included files. You can add a template with the type of `file` for this purpse. File templates can be any text file (UTF-8).
+There are times when it is helpful to inject properties from your stack into included files. You can add a template with the type of `file` for this purpose. File templates can be any text file (UTF-8).
 
 #### Not for edit mode
 Because template files may be very slow to process, they will not be processed for edit mode.  Only HTML and CSS templates are processed for edit mode.

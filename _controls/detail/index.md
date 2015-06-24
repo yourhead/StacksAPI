@@ -28,5 +28,5 @@ properties:
 
 ---
 
-A toggle button specifically for showing more details. It behaves exactly like a checkbox (and it's value **can** be used in template variables just like a checkbox) but it has a UI that is simple. It does not display a title, but does have a tooltip for explaination.
+A toggle button specifically for showing more details. It behaves exactly like a checkbox (and it's value **can** be used in template variables just like a checkbox) but it has a UI that is simple. It does not display a title, but does have a tooltip for explanation.
 

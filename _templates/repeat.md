@@ -8,7 +8,7 @@ deprecated: 7
 
 ---
 
-> Deprecation Notice: This themplate has been deprecated due to poor perforance. You should migrate your stacks to use other API in its place (such as the addTypes property on containers).  Stacks 3.0 will continue to support %repeat% for at least 12 months after release.
+> Deprecation Notice: This template has been deprecated due to poor performance. You should migrate your stacks to use other API in its place (such as the addTypes property on containers).  Stacks 3.0 will continue to support %repeat% for at least 12 months after release.
 
 ### Usage
 

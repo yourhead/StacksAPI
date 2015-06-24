@@ -66,7 +66,7 @@ You can choose from over 500 custom icons on the [Font Awesome Icons](http://for
 
 **The icons labeled "cube" and "cubes" are reserved for Stacks internal use.**
 
-> Hint: To find the unicode value of a Font Awesome icon click through to the icon's page (e.g. [Birthday Cake icon](http://fortawesome.github.io/Font-Awesome/icon/birthday-cake/)). The Unicode value is listed below the icon prevews.  (e.g. Unicode f1fd for Birthday Cake).  You can enter this value directly into a PList editor as a hex value, just enter 0x before the listed value (e.g. type "0xf1fd" in the Xcode PList editor). You can also convert that hex value to a regular integer using Calculator.app (e.g. f1fd = 61949).
+> Hint: To find the Unicode value of a Font Awesome icon click through to the icon's page (e.g. [Birthday Cake icon](http://fortawesome.github.io/Font-Awesome/icon/birthday-cake/)). The Unicode value is listed below the icon previews.  (e.g. Unicode f1fd for Birthday Cake).  You can enter this value directly into a PList editor as a hex value, just enter 0x before the listed value (e.g. type "0xf1fd" in the Xcode PList editor). You can also convert that hex value to a regular integer using Calculator.app (e.g. f1fd = 61949).
 
 
 

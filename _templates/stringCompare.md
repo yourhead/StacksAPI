@@ -40,7 +40,7 @@ evaluates to `true` unless the user selects the droid you were looking for from 
 ```
 
 #### Example 3: compare a property with a literal string
-evalutes to `true` especially for Yoda 
+evaluates to `true` especially for Yoda 
 
 ```
 %( 
