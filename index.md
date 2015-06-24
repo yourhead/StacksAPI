@@ -24,7 +24,7 @@ A stack is one element in a Stacks layout. Any item that can be added to a Stack
 > Note: In this document we will use the term **Stacks** (capitalized and plural) to refer to the plugin. We will use the term **stack** (lowercase and singular) to refer to the layout elements that you create with the Stacks API.
 
 
-### Where do Stacks get installed
+### Where do stacks get installed
 Each default stack resides inside of the Stacks plugin bundle. You can view them (but you should not modify them) by right-clicking on the Stacks.rwplugin file and choosing **Show Package Contents**. To install your own stacks into you should add them to the Stacks folder.
 
 The Stacks folder can be found in: `~/Library/Containers/com.realmacsoftware.rapidweaver6/Data/Library/Application Support/RapidWeaver`
@@ -36,6 +36,16 @@ If this folder doesn't yet exist, it will be created the first time you use Stac
 On Mac OS X, a bundle is a folder with a file extension that belongs to an application. These folders appear as a single file to the user. Double clicking them launches the owning app rather than opening the folder. RapidWeaver has graciously done this for folders with the .stack extension. So if you have RapidWeaver installed any stack you create should immediately gain the stack icon and open RapidWeaver when double-clicked.
 
 > Note: RapidWeaver will install a double-clicked stack into the Stacks folder.
+
+{% include newstuff.html %}
+#### Dev stack folders
+While working on a stack you can change the extension to .devstack. Stacks will recognize a folder with the `.devstack` extension, but it will not be bundled in the Finder.  This makes it a bit easier to work with.
+
+Dev stacks also behave a bit differently inside Stacks. Stacks will monitor the files inside of a dev stack and refresh edit mode when there changes to the files.
+
+Dev stacks also cause Stacks to do more logging in the developer console. When a dev stack is being updated Stacks will log more detailed information about the automatic check/update/install process.
+
+> Warning: Do not ship a dev stack to a customer. Dev stacks cause Stacks to do a bit of extra work in logging and file monitoring. For the best experience customers should always use the .stack extension.
 
 
 ### What's inside a stack
