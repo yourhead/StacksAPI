@@ -40,7 +40,7 @@ properties:
   - title: Default Value
     key: default
     type: string
-    default: The first menu item.
+    default: 0
     markdown: true
 
   - title: Clear Value
