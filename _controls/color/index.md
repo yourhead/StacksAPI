@@ -7,6 +7,13 @@ value: HTML Color String
 available: 2
 generics: true
 properties:
+
+  - title: Opacity Enable
+  - key: allowsOpacity
+  - type: boolean
+  - default: no
+  - description: Enalbe the opacity slider on the color selection box.
+
   - title: Prefix
     key: prefix
     type: string
@@ -16,14 +23,20 @@ properties:
   - title: Default Value
     key: default
     type: HTML Color String
-    default: #000000 Black
-    description: The color the color well will be set to by default. If no color is provided Black will be used
+    default: "Light gray: #ccc"
+    description: The color the color well will be set to by default. If no color is provided light gray will be used.
 
 ---
 
 A color well. 
 
 When clicked the RapidWeaver shared color pallet is displayed. The selected color is converted to RGB and returned as a hex string.
+
+{% include newstuff.html %}
+### Opacity
+The color control now allows you to enable opacity when selecting colors.  To ensure backward compatability it defaults to being disabled.
+
+The default bevhavior of color values is now to output as rgba() css values instead of HTML hex colors.
 
 
 
