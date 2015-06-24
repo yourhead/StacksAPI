@@ -1,6 +1,7 @@
 ---
 name: Number
 type: number
+array: number-2, number-4
 value: number
 group: numbers
 description: A number entry field, with a small up/down control for adjustment.
@@ -47,6 +48,14 @@ properties:
 
 ---
 
-A slider for choosing from a range of numbers. 
+A text entry field that validates only numbers in an allowed range. There are up/down arrows next to text entry to increment/decrement the number.
 
-A slider always has a minimum and maximum value (defaults to 0 - 20). Tick marks can be displayed to help the user find specific values. The output value can be either an integer (if rounding is enabled) or a float.
+
+{% include newstuff.html %}
+### Number Control Array
+
+Number controls can be used in arrays.  Each has its own subtitle and default, all other values are shared.  Number control types are:
+
+- `number` : a regular number control.
+- `number-2` : two number controls.
+- `number-4` : four number controls.

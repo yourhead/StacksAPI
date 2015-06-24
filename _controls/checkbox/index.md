@@ -1,37 +1,36 @@
 ---
 name: Checkbox
 type: checkbox
-path: wow
+array: checkbox-2, checkbox-4
 description: A simple checkbox for enabling/disabling properties.
 value: any value
 available: 1
 generics: true
 
 properties:
+  - title: Radio Buttons
+    key: radio
+    type: boolean
+    default: False
+    description: Radio buttons will allow only one button in the group to be pushed.
+
   - title: True Value
-    key: min
-    type: number
-    default: 0
+    key: trueValue
+    type: boolean
+    default: 1
     description: When the checkbox is checked this value will be used in replacement templates.
 
   - title: False Value
-    key: max
-    type: number
-    default: 20
+    key: falseValue
+    type: boolean
+    default: 0
     description: When the checkbox is unchecked this value will be used in replacement templates.
 
   - title: Default Value
     key: default
-    type: string
-    default: The first menu item.
+    type: boolean
+    default: False (not pushed in)
     description: When this stack is placed on a page the default value will be used. The default value should be either the true or false values.
-
-  - title: Clear Value
-    key: clearValue
-    type: string
-    default: '""'
-    description: When all the content is cleared out of a text input area (the user deletes all the text), the control will automatically fill with this value. This is useful for applications where a non-empty string is required.
-
 
 
 ---
@@ -39,3 +38,19 @@ properties:
 A checkbox for enabling or selecting from two options. 
 
 Although a checkbox would seem to return a boolean value, for historical reasons a checkbox control is able to return any value type. This means, by using the True Value and False Value properties a checkbox can return the string "Jedi" if checked and the value "Sith" when unchecked, or integers, floats, or booleans.
+
+
+{% include newstuff.html %}
+### Radio Mode
+
+Checkboxes arrays can be used where only one of the group is allowed to be checked at a time.  To use checkboxes in this mode use one of the array types (see below) and enable the Radio property.
+
+
+{% include newstuff.html %}
+### Checkbox Array
+
+Checkboxes can be used in arrays.  Each has its own subtitle and default, all other values are shared.  Checkbox types are:
+
+- `checkbox` : a regular checkbox.
+- `checkbox-2` : two checkboxes.
+- `checkbox-4` : four checkboxes.

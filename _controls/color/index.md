@@ -1,6 +1,7 @@
 ---
 name: Color
 type: color
+array: color-2, color-4
 description: A color well for choosing colors.
 value: HTML Color String
 available: 2
@@ -18,16 +19,19 @@ properties:
     default: #000000 Black
     description: The color the color well will be set to by default. If no color is provided Black will be used
 
-  - title: Clear Value
-    key: clearValue
-    type: string
-    default: '""'
-    description: When all the content is cleared out of a text input area (the user deletes all the text), the control will automatically fill with this value. This is useful for applications where a non-empty string is required.
-
-    
-
 ---
 
 A color well. 
 
 When clicked the RapidWeaver shared color pallet is displayed. The selected color is converted to RGB and returned as a hex string.
+
+
+
+{% include newstuff.html %}
+### Color Array
+
+Color controls can be used in arrays.  Each has its own subtitle and default, all other values are shared.  Color array types are:
+
+- `color` : a regular color control.
+- `color-2` : two color controls.
+- `color-4` : four color controls.

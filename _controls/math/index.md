@@ -33,6 +33,9 @@ properties:
 
 ---
 
-A slider for choosing from a range of numbers. 
+A virtual control to perform simple math. 
+Most functions that math-controls provide can be more easily performed using template expressions. However, there are still a few ways that math-controls are useful, mostly in enable logic.
 
-A slider always has a minimum and maximum value (defaults to 0 - 20). Tick marks can be displayed to help the user find specific values. The output value can be either an integer (if rounding is enabled) or a float.
+Math properties follow a two-argument, one-operator format: 
+<argument_1> <operator> <argument_2> = <result>
+

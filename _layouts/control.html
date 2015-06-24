@@ -41,18 +41,18 @@ layout: default
 <section>
  
 
-
 <h2>{{ page.name }} &mdash; <code>{{page.type}}</code></h2>
-<h3>Overview</h3>
 
 <ul class='propertyList'>
 <li><span class='propertyTitle'>Type:</span><code>{{ page.type }}</code></li>
+{% if page.array %}<li><span class='propertyTitle'>Array Types:</span><code>{{ page.array }}</code></li>{% endif %}
 <li><span class='propertyTitle'>Output Value:</span><code>{{ page.value }}</code></li>
 </ul>
 
+{% include availability.html %}	
+<br>
 {{ content }}
 
-{% if page.available %}<h5><i>Available: Stacks API v{{ page.available }}</i></h5>{% endif %}
 
 <hr>
 

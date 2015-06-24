@@ -5,11 +5,24 @@ back:
   - top: /plist
 ---
 
+{% include newstuff.html %}
+#### Control Arrays
+
+Many control types now support array types: a group of related controls.  Control arrays share many of the same properties like `id`, `title`, and `enable`, etc. However their `default` and `subtitles` become arrays.
+
+To access an array value use the the property value template adding an array index. See the [property value](../../templates/value.html) documentation for more info.
+
+{% include newstuff.html %}
+#### Subtitles
+Most controls can now display a subtitle.  Subtitles provide more contextual info and are especially helpful in array controls so that each control can be labeled. Omitting the label makes the control vertically more compact.
+
+> Note: Four-across control arrays have very limited space for subtitles.
 
 {% assign groups = (site.controls | sort: 'group') %}
 {% assign currentGroup = 'basic' %}
 
 
+## Controls
 <ul>
 <h3>{{ currentGroup | capitalize }}</h3>
 {% for control in groups %}
@@ -24,7 +37,18 @@ back:
     {% endif %}
   {% endif %}
 
-<li><a href='{{ site.baseurl }}{{ control.url }}'>{{ control.name }}</a> &mdash; {{ control.description }}</li>
+
+{% if control.available == site.version %}
+    <li class='new'>
+{% else %}
+    {% if control.deprecated == site.version %}
+        <li class='new deprecation'>
+    {% else %}
+        <li>
+    {% endif %}
+{% endif %}
+
+<a href='{{ site.baseurl }}{{ control.url }}'>{{ control.name }}</a> &mdash; {{ control.description }}</li>
 
 {% endfor %}
 </ul>

@@ -22,4 +22,10 @@
     type: string
     generic-markdown: true
     default: No tooltip is displayed.
+
+  - title: Subtitles
+    key: subtitles
+    type: array of strings
+    generic-markdown: true
+    default: No subtitles are displayed.
     
