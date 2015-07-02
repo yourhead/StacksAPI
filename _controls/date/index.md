@@ -6,7 +6,7 @@ description: A date entry field
 available: 7
 generics: true
 properties:
-.
+
   - title: Default Value
     key: default
     type: string containing a date

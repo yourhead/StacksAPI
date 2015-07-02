@@ -1,0 +1,1 @@
+When the stack is placed onto the page the default value will be used. If no default is provided, today's date will be used.
