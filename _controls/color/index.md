@@ -30,14 +30,36 @@ properties:
 
 A color well. 
 
-When clicked the RapidWeaver shared color pallet is displayed. The selected color is converted to RGB and returned as a hex string.
+When clicked the RapidWeaver shared color pallet is displayed. The selected color is converted to RGB and returned as a hex string or rgba color value.
 
 {% include newstuff.html %}
+
 ### Opacity
 The color control now allows you to enable opacity when selecting colors.  To ensure backward compatability it defaults to being disabled.
 
-The default bevhavior of color values is now to output as rgba() css values instead of HTML hex colors.
+Colors that include an opacity will be output (in templates) as rgba color values.  Colors without an opacity will be output as HTML hex colors.
 
+
+### Specifying defaults
+Default values can be supplied for color controls useing HTML hex values, rgb values, or rgba values.  Rgb and rgba color components can use 0-255 (rgb values equivalent to the HTML hex value) or percentages `0%` - `100%`.  The opacity component in rgba can use either percentages `0%` - `100%` or decimal notation `0.0` - `1.0`
+
+An HTML hex color for red:
+
+```
+#FF0000
+```
+
+An rgb color for green:
+
+```
+rgb(0, 255, 0)
+```
+
+An rgba color for translucent blue:
+
+```
+rgba(0, 0, 50%, 0.5)
+```
 
 
 {% include newstuff.html %}
@@ -48,3 +70,5 @@ Color controls can be used in arrays.  Each has its own subtitle and default, al
 - `color` : a regular color control.
 - `color-2` : two color controls.
 - `color-4` : four color controls.
+
+In arrayed color controls default values for the `default` key can either be a single color (applied to all controls in the array) or an array of colors.
