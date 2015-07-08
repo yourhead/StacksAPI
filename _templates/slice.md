@@ -17,7 +17,7 @@ available: 7
 or
 
 ```
-%slice -addTypes="<stack_id_1>, <stack_id_2>"%
+%slice -addTypes="<stack_id_1>, <stack_id_2>" -allowedTypes="<stack_id_1>, <stack_id_2>" -addInit=<n>%
 ```
 
 
