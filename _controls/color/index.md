@@ -9,10 +9,10 @@ generics: true
 properties:
 
   - title: Opacity Enable
-  - key: allowsOpacity
-  - type: boolean
-  - default: no
-  - description: Enalbe the opacity slider on the color selection box.
+    key: allowsOpacity
+    type: boolean
+    default: no
+    description: Enable the opacity slider on the color selection box.
 
   - title: Prefix
     key: prefix
