@@ -21,6 +21,7 @@ If no tags are provided, Stacks will fall back to the v6 API and use the group (
 The purpose of a tag is to help the user organize their library by common tasks, or common stack functions.  You can provide tags for anything, Stacks may ignore, or give the user the preference to ignore, some tags that are innappropriate or unhelpful.
 
 
+
 #### Author names in tags
 
 Stacks 3 provides users with a mechanism for arranging by author if they wish to and search always includes the author. This means when they've chose to arrange their library by tag they **DO NOT want to arrange by author**. Please respect that customer desire and do not put make the first tag you author name.
