@@ -1,6 +1,6 @@
 ---
 name: Parent ID
-syntax: "%parent%"
+syntax: "%parentID%"
 group: properties and controls
 description: The ID parent stack of the current stack.
 available: 7
@@ -14,7 +14,7 @@ available: 7
 ### Usage
 
 ```html
-%containerId%
+%parentId%
 ```
 
 
