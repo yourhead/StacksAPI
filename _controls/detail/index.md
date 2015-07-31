@@ -1,6 +1,6 @@
 ---
 name: Details Button
-type: details
+type: detail
 description: A toggle for showing more detailed controls.
 value: Boolean
 available: 7
