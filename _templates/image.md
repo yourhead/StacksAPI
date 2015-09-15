@@ -18,7 +18,7 @@ or with default transforms:
 
 
 ```html
-%image imageScaleMode=1 imageMaxWidth=100 imageMaxHeight=100%
+%image -imageScaleMode=1 -imageMaxWidth=100 -imageMaxHeight=100%
 ```
 
  - default properties - Default values for the image editing properties can be included. Any of the properties defined for the Image Transform control may be used. 
