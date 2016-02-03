@@ -8,7 +8,7 @@ reloader:             YES
 
 safe:                true      # enable safe mode to match github pages
 permalink:           pretty    # make prettty link
-relative_permalinks: true
+relative_permalinks: false
 highlighter:         pygments
 markdown:            redcarpet
 
