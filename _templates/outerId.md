@@ -1,6 +1,6 @@
 ---
 name: Outer ID
-syntax: "%outerID%"
+syntax: "%outerId%"
 group: properties and controls
 description: The ID outer div of the current stack.
 available: 7
