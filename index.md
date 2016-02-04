@@ -15,7 +15,7 @@ The Stacks library comes with a set of built-in, general purpose stacks that are
 
 This document describes how to build your own stacks and gives a reference to the available options in the API.
 
-There's an active community of stack developers that discuss how to build and market stacks in [this Google group](http://groups.google.com/group/stack_developers). If you have questions, it's a good place to ask.
+There's an active community of stack users and developers that discuss stacks on Slack:  [Sign up for Stacks Slack](http://slack.yourhead.com) -- [Log in to Stacks Slack](http://slack.yourhead.com)
 
 
 ### What is a stack
