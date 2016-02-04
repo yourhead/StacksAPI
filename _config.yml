@@ -10,7 +10,7 @@ github:               [Repository metadata]
 safe:                true      # enable safe mode to match github pages
 permalink:           pretty    # make prettty link
 relative_permalinks: false
-highlighter:         pygments
+highlighter:         rouge
 markdown:            redcarpet
 
 title:               Stacks API
