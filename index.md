@@ -15,7 +15,10 @@ The Stacks library comes with a set of built-in, general purpose stacks that are
 
 This document describes how to build your own stacks and gives a reference to the available options in the API.
 
-There's an active community of stack users and developers that discuss stacks on Slack:  [Sign up for Stacks Slack](http://slack.yourhead.com) -- [Log in to Stacks Slack](http://slack.yourhead.com)
+There's an active community of stack developers that discuss how to build, market, and sell stacks on our Slack channel.  If you need help, have questions, or just want to hear what other developers are doing, this is the place. The channel is open to the public but you need to sign up at:
+
+ * Sign Up:  [http://slack.yourhead.com](http://slack.yourhead.com)
+ * Log In:  [http://yourhead.slack.com](http://yourhead.slack.com)
 
 
 ### What is a stack
