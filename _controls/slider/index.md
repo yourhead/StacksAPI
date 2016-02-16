@@ -20,7 +20,7 @@ properties:
     description: The maximum value for the slider.
 
   - title: Rounding
-    key: rounding
+    key: round
     type: Boolean
     default: True
     markdown: true
