@@ -1,6 +1,6 @@
 #!/bin/sh
 
-RELOAD="/usr/local/bin/reload"
+RELOAD="../node_modules/reload/bin/reload"
 JEKYLL="/usr/local/bin/jekyll"
 
 
@@ -45,7 +45,7 @@ trap "kill -9 ${JEKYLLPID}; exit 0" SIGHUP SIGINT SIGTERM
 bash -c 'sleep 3; open "http://localhost:8080"' &
 
 # now start live reload on the generated site
-${RELOAD} --time 600 --dir _site
+${RELOAD} --dir _site
 
 
 
