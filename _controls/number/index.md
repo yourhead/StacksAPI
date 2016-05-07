@@ -1,7 +1,7 @@
 ---
 name: Number
 type: number
-array: number-2, number-4
+array: number-2, number-3, number-4
 value: number
 group: numbers
 description: A number entry field, with a small up/down control for adjustment.
@@ -54,8 +54,13 @@ A text entry field that validates only numbers in an allowed range. There are up
 {% include newstuff.html %}
 ### Number Control Array
 
-Number controls can be used in arrays.  Each has its own subtitle and default, all other values are shared.  Number control types are:
+Number controls can be used in arrays.  Each has its own subtitle and default, all other values are shared.
+
+> NB: number-3 requires Stacks API v8 (Stacks v3.1+)
+
+Number control types are:
 
 - `number` : a regular number control.
 - `number-2` : two number controls.
+- `number-3` : three number controls.
 - `number-4` : four number controls.

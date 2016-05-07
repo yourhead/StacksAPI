@@ -3,7 +3,7 @@ title: Text Input Control
 name: Text Input
 description: A simple text input.
 type: input
-array: input-2, input-4
+array: input-2, input-3, input-4
 value: string
 available: 1
 generics: yes
@@ -32,10 +32,15 @@ Like all string value properties, you can retrieve an encoded value with escapes
 {% include newstuff.html %}
 ### Text Input Array
 
-Text Input can be used in arrays.  Each has its own subtitle and default, all other values are shared.  Text Input array types are:
+Text Input can be used in arrays.  Each has its own subtitle and default, all other values are shared.
+
+> NB: input-3 requires Stacks API v8 (Stacks v3.1+)
+
+Text Input array types are:
 
 - `input` : a regular text input.
 - `input-2` : two text input.
+- `input-3` : three text input.
 - `input-4` : four text input.
 
 

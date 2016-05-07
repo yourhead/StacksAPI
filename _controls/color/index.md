@@ -1,7 +1,7 @@
 ---
 name: Color
 type: color
-array: color-2, color-4
+array: color-2, color-3, color-4
 description: A color well for choosing colors.
 value: HTML Color String
 available: 2
