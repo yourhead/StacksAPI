@@ -29,7 +29,6 @@ available: 3
 
 Color Math operations can be used to modify the colors.
 
-{% include newstuff.html %}
 #### Color with opacity 
 
 Color values output as rgba CSS color strings including opacity if it is enabled.

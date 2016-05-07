@@ -4,7 +4,7 @@ type: color
 array: color-2, color-3, color-4
 description: A color well for choosing colors.
 value: HTML Color String
-available: 2
+available: 8
 generics: true
 properties:
 
@@ -31,8 +31,6 @@ properties:
 A color well. 
 
 When clicked the RapidWeaver shared color pallet is displayed. The selected color is converted to RGB and returned as a hex string or rgba color value.
-
-{% include newstuff.html %}
 
 ### Opacity
 The color control now allows you to enable opacity when selecting colors.  To ensure backward compatability it defaults to being disabled.
@@ -67,7 +65,7 @@ rgba(0, 0, 50%, 0.5)
 
 Color controls can be used in arrays.  Each has its own subtitle and default, all other values are shared.
 
-> NB: color-3 requires Stacks API v8 (Stacks v3.1+)
+> NB: color-3 requires Stacks API v8 (Stacks v3.1+), 2 & 4 require v7 (Stacks v3.0+), single control requires v1.
 
 Color array types are:
 

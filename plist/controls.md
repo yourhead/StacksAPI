@@ -12,7 +12,8 @@ Many control types now support array types: a group of related controls.  Contro
 
 To access an array value use the the property value template adding an array index. See the [property value](../../templates/value.html) documentation for more info.
 
-{% include newstuff.html %}
+New in v8 more controls have 3-across array variants.
+
 #### Subtitles
 Most controls can now display a subtitle.  Subtitles provide more contextual info and are especially helpful in array controls so that each control can be labeled. Omitting the label makes the control vertically more compact.
 

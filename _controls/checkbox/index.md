@@ -40,7 +40,6 @@ A checkbox for enabling or selecting from two options.
 Although a checkbox would seem to return a boolean value, for historical reasons a checkbox control is able to return any value type. This means, by using the True Value and False Value properties a checkbox can return the string "Jedi" if checked and the value "Sith" when unchecked, or integers, floats, or booleans.
 
 
-{% include newstuff.html %}
 ### Radio Mode
 
 Checkboxes arrays can be used where only one of the group is allowed to be checked at a time.  To use checkboxes in this mode use one of the array types (see below) and enable the Radio property.

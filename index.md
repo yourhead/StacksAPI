@@ -40,7 +40,6 @@ On Mac OS X, a bundle is a folder with a file extension that belongs to an appli
 
 > Note: RapidWeaver will install a double-clicked stack into the Stacks folder.
 
-{% include newstuff.html %}
 #### Dev stack folders
 While working on a stack you can change the extension to .devstack. Stacks will recognize a folder with the `.devstack` extension, but it will not be bundled in the Finder.  This makes it a bit easier to work with.
 

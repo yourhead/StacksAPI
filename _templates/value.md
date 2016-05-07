@@ -17,7 +17,6 @@ available: 2
 
  - `<property_id>` - The name of the property to return.
 
-{% include newstuff.html %}
 or for control arrays
 
 ```html
@@ -50,7 +49,6 @@ The slider value is: 10
 
 
 
-{% include newstuff.html %}
 #### Example 2: use two number fields in a control array.
 
 template:
@@ -69,7 +67,6 @@ Image size to: 800 x 600
 
 
 
-{% include newstuff.html %}
 #### Example 3: use radio buttons to change text alignment
 
 template:
