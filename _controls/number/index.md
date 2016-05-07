@@ -5,7 +5,7 @@ array: number-2, number-3, number-4
 value: number
 group: numbers
 description: A number entry field, with a small up/down control for adjustment.
-available: 2
+available: 8
 generics: true
 properties:
   - title: Minimum
@@ -56,7 +56,7 @@ A text entry field that validates only numbers in an allowed range. There are up
 
 Number controls can be used in arrays.  Each has its own subtitle and default, all other values are shared.
 
-> NB: number-3 requires Stacks API v8 (Stacks v3.1+)
+> NB: number-3 requires Stacks API v8 (Stacks v3.1+), 2 & 4 require v7 (Stacks v3.0+), single control requires v2.
 
 Number control types are:
 

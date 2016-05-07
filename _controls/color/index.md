@@ -65,10 +65,15 @@ rgba(0, 0, 50%, 0.5)
 {% include newstuff.html %}
 ### Color Array
 
-Color controls can be used in arrays.  Each has its own subtitle and default, all other values are shared.  Color array types are:
+Color controls can be used in arrays.  Each has its own subtitle and default, all other values are shared.
+
+> NB: color-3 requires Stacks API v8 (Stacks v3.1+)
+
+Color array types are:
 
 - `color` : a regular color control.
 - `color-2` : two color controls.
+- `color-3` : three color controls.
 - `color-4` : four color controls.
 
 In arrayed color controls default values for the `default` key can either be a single color (applied to all controls in the array) or an array of colors.

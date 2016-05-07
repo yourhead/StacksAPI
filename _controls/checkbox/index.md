@@ -4,7 +4,7 @@ type: checkbox
 array: checkbox-2, checkbox-3, checkbox-4
 description: A simple checkbox for enabling/disabling properties.
 value: any value
-available: 1
+available: 8
 generics: true
 
 properties:
@@ -51,7 +51,7 @@ Checkboxes arrays can be used where only one of the group is allowed to be check
 
 Checkboxes can be used in arrays.  Each has its own subtitle and default, all other values are shared.
 
-> NB: checkbox-3 requires Stacks API v8 (Stacks v3.1+)
+> NB: checkbox-3 requires Stacks API v8 (Stacks v3.1+), 2 & 4 require v7 (Stacks v3.0+), single control requires v1.
 
 Checkbox types are:
 

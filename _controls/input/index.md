@@ -5,7 +5,7 @@ description: A simple text input.
 type: input
 array: input-2, input-3, input-4
 value: string
-available: 1
+available: 8
 generics: yes
 properties:
 
@@ -34,7 +34,7 @@ Like all string value properties, you can retrieve an encoded value with escapes
 
 Text Input can be used in arrays.  Each has its own subtitle and default, all other values are shared.
 
-> NB: input-3 requires Stacks API v8 (Stacks v3.1+)
+> NB: input-3 requires Stacks API v8 (Stacks v3.1+), 2 & 4 require v7 (Stacks v3.0+), single control requires v1.
 
 Text Input array types are:
 
