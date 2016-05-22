@@ -22,15 +22,15 @@ properties:
 
   - title: True Value
     key: trueValue
-    type: boolean
-    default: 1
-    description: When the button is pressed this value will be used in replacement templates.
+    type: string
+    default: True
+    description: When the button is pressed this value will be used in replacement templates. In arrays, this may be an arrof of strings.
 
   - title: False Value
     key: falseValue
-    type: boolean
-    default: 0
-    description: When the button is unpressed this value will be used in replacement templates.
+    type: string
+    default: False
+    description: When the button is unpressed this value will be used in replacement templates. In arrays, this may be an arrof of strings.
 
   - title: Default Value
     key: default
@@ -51,7 +51,9 @@ Checkboxes arrays can be used where only one of the group is allowed to be check
 
 ### Button Array
 
-Button controls can be used in arrays.  Each has its own icon, subtitle and default, all other values are shared.  Button types are:
+Button controls can be used in arrays.  Each has its own icon, subtitle, trueValue, falseValue, and default, all other values are shared.  Button types are:
+
+> NB: trueValue/falseValue arrays requires Stacks API v8 (Stacks v3.1+).
 
 - `button` : a regular button.
 - `button-2` : two buttons.

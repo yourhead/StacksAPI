@@ -16,15 +16,15 @@ properties:
 
   - title: True Value
     key: trueValue
-    type: boolean
-    default: 1
-    description: When the checkbox is checked this value will be used in replacement templates.
+    type: string
+    default: True
+    description: When the checkbox is checked this value will be used in replacement templates. In arrays, this may be an arrof of strings.
 
   - title: False Value
     key: falseValue
-    type: boolean
-    default: 0
-    description: When the checkbox is unchecked this value will be used in replacement templates.
+    type: string
+    default: False
+    description: When the checkbox is unchecked this value will be used in replacement templates. In arrays, this may be an arrof of strings.
 
   - title: Default Value
     key: default
@@ -48,9 +48,9 @@ Checkboxes arrays can be used where only one of the group is allowed to be check
 {% include newstuff.html %}
 ### Checkbox Array
 
-Checkboxes can be used in arrays.  Each has its own subtitle and default, all other values are shared.
+Checkboxes can be used in arrays.  Each has its own subtitle, trueValue, falseValue, and default, all other values are shared.
 
-> NB: checkbox-3 requires Stacks API v8 (Stacks v3.1+), 2 & 4 require v7 (Stacks v3.0+), single control requires v1.
+> NB: checkbox-3 and trueValue/falseValue arrays requires Stacks API v8 (Stacks v3.1+), 2 & 4 require v7 (Stacks v3.0+), single control requires v1.
 
 Checkbox types are:
 
