@@ -15,7 +15,8 @@ links:
 
 To enable the Stacks 3.5 preprocessor and disable old-style preprocssor set this key to YES.  It is strongly recommended that you use enable the new preprocessor as it is significantly faster.
 
-When the preprocessor is enabled mode-conditional templates may *not* be nested and have a new format:
+
+When the preprocessor is enabled [conditional mode macros]({{ site.baseurl}}/templates/display) will have a new format and may *not* be nested.
 
 > Example:  `%%[if edit]%%`
 

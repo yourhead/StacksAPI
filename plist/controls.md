@@ -5,7 +5,6 @@ back:
   - top: /plist
 ---
 
-{% include newstuff.html %}
 #### Control Arrays
 
 Many control types now support array types: a group of related controls.  Control arrays share many of the same properties like `id`, `title`, and `enable`, etc. However their `default` and `subtitles` become arrays.

@@ -1,1 +1,2 @@
+{% include newstuff.html %}
 Inheritance allows one stack to pull in the controls and properties of another stack.  All of the controls from the specified stack are pulled in to the current stack.  The inherited controls will be ordered as if they were they were first in the plist customItems array. The value should be the ID of the stack to inherit from.
