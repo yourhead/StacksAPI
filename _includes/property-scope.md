@@ -1,0 +1,1 @@
+The scope of a property can be set to bind to the page instead of each stack.  Binding a property to the page-scope means that the values set by this control will be shared between all stack-instances on the page.

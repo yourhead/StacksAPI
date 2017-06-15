@@ -28,4 +28,17 @@
     type: array of strings
     generic-markdown: true
     default: No subtitles are displayed.
-    
+
+  - title: Scope
+    key: scope
+    type: string
+    generic-markdown: true
+    default: '"each"'
+    available: 10
+
+  - title: Inheritance
+    key: inheritsFrom
+    type: string
+    generic-markdown: true
+    default: No inheritance.
+    available: 10
