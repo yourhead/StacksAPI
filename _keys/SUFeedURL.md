@@ -4,7 +4,7 @@ key: SUFeedURL
 type: string
 description: The Appcast URL for updates.
 available: 2
-group: URLs
+group: Updates
 
 links:
   - top: /plist
