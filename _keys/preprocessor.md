@@ -18,6 +18,6 @@ To enable the Stacks 3.5 preprocessor and disable old-style preprocssor set this
 
 When the preprocessor is enabled [conditional mode macros]({{ site.baseurl}}/templates/display) will have a new format and may *not* be nested.
 
-> Example:  `%%[if edit]%%`
+> Example:  `%%[[if edit]]%%`
 
-The new format adds a percent sign.
+The new format doubles the percent signs and square-brackets.
