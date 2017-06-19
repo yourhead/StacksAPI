@@ -1,7 +1,7 @@
 ---
 name: Page Path
 syntax: "%pagePath%"
-group: paths
+group: page
 description: The absolute path to the current page.
 available: 7
 
