@@ -2,7 +2,7 @@
 name: Version Number
 key: CFBundleShortVersionString
 humanReadableKey: Bundle versions string, short
-type: string
+type: String
 description: The version number.
 available: 2
 group: version
@@ -12,7 +12,7 @@ links:
 
 ---
 
-The version number of your stack. 
+The version number of your stack.
 
 This should be a string in the standard version format, "1.2.3". When a version number is available it will be displayed in the library detail view.
 

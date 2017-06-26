@@ -1,7 +1,7 @@
 ---
-name: Asset Files 
+name: Asset Files
 key: assets
-type: array
+type: Array
 group: content
 value: An array of asset dictionaries.
 description: Declare your static assets files here.
@@ -13,7 +13,7 @@ links:
 
 ---
 
-An array of asset files declarations. 
+An array of asset files declarations.
 
 [Detailed Asset File Reference]({{ site.baseurl}}/plist/assets)
 

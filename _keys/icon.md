@@ -1,13 +1,13 @@
 ---
 name: Icon File
 key: icon
-type: string
+type: String
 description: The base of you icon files.
 required: yes
 available: 7
 ---
 
-The base name of your stack's icon files. 
+The base name of your stack's icon files.
 
 ***New in Stacks API v7***
 
@@ -30,4 +30,3 @@ In your plist you provide the base name of the icon file. Stacks will look for t
 
 
 > Note: All older icon file standards are supported in Stacks 3, icon images are scaled to fit the new sizes which reduces the quality of the icon image.  It is recommended to add all the new icon sizes.  There are several open source icon templates and help apps available on [the YourHead GitHub](http://github.com/yourhead/).
-

@@ -1,7 +1,7 @@
 ---
 name: Secure Update Public Key
 key: updateInfoPublicKey
-type: string (pem format)
+type: String (pem format)
 description: Public Key for secure updates.
 available: 10
 group: Updates

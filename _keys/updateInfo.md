@@ -1,7 +1,7 @@
 ---
 name: Secure Update Data
 key: updateInfo
-type: string (JSON format)
+type: String (JSON format)
 description: Any data in JSON format.
 available: 10
 group: Updates

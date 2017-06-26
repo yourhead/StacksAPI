@@ -1,7 +1,7 @@
 ---
 name: Template Files
 key: templates
-type: array
+type: Array
 value: An array of template dictionaries.
 description: Declare your template files here.
 group: content
@@ -13,8 +13,8 @@ links:
 
 ---
 
-An array of template file declarations. 
+An array of template file declarations.
 
 [Detailed Template Dictionary Reference]({{ site.baseurl}}/plist/templates)
 
-Each entry in the Templates array is a dictionary that corresponds to a template file for your stack. When the page is published each template in your stack is processed, each template variable within the template is replaced with the content or property for each stack. 
+Each entry in the Templates array is a dictionary that corresponds to a template file for your stack. When the page is published each template in your stack is processed, each template variable within the template is replaced with the content or property for each stack.

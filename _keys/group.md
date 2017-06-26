@@ -1,7 +1,7 @@
 ---
 name: Group
 key: group
-type: string
+type: String
 description: The library group for your stack.
 available: 3
 ---

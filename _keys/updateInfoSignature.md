@@ -1,7 +1,7 @@
 ---
 name: Secure Update Signature
 key: updateInfoSignature
-type: string
+type: String
 description: A digital signature for the update info.
 available: 10
 group: Updates

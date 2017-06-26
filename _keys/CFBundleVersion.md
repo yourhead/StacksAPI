@@ -2,7 +2,7 @@
 name: Build Number
 key: CFBundleVersion
 humanReadableKey: Bundle version
-type: string
+type: String
 description: The the current build number.
 available: 2
 group: version
@@ -12,7 +12,7 @@ links:
 
 ---
 
-The build number of your stack. 
+The build number of your stack.
 
 This should be a string with a number. The number should be simple integer value like "12345". It should increase with each release.
 

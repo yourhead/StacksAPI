@@ -1,7 +1,7 @@
 ---
 name: Deprecated
 key: deprecated
-type: boolean
+type: Boolean
 group: sub-stacks
 description: Hide (really really) this stack in the Library
 available: 7

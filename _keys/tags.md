@@ -1,7 +1,7 @@
 ---
 name: Tags
 key: tags
-type: array
+type: Array
 value: An array of tags
 description: Tags used for search and groups.
 available: 7

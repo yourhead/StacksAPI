@@ -1,7 +1,7 @@
 ---
 name: Child Of
 key: childOf
-type: array
+type: Array
 group: sub-stacks
 value: An array of stack ID strings.
 description: Limit where this stack can be placed.

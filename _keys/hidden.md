@@ -1,7 +1,7 @@
 ---
 name: Hidden
 key: hidden
-type: boolean
+type: Boolean
 group: sub-stacks
 description: Hide this stack in the Library
 available: 7
