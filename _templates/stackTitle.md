@@ -20,4 +20,4 @@ available: 5
 
 This is be replaced with the Title of the stack.
 
-
+> This template is applied in the pre-processor and has very low performance cost.

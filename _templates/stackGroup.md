@@ -20,4 +20,4 @@ available: 5
 
 This is be replaced with the first tag of the stack.  The first tag is the tag used to sort stacks into groups when groups are enabled.
 
-
+> This template is applied in the pre-processor and has very low performance cost.
