@@ -20,6 +20,12 @@ or
 %slice -addTypes="<stack_id_1>, <stack_id_2>" -allowedTypes="<stack_id_1>, <stack_id_2>" -addInit=<n>%
 ```
 
+also
+
+```
+%slice -maxChildren=<n>%
+```
+
 
 ### Description
 
@@ -33,3 +39,5 @@ Slice accepts properties that define how the slice container will behave.  These
 - **Allowed Types** - `allowedTypes` - Allowed types will limit which types may be dragged in to a container. If allowedTypes is not present, then all stacks are allowed. *Note: Specifying a stack `addTypes` that is not also in `allowedTypes` has undefined behavior.*
 
 - **Initial Added** - `addInit` - A container can begin with a number of stacks pre-added.  This should only be used in conjunction with addTypes and only when there is a single type.
+
+- **Max Children** - `maxChildren` - You can limit the number of children that can be added. One the container has the maximum number of items it will prevent dragging new items in and will remove the + button.
