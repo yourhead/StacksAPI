@@ -2,7 +2,7 @@
 name: Stack Container
 syntax: "%slice%"
 description: A container for other stacks.
-available: 7
+available: 10
 
 ---
 
@@ -25,6 +25,11 @@ also
 ```
 %slice -maxChildren=<n>%
 ```
+
+
+> -addTypes, -allowedTypes, and -addInit were introduced in API v7.
+
+> Containers were introduced in API v1.
 
 
 ### Description
