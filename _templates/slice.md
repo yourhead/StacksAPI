@@ -45,4 +45,4 @@ Slice accepts properties that define how the slice container will behave.  These
 
 - **Initial Added** - `addInit` - A container can begin with a number of stacks pre-added.  This should only be used in conjunction with addTypes and only when there is a single type.
 
-- **Max Children** - `maxChildren` - You can limit the number of children that can be added. One the container has the maximum number of items it will prevent dragging new items in and will remove the + button.
+- **Max Children** - `maxChildren` - You can limit the number of children that can be added. When the container has the maximum number of items it will prevent dragging new items in and will remove the + button.
