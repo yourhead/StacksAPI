@@ -22,7 +22,7 @@
 			{% assign l = topLink %}
 		{% endif %}
 	{% endfor %}
-	{% assign base = "/plist/" %}
+	{% assign base = "/" %}
 {% endif %}
 
 <li><a href='{{ site.baseurl}}{{base}}{{ l.url }}'>{{ l.title }}</a>{% if l.description %}<br><span class='description'>{{ l.description }}<br><br></span>{% endif %} </li>

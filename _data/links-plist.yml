@@ -1,12 +1,16 @@
 
   - title: Custom Controls Reference
-    url: controls
+    url: plist/controls
     description: The sidebar UI controls and their properties.
 
   - title: Templates Files Dictionary
-    url: templates
-    description: Define each template your stack will use here.
+    url: keys/templates
+    description: Define each template your stack will process here.
+
+  - title: Libraries Dictionary
+    url: keys/libraries
+    description: Define each library your stack will use or include here.
 
   - title: Assets Files Dictionary
-    url: assets
-    description: Define all the static assets your stack will export.
+    url: keys/assets
+    description: Define all the static assets your stack will publish.

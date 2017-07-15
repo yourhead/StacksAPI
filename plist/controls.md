@@ -3,6 +3,8 @@ title: Controls
 layout: page
 back:
   - top: /plist
+links:
+  - top: /templates
 ---
 
 #### Control Arrays
@@ -10,8 +12,6 @@ back:
 Many control types now support array types: a group of related controls.  Control arrays share many of the same properties like `id`, `title`, and `enable`, etc. However their `default` and `subtitles` become arrays.
 
 To access an array value use the the property value template adding an array index. See the [property value](../../templates/value.html) documentation for more info.
-
-New in v8 more controls have 3-across array variants.
 
 #### Subtitles
 Most controls can now display a subtitle.  Subtitles provide more contextual info and are especially helpful in array controls so that each control can be labeled. Omitting the label makes the control vertically more compact.

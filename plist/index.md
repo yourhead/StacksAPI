@@ -4,9 +4,9 @@ layout: page
 back:
   - top: /bundle
 links:
-  - plist: controls
-  - plist: templates
-  - plist: assets
+  - plist: keys/assets
+  - plist: keys/libraries
+  - plist: keys/templates
 ---
 
 The Info.plist file within a stack defines the basic attributes of the stack like its title and version number, the custom properties the stack will display when selected, and file names of each of the templates and assets.

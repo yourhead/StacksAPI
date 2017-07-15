@@ -3,6 +3,9 @@ title: Template Variables
 layout: page
 back:
   - top: /bundle
+links:
+  - plist: keys/templates  
+  - plist: plist/controls  
 ---
 
 

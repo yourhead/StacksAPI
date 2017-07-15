@@ -4,7 +4,7 @@ layout: page
 links:
   - top: /bundle
   - top: /plist
-  - plist: controls
+  - plist: plist/controls
   - top: /templates
 ---
 
@@ -30,7 +30,7 @@ A stack is one element in a Stacks layout. Any item that can be added to a Stack
 ### Where do stacks get installed
 Each default stack resides inside of the Stacks plugin bundle. You can view them (but you should not modify them) by right-clicking on the Stacks.rwplugin file and choosing **Show Package Contents**. To install your own stacks into you should add them to the Stacks folder.
 
-The Stacks folder can be found in: `~/Library/Containers/com.realmacsoftware.rapidweaver6/Data/Library/Application Support/RapidWeaver`
+The Stacks folder can be found in: `~/Library/Containers/com.realmacsoftware.rapidweaver/Data/Library/Application Support/RapidWeaver`
 
 If this folder doesn't yet exist, it will be created the first time you use Stacks.
 
@@ -44,6 +44,8 @@ On Mac OS X, a bundle is a folder with a file extension that belongs to an appli
 While working on a stack you can change the extension to .devstack. Stacks will recognize a folder with the `.devstack` extension, but it will not be bundled in the Finder.  This makes it a bit easier to work with.
 
 Dev stacks also behave a bit differently inside Stacks. Stacks will monitor the files inside of a dev stack and refresh edit mode when there changes to the files.
+
+This extra monitoring and extra logging takes a lot of extra work. For this reason Stacks limits the number of devstacks to 20.
 
 Dev stacks also cause Stacks to do more logging in the developer console. When a dev stack is being updated Stacks will log more detailed information about the automatic check/update/install process.
 
