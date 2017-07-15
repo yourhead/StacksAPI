@@ -22,15 +22,15 @@ The bundle of a stack follows the standard Mac OS X bundle structure. It looks l
   - Contents - all bundles store their contents in a Contents folder.
     - [Info.plist]({{ site.baseurl }}/plist) - the bundle property-list that describes the stack. This will define all of the properties, templates, and assets your stack uses.
     - Resources - all of the templates, libraries, and assets your stack uses are stored here.
-      - large_icon.png - a large-mode Stacks library icon for non-retina screens (64px x 64px)
-      - large_icon@2x.png - a large-mode Stacks library icon for retina screens (128px x 128px)
-      - medium_icon.png - a medium-mode Stacks library icon for non-retina screens (32px x 32px)
-      - medium_icon@2x.png - a medium-mode Stacks library icon for retina screens (64px x 64px)
-      - small_icon.png - a a small-mode Stacks library icon for non-retina screens (16px x 16px)
-      - small_icon@2x.png - a small-mode Stacks library icon for retina screens (32px x 32px)
-      - [<asset_files> or <asset_folders>](/keys/assets/) - asset files will be published with your stack. assets are NOT template processed. you can include any number of assets. they can be any type of file. assets may also be an entire folder of files. the entire folder will be published as-is with hierarchy intact.
-      - [<template_files>](/keys/templates) - template files are processed for [template variables](/templates). templates contain the content of your stack displayed in edit mode, as well as the files that are published with your stack. the only difference between a template and an asset is that templates are processed for template variables.
-      - [<library_files>](/keys/libraries) - your stack can include built-in stack libraries (like jQuery) or libraries that your stacks include. included libraries are similar to assets, but are shared by more than one stack. if two stacks include the same library only one copy will be published with the stack.
+      - `large_<icon-name>.png` - a large-mode Stacks library icon for non-retina screens (64px x 64px)
+      - `large_<icon-name>@2x.png` - a large-mode Stacks library icon for retina screens (128px x 128px)
+      - `medium_<icon-name>.png` - a medium-mode Stacks library icon for non-retina screens (32px x 32px)
+      - `medium_<icon-name>@2x.png` - a medium-mode Stacks library icon for retina screens (64px x 64px)
+      - `small_<icon-name>.png` - a a small-mode Stacks library icon for non-retina screens (16px x 16px)
+      - `small_<icon-name>@2x.png` - a small-mode Stacks library icon for retina screens (32px x 32px)
+      - [`<asset_files>` or `<asset_folders>`](/keys/assets/) - asset files will be published with your stack. assets are NOT template processed. you can include any number of assets. they can be any type of file. assets may also be an entire folder of files. the entire folder will be published as-is with hierarchy intact.
+      - [`<template_files>`](/keys/templates) - template files are processed for [template variables](/templates). templates contain the content of your stack displayed in edit mode, as well as the files that are published with your stack. the only difference between a template and an asset is that templates are processed for template variables.
+      - [`<library_files>`](/keys/libraries) - your stack can include built-in stack libraries (like jQuery) or libraries that your stacks include. included libraries are similar to assets, but are shared by more than one stack. if two stacks include the same library only one copy will be published with the stack.
 
 ### The Property List — Info.plist
 All of the properties that will be used for your stack are stored in the Info.plist file. You can learn more about it in the Info.plist document. A stack without an Info.plist file will not be loaded by stack.
