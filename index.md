@@ -54,7 +54,7 @@ Dev stacks also cause Stacks to do more logging in the developer console. When a
 
 ### What's inside a stack
 A stack is built as a standard Mac OS X bundle. This means that it's a folder with a very specific structure. Inside the folder you'll find a Contents folder and inside of that you'll find the property list and the stack's resources. You can use this reference to build your own from scratch, but it's probably easier to start from a copy of one of the built-in stacks.
-
+.
 
 
 
