@@ -31,7 +31,7 @@ Templates ARE processed for template variables. Some templates are included in e
 
 
 
- #### Asset Dictionary
+#### Asset Dictionary
 
 The asset dictionary can include the following keys:
 
