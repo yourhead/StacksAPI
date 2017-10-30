@@ -1,6 +1,6 @@
 ---
 name: Page Unique ID
-syntax: "%pageUniqueID%"
+syntax: "%pageId%"
 group: page
 description: The RapidWeaver internal page ID.
 available: 10
@@ -14,7 +14,7 @@ links:
 ### Usage
 
 ```html
-%pageUniqueID%
+%pageId%
 ```
 
 
