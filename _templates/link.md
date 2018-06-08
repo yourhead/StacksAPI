@@ -75,7 +75,7 @@ available: 10
 
  The stringValues should not be an empty string. The strings are NOT encoded but treated as literals. If the values are pulled from a `%html%` then property text encoding should be applied.
 
- To provide a mechanism to override properties with "-" in thier name such that the dashes don't get interpretted as another override (e.g. "aria-label") you should use camel-case in the override. Stacks will processs the camel-case property and write out the value with a dash.  See Example 4 below.
+ To provide a mechanism to override properties with "-" in thier name such that the dashes don't get interpretted as another override (e.g. "aria-label") you should use camel-case in the override. Stacks will processs the camel-case property and write out the value with a dash.  See Example 5 below.
 
  > Only a single attribute can be overridden. If multiple attributes are specified the behavior is undefined.
 
@@ -143,7 +143,7 @@ Result: <a href="https://google.com" title="Untitled" class="button enabled">
 
 
 
-#### Example 4: add the `enabled` and `button` to the class attribute
+#### Example 5: add the `enabled` and `button` to the class attribute
 
 ```html
 %id=linkControlID +ariaLabel="Google Button"%Click Here</a>
