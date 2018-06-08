@@ -75,6 +75,8 @@ available: 10
 
  The stringValues should not be an empty string. The strings are NOT encoded but treated as literals. If the values are pulled from a `%html%` then property text encoding should be applied.
 
+ To provide a mechanism to override properties with "-" in thier name such that the dashes don't get interpretted as another override (e.g. "aria-label") you should use camel-case in the override. Stacks will processs the camel-case property and write out the value with a dash.  See Example 4 below.
+
  > Only a single attribute can be overridden. If multiple attributes are specified the behavior is undefined.
 
 
@@ -92,7 +94,7 @@ Otherwise the template of this form is the *first half* of an anchor tag. **You 
 #### Example 1: a simple link in HTML.
 
 ```html
-%id=linkContorlID%Click Here</a>
+%id=linkControlID%Click Here</a>
 
 <!--
 Input:  <a href="https://google.com" title="Untitled" class="enabled">
@@ -115,10 +117,10 @@ Result: background-image: url("https://google.com");
 ```
 
 
-#### Example 2: replace the target attribute with `_blank`
+#### Example 3: replace the target attribute with `_blank`
 
 ```html
-%id=linkContorlID -target="_blank"%Click Here</a>
+%id=linkControlID -target="_blank"%Click Here</a>
 
 <!--
 Input:  <a href="https://google.com" title="Untitled" class="enabled">
@@ -128,13 +130,26 @@ Result: <a href="https://google.com" title="Untitled" class="enabled target="_bl
 
 
 
-#### Example 2: add the `enabled` and `button` to the class attribute
+#### Example 4: add the `enabled` and `button` to the class attribute
 
 ```html
-%id=linkContorlID +class="enabled button"%Click Here</a>
+%id=linkControlID +class="enabled button"%Click Here</a>
 
 <!--
 Input:  <a href="https://google.com" title="Untitled" class="enabled">
 Result: <a href="https://google.com" title="Untitled" class="button enabled">
+-->
+```
+
+
+
+#### Example 4: add the `enabled` and `button` to the class attribute
+
+```html
+%id=linkControlID +ariaLabel="Google Button"%Click Here</a>
+
+<!--
+Input:  <a href="https://google.com">
+Result: <a href="https://google.com" aria-label="Google Button">
 -->
 ```
