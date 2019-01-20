@@ -42,11 +42,11 @@ The filename of the template. Do not include the path to the file.
 ##### File type -- key: `type`
 This can be any of the following:
 	
-	- `html` -- This content is included in the index.html page content. You can choose where on the page the content will be included using the scope (see below). `html` content is included in Edit, Preview, and Publish modes.
-	- `css` -- The style content for your stack. It will be grouped with other style content and published in a separate file.
-	- `js` -- Javascript content is NOT included in edit mode. By default JS content is wrapped in a closure and grouped together into a single JS file.
-	- `php` -- PHP is only included when publishing. It is NOT combined into a single file, but published in individual files.
-	- `file` -- The file-type template is a catch-all. You should use it only when one of the other template types doesn't fit. (Example: JSON Config files, Raw Text files, etc.) File type content can be any sort of UTF-8 text based file that can be template processed (if you'd like to include non-template processed files, or non-text files, they should be [assets](/keys/assets) instead). Keep in mind that each file will be processed for templates. Include only what you need. Use assets for all that you can.
+- `html` -- This content is included in the index.html page content. You can choose where on the page the content will be included using the scope (see below). `html` content is included in Edit, Preview, and Publish modes.
+- `css` -- The style content for your stack. It will be grouped with other style content and published in a separate file.
+- `js` -- Javascript content is NOT included in edit mode. By default JS content is wrapped in a closure and grouped together into a single JS file.
+- `php` -- PHP is only included when publishing. It is NOT combined into a single file, but published in individual files.
+- `file` -- The file-type template is a catch-all. You should use it only when one of the other template types doesn't fit. (Example: JSON Config files, Raw Text files, etc.) File type content can be any sort of UTF-8 text based file that can be template processed (if you'd like to include non-template processed files, or non-text files, they should be [assets](/keys/assets) instead). Keep in mind that each file will be processed for templates. Include only what you need. Use assets for all that you can.
 
 ##### Scope -- key: `scope`
 The scope of a template determins where on the page/file it will be published, as well as which template variables will be processed.
