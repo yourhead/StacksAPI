@@ -37,5 +37,8 @@ A virtual control to perform simple math.
 Most functions that math-controls provide can be more easily performed using template expressions. However, there are still a few ways that math-controls are useful, mostly in enable logic.
 
 Math properties follow a two-argument, one-operator format: 
-<argument_1> <operator> <argument_2> = <result>
+`<argument_1> <operator> <argument_2> = <result>`
+
+
+> Note: There is no `enable` property for the Math control. The *Math* control cannot be enabled (made visible) itself because a *Math* control is virtual -- it has no user interface.  A *Math* control also cannot be used to enable other controls. *Math* controls create dependencies between other controls: changes to the input values affect the output. This can create chains of dependency that take too long to evaluate, causing noticable lags in the Info Sidebar UI.
 
