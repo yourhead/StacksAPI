@@ -130,7 +130,7 @@ Result: <a href="https://google.com" title="Untitled" class="enabled target="_bl
 
 
 
-#### Example 4: add the `enabled` and `button` to the class attribute
+#### Example 4: add the `enabled` and `button` CSS classes to the class attribute
 
 ```html
 %id=linkControlID +class="enabled button"%Click Here</a>
@@ -143,7 +143,7 @@ Result: <a href="https://google.com" title="Untitled" class="button enabled">
 
 
 
-#### Example 5: add the `enabled` and `button` to the class attribute
+#### Example 5: add an Aria Label attribute for accessability, converting `ariaLabel` in the stacks-tag to the proper attribute name `aria-label` in HTML (note the change from camel case to a dash)
 
 ```html
 %id=linkControlID +ariaLabel="Google Button"%Click Here</a>
