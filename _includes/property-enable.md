@@ -13,13 +13,17 @@ The enable dictionary defines the ID of another control and the value that other
 
 #### Enable Operations
  * `==` - *(any type)* - ***default*** compares any two values. to maintain backwards compatibility rounding is never applied. *(aliases: `=`, `equals`, `equalTo`)*
+ * `!=` - *(any type)* - compares any two values are not the same. *(aliases: `notEqual`, `notEqualTo`)*
  * `<` - *(number)* - less than. *(aliases: `lessThan`)*
  * `<=` - *(number)* - less than or equal to. *(aliases: `lessThanOrEqualTo`, `lessThanOrEquals`)*
  * `>` - *(number)* - greater than. *(aliases: `greaterThan`)*
  * `>=` - *(number)* - greater than or equal to. *(aliases: `greaterThanOrEqualTo`, `greaterThanOrEquals`)*
  * `contains` - *(string)* - This does a *case insensitive* match of the value anywhere in the string.
+ * `doesntcontain` - *(string)* - This is the opposite of the `contains` operation.
  * `matches` - *(string)* - Wildcard match. Examples: `Red` (matches: `Red` and `Reddish`), `R?d` (matches: `Red` and `Rad` )
+ * `doesntmatch` - *(string)* - This is the opposite of the `matches` operation.
  * `caseInsensitiveMatches` - *(string)* - Similar to `matches` but ignores case.
+ * `caseInsensitiveDoesntMatch` - *(string)* - This is the opposite of the `caseInsensitiveMatches` operation.
 
 
 > **Warning**: creating infinite loops in enable dependencies has undefined behavior. It will likely result in a RapidWeaver crash.
