@@ -25,6 +25,13 @@ The enable dictionary defines the ID of another control and the value that other
  * `caseInsensitiveMatches` - *(string)* - Similar to `matches` but ignores case.
  * `caseInsensitiveDoesntMatch` - *(string)* - This is the opposite of the `caseInsensitiveMatches` operation.
 
+> **Stacks API v11 Operations**: The following enable operations were added in Stacks API v11 for Stacks 4.0
+>
+> * `!=`, `notEqual`, `notEqualTo`
+> * `doesntcontain`
+> * `doesntmatch`
+> * `caseInsensitiveDoesntMatch`
+
 
 > **Warning**: creating infinite loops in enable dependencies has undefined behavior. It will likely result in a RapidWeaver crash.
 
