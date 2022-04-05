@@ -13,6 +13,7 @@ The enable dictionary defines the ID of another control and the value that other
 
 #### Enable Operations
  * `==` - *(any type)* - ***default*** compares any two values. to maintain backwards compatibility rounding is never applied. *(aliases: `=`, `equals`, `equalTo`)*
+ * `!=` - *(any type)* - does not equal
  * `<` - *(number)* - less than. *(aliases: `lessThan`)*
  * `<=` - *(number)* - less than or equal to. *(aliases: `lessThanOrEqualTo`, `lessThanOrEquals`)*
  * `>` - *(number)* - greater than. *(aliases: `greaterThan`)*
