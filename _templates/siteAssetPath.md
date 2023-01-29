@@ -26,7 +26,7 @@ Returns the path to the assets directory shared by all pages of the site. This w
 
  > Note: This path may different between edit/preview/publish modes.
 
-[Detailed Asset File Reference]({{ site.baseurl}}/plist/assets)
+[Detailed Asset File Reference]({{ site.baseurl}}/keys/assets)
 
 
 #### Example 1: link to an included PDF document
