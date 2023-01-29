@@ -80,10 +80,16 @@ After Big Sur the major version always increments and is one bigger than the yea
 Below is a list of the versions, names, and associated integer values.
 
 #### The macOS Names and Versions
-- Mac OS X Sierra: 10.12.0 :: 101200
-- Mac OS X High Sierra: 10.13.0 :: 101300
-- Mac OS X Mojave: 10.14.0 :: 101400
-- Mac OS X Catalina: 10.15.0 :: 101500
-- macOS Big Sur: 11.0 :: 110000
-- macOS Monterey: 12.0 :: 120000
-- macOS Ventura: 13.0 :: 130000
+
+| macOS Name           | Version Number | Inteter Value |
+| :---                 |     ---:       |          ---: |
+| Mac OS X Sierra      |  10.12.0       |        101200 |
+| Mac OS X High Sierra |  10.13.0       |        101300 |
+| Mac OS X Mojave      |  10.14.0       |        101400 |
+| Mac OS X Catalina    |  10.15.0       |        101500 |
+| macOS Big Sur        |  11.0.0        |        110000 |
+| macOS Monterey       |  12.0.0        |        120000 |
+| macOS Ventura        |  13.0.0        |        130000 |
+
+
+
