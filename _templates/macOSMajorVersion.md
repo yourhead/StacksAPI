@@ -18,14 +18,14 @@ available: 13
 
 ### Description
 
-This is replaced with an major component of the macOS Version. The major component is the first of the three
+This is replaced with the major component of the macOS version. The major component is the first of the three
 components of the macOS version. As an example, the current version as of this writing is macOS `13.0.2`, so the *major* compoent
 is `13`, the *minor* component is `0`, and the *patch* component is `2`. This template would be replaced by `13`.
 
-This is not meant to be a human readable, if you need the full human readable macOS version you should use 
+This is not meant to be a human readable value, if you need the full human readable macOS version you should use 
 [%macOSMajorVersion%](/templates/macOSVersion/) instead.
 
-The value returned value is an integer, this template works well as part of a conditional statement or a math expression.
+The value returned is an integer, so this template works well as part of a conditional statement or a math expression.
 
 If you need to compare to a specific version of macOS, you might also consider using
 [%macOSVersionAsInteger%](/templates/macOSVersionAsInteger/) instead which is perfect for doing version comparisons.
