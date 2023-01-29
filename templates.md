@@ -10,7 +10,7 @@ links:
 
 
 ### Overview
-Templates are files that define the content of your stack. You can have any number of templates in your stack. They're specified in the Info.plist [Templates Dictionary](/StacksAPI/keys/templates).  The template variables listed below will be replaced in each template.
+Templates are files that define the content of your stack. You can have any number of templates in your stack. They're specified in the Info.plist [Templates Dictionary](/keys/templates/).  The template variables listed below will be replaced in each template.
 
 
 
