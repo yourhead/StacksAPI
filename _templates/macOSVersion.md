@@ -57,10 +57,16 @@ to use in a conditional statement:
 It should be noted that macOS/Mac OS X, versions and naming both shift in an unexpected way at macOS Big Sur. 
 
 #### The macOS Names and Versions
-- Mac OS X Sierra: 10.12.0
-- Mac OS X High Sierra: 10.13.0
-- Mac OS X Mojave: 10.14.0
-- Mac OS X Catalina: 10.15.0
-- macOS Big Sur: 11.0
-- macOS Monterey: 12.0
-- macOS Ventura: 13.0
+
+| macOS Name           | Version Number |
+| :---                 |     ---:       |
+| Mac OS X Sierra      |  10.12.0       |
+| Mac OS X High Sierra |  10.13.0       |
+| Mac OS X Mojave      |  10.14.0       |
+| Mac OS X Catalina    |  10.15.0       |
+| macOS Big Sur        |  11.0.0        |
+| macOS Monterey       |  12.0.0        |
+| macOS Ventura        |  13.0.0        |
+
+
+
