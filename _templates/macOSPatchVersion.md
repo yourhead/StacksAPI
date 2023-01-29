@@ -23,12 +23,12 @@ components of the macOS version. As an example, the current version as of this w
 is `13`, the *minor* component is `0`, and the *patch* component is `2`. This template would be replaced by `2`.
 
 This is not meant to be a human readable value, if you need the full human readable macOS version you should use 
-[%macOSMajorVersion%](/templates/macOSVersion/) instead.
+[%macOSMajorVersion%](../macOSVersion/) instead.
 
 The value returned is an integer, so this template works well as part of a conditional statement or a math expression.
 
 If you need to compare to a specific version of macOS, you might also consider using
-[%macOSVersionAsInteger%](/templates/macOSVersionAsInteger/) instead which is perfect for doing version comparisons.
+[%macOSVersionAsInteger%](../macOSVersionAsInteger/) instead which is perfect for doing version comparisons.
 
 #### Example
 
