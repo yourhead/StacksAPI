@@ -27,7 +27,7 @@ This template will be replaced by the path to Stacks' assets directory for the p
 
  > Note: This path may different between edit/preview/publish modes.
 
-[Detailed Asset File Reference]({{ site.baseurl}}/plist/assets)
+[Detailed Asset File Reference]({{ site.baseurl}}/keys/assets)
 
 #### Example 1: link to an included PDF document
 
