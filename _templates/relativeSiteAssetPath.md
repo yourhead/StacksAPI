@@ -20,4 +20,4 @@ links:
 
 ### Description
 
-This is identical to the [Site Asset Path](siteAssetPath.html) except that it contains a relative path instead of an absolute path.
+This is identical to the [Site Asset Path](../siteAssetPath.html) except that it contains a relative path instead of an absolute path.
