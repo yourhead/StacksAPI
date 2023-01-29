@@ -24,5 +24,5 @@ or
 
 A markdown text container. This is the core of an Markdown stack.
 
-It behaves in exactly the same way as an [HTML stack](html.html) but processes all markdown in the text before exporting.
+It behaves in exactly the same way as an [HTML stack](../html) but processes all markdown in the text before exporting.
 
