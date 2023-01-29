@@ -18,7 +18,7 @@ available: 13
 
 ### Description
 
-This is replaced with the minor component of the macOS Version. The minor component is the second of the three
+This is replaced with the minor component of the macOS version. The minor component is the second of the three
 components of the macOS version. As an example, the current version as of this writing is macOS `13.0.2`, so the *major* compoent
 is `13`, the *minor* component is `0`, and the *patch* component is `2`. This template would be replaced by `0`.
 
