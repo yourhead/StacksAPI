@@ -46,10 +46,10 @@ to use in a conditional statement:
 
 ##### Related Templates for Conditionals
 
-- [%macOSVersionAsInteger%](/templates/macOSVersionAsInteger/)
-- [%macOSMajorVersion%](/templates/macOSMajorVersion/)
-- [%macOSMinorVersion%](/templates/macOSMinorVersion/)
-- [%macOSPatchVersion%](/templates/macOSPatchVersion/)
+- [%macOSVersionAsInteger%](../macOSVersionAsInteger/)
+- [%macOSMajorVersion%](../macOSMajorVersion/)
+- [%macOSMinorVersion%](../macOSMinorVersion/)
+- [%macOSPatchVersion%](../macOSPatchVersion/)
 
 
 #### A Note About Big Sur
