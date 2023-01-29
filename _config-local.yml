@@ -13,11 +13,11 @@ highlighter:         rouge
 
 title:               Stacks API
 tagline:             Come build with us.
-version:             10
-stacksVersion:       3.5
+version:             13
+stacksVersion:       5
 author:
   name:              YourHead Software
-  url:               http://yourhead.com
+  url:               https://yourhead.com
 
 
 git_host:            github.com
