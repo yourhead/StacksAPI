@@ -66,9 +66,9 @@ See the list below for the components.
 
 ##### Related Templates for Conditionals
 
-- [%macOSMajorVersion%](/templates/macOSMajorVersion/)
-- [%macOSMinorVersion%](/templates/macOSMinorVersion/)
-- [%macOSPatchVersion%](/templates/macOSPatchVersion/)
+- [%macOSMajorVersion%](../macOSMajorVersion/)
+- [%macOSMinorVersion%](../macOSMinorVersion/)
+- [%macOSPatchVersion%](../macOSPatchVersion/)
 
 
 #### A Note About Big Sur
