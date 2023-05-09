@@ -61,3 +61,4 @@ The scope of a template determins where on the page/file it will be published, a
 - `pageHeadBelow` -- (HTML only) -- HTML content, in the page scope, positioned in the `<head>` tag below all js declarations.
 - `pageBodyAbove` -- (HTML only) -- HTML content, in the page scope. The content of this template will be placed immediately BEFORE all other stack content. This is the absolute highest place in the `<body>` tag that Stacks has access to in the RapidWeaver API. 
 - `pageBodyBelow` -- (HTML only) -- HTML content, in the page scope. The content of this template will be placed immediately AFTER all other stack content. This is the absolute lowest place in the `<body>` tag that Stacks has access to in the RapidWeaver API. Some Javascript works best that way.
+- `pagePrefix` -- (HTML only) -- The content of this template will be placed immediately BEFORE all other HTML content. This is useful for PHP that *must* be executed before the opening `<html>` tag.
