@@ -1,6 +1,6 @@
 
-url:                  "http://api.yourhead.com"
-baseurl:              "http://yourhead.github.io/StacksAPI"
+url:                  "https://api.yourhead.com"
+baseurl:              ""
 reloader:             NO
 github:               [Repository metadata]
 
@@ -68,5 +68,4 @@ defaults:
       layout: "template"
       back: 
         - top: "/templates"
-
 
