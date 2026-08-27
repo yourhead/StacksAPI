@@ -2,12 +2,24 @@
 ---
 
 body {
+  --api-accent:#3399cc;
+  --api-accent-soft:#eaf5fa;
   padding:50px;
   font:17px/1.7 Avenir, Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
   margin:0;
   padding:0;
+}
+
+body.api-section--stack {
+  --api-accent:#1479b8;
+  --api-accent-soft:#e7f2f8;
+}
+
+body.api-section--theme {
+  --api-accent:#7c4dbe;
+  --api-accent-soft:#f0eafa;
 }
 
 @import 'pygment_trac';
@@ -39,9 +51,38 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:var(--api-accent);
   font-weight:500;
   text-decoration:none;
+}
+
+.api-section-label {
+  display:inline-block;
+  margin:0 0 1em;
+  padding:0.25em 0.75em;
+  border-radius:999px;
+  color:white;
+  background:var(--api-accent);
+  font-size:0.75em;
+  font-weight:700;
+  letter-spacing:0.08em;
+  line-height:1.5;
+  text-transform:uppercase;
+}
+
+.api-section section {
+  border-top:4px solid var(--api-accent);
+}
+
+.api-section section > h2,
+.api-section header h1 a {
+  color:var(--api-accent);
+}
+
+.api-section blockquote {
+  border-left-color:var(--api-accent);
+  background:var(--api-accent-soft);
+  padding:0.6em 1em;
 }
 
 a small {

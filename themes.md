@@ -1,6 +1,7 @@
 ---
 title: Theme API
 layout: page
+api_section: theme
 back:
   - top: /
 links:

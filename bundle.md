@@ -1,6 +1,7 @@
 ---
 title: The Stacks Bundle
 layout: page
+api_section: stack
 back:
   - top: /stacks
 links:

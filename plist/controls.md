@@ -1,6 +1,7 @@
 ---
 title: Controls
 layout: page
+api_section: stack
 back:
   - top: /plist
 links:
