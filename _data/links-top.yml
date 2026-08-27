@@ -15,6 +15,10 @@
     url: /templates
     description: The Stacks templating system.
 
+  - title: Theme API
+    url: /themes
+    description: Build complete page themes for Stacks.
+
   - title: Resources
     url: /resources
     description: All the other stuff that's included in a stack.

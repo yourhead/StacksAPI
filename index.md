@@ -6,6 +6,7 @@ links:
   - top: /plist
   - plist: plist/controls
   - top: /templates
+  - top: /themes
 ---
 
 
