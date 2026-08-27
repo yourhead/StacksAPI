@@ -1,9 +1,13 @@
 
-  - title: The Stacks API
+  - title: Stacks Developer API
     url: /
-    description: An overview of the API.
+    description: Choose between stack and theme development.
 
-  - title: Stacks Bundle
+  - title: Stack API
+    url: /stacks
+    description: Build reusable page components and layouts.
+
+  - title: Stack Bundles
     url: /bundle
     description: What goes where and why inside a stack bundle.
 
@@ -17,7 +21,7 @@
 
   - title: Theme API
     url: /themes
-    description: Build complete page themes for Stacks.
+    description: Build the document-level presentation around a page.
 
   - title: Resources
     url: /resources

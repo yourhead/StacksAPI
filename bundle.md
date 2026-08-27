@@ -2,7 +2,7 @@
 title: The Stacks Bundle
 layout: page
 back:
-  - top: /
+  - top: /stacks
 links:
   - top: /plist
   - top: /templates
