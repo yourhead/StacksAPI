@@ -78,7 +78,7 @@ The bundled themes use a user-facing dotted version and a monotonically increasi
 <string>com.yourhead.stacks.theme.base</string>
 ```
 
-See [Theme Inheritance](/themes/inheritance) for the distinction between confirmed `parent` behaviour and the less completely documented `inheritsFrom` key.
+See [Theme Inheritance]({% include docs-root.html %}/themes/inheritance) for the distinction between confirmed `parent` behaviour and the less completely documented `inheritsFrom` key.
 
 ## Controls
 
@@ -119,7 +119,7 @@ The selected value is available to theme templates by property name:
 }
 ```
 
-Theme controls use the existing [Custom Controls Reference](/plist/controls).
+Theme controls use the existing [Custom Controls Reference]({% include docs-root.html %}/plist/controls).
 
 ## Assets and libraries
 

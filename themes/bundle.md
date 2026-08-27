@@ -36,7 +36,7 @@ The schema does not fully describe the purpose or required contents of the two o
 
 ## Info.plist
 
-`Contents/Info.plist` identifies the bundle as a theme and declares metadata, controls, assets and libraries. See [Theme Info.plist](/themes/plist).
+`Contents/Info.plist` identifies the bundle as a theme and declares metadata, controls, assets and libraries. See [Theme Info.plist]({% include docs-root.html %}/themes/plist).
 
 ## Templates
 
@@ -69,4 +69,4 @@ Do not distribute a development bundle as the finished product.
 
 ## Assets and libraries
 
-Assets are files or folders copied into published output. Libraries are named shared resources. Their plist declarations follow the same general API used by ordinary stacks; see [Theme Info.plist](/themes/plist#assets-and-libraries).
+Assets are files or folders copied into published output. Libraries are named shared resources. Their plist declarations follow the same general API used by ordinary stacks; see [Theme Info.plist]({% include docs-root.html %}/themes/plist#assets-and-libraries).

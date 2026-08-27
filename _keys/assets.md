@@ -41,6 +41,6 @@ The filename of the asset. Do not include the path to the file.
 > Note: The filename can refer to an entire folder. All content inside the folder will be published.
 
 ##### Scope -- key: `siteAsset` (Boolean -- defaults to NO)
-Normal assets are published, along with the page. Site assets are just once for the whole site and shared among all pages. They are published to the Stacks common directory for the site. To refer to the them you should use the [`%siteAssetPath%`](/templates/siteAssetPath) template variable
+Normal assets are published, along with the page. Site assets are just once for the whole site and shared among all pages. They are published to the Stacks common directory for the site. To refer to the them you should use the [`%siteAssetPath%`]({% include docs-root.html %}/templates/siteAssetPath) template variable
 
 > Note: It's up to you to ensure that the items have acceptable web-friendly naming and do not conflict with other files that might be present in other elements.
