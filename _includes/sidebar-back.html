@@ -24,7 +24,7 @@
 	{% assign base = "/plist/" %}
 {% endif %}
 
-&nbsp; <span style='font-size:16px'>&lt; &nbsp; </span><a href='{{ site.baseurl}}{{base}}{{ l.url }}'>{{ l.title }}</a><br>
+&nbsp; <span style='font-size:16px'>&lt; &nbsp; </span><a href='{% include docs-root.html %}{{base}}{{ l.url }}'>{{ l.title }}</a><br>
 
 {% endfor %}
 <br>

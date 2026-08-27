@@ -15,10 +15,10 @@ The Stack API is for building reusable elements that people add to a Stacks page
 
 ### Start here
 
-- [Stack bundles]({{ site.baseurl }}/bundle/) explains the bundle structure and where files belong.
-- [Property List Reference]({{ site.baseurl }}/plist/) documents stack metadata and configuration.
-- [Custom Controls Reference]({{ site.baseurl }}/plist/controls/) covers controls shown in the inspector.
-- [Template Variables Reference]({{ site.baseurl }}/templates/) documents values available to stack templates.
+- [Stack bundles]({% include docs-root.html %}/bundle/) explains the bundle structure and where files belong.
+- [Property List Reference]({% include docs-root.html %}/plist/) documents stack metadata and configuration.
+- [Custom Controls Reference]({% include docs-root.html %}/plist/controls/) covers controls shown in the inspector.
+- [Template Variables Reference]({% include docs-root.html %}/templates/) documents values available to stack templates.
 
 ### What is a stack?
 
@@ -36,4 +36,4 @@ For development, use the `.devstack` extension. Stacks monitors development bund
 
 A stack uses a standard macOS bundle structure. Its `Contents` folder contains an `Info.plist` and a `Resources` folder holding templates, libraries, assets and other files required by the stack.
 
-[Continue with stack bundles →]({{ site.baseurl }}/bundle/)
+[Continue with stack bundles →]({% include docs-root.html %}/bundle/)

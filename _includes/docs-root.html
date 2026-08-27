@@ -1,0 +1,5 @@
+{%- if site.github.url -%}
+{{- site.github.url | replace_first: 'http://', 'https://' -}}
+{%- else -%}
+{{- site.url -}}
+{%- endif -%}
