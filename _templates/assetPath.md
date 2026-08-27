@@ -27,14 +27,13 @@ This template will be replaced by the path to Stacks' assets directory for the p
 
  > Note: This path may different between edit/preview/publish modes.
 
-[Detailed Asset File Reference]({{ site.baseurl}}/keys/assets)
+[Detailed Asset File Reference]({% include docs-root.html %}/keys/assets)
 
 #### Example 1: link to an included PDF document
 
 ```
 <a href='%assetPath%/document.pdf' >Download PDF Document</a>
 ```
-
 
 
 

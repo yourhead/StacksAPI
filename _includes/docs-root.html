@@ -1,0 +1,15 @@
+{%- assign docs_depth = 0 -%}
+{%- assign docs_parts = page.url | split: '/' -%}
+{%- for docs_part in docs_parts -%}
+  {%- unless docs_part == '' -%}
+    {%- assign docs_depth = docs_depth | plus: 1 -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- if docs_depth == 0 -%}
+.
+{%- else -%}
+  {%- for docs_level in (1..docs_depth) -%}
+..
+    {%- unless forloop.last -%}/{%- endunless -%}
+  {%- endfor -%}
+{%- endif -%}

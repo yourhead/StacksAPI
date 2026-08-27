@@ -18,7 +18,7 @@ To enable the Stacks 3.5 preprocessor and disable old-style preprocssor set this
  > NB: Opting in to the new-style preprocessor removes support for all deprecated API.
 
 
-When the preprocessor is enabled [conditional mode macros]({{ site.baseurl}}/templates/display) will have a new format and may *not* be nested.
+When the preprocessor is enabled [conditional mode macros]({% include docs-root.html %}/templates/display) will have a new format and may *not* be nested.
 
 > Example:  `%%[[if edit]]%%`
 

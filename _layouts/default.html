@@ -2,7 +2,7 @@
 <html lang="en">
   {% include head.html %}
 
-  <body>
+  <body{% if page.api_section %} class="api-section api-section--{{ page.api_section }}"{% endif %}>
     {{ content }}
 
     <small class='footer copyright'>&copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. YourHead Software all rights reserved.</small>

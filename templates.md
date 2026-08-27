@@ -1,6 +1,7 @@
 ---
 title: Template Variables
 layout: page
+api_section: stack
 back:
   - top: /bundle
 links:
@@ -10,7 +11,7 @@ links:
 
 
 ### Overview
-Templates are files that define the content of your stack. You can have any number of templates in your stack. They're specified in the Info.plist [Templates Dictionary](/keys/templates/).  The template variables listed below will be replaced in each template.
+Templates are files that define the content of your stack. You can have any number of templates in your stack. They're specified in the Info.plist [Templates Dictionary]({% include docs-root.html %}/keys/templates/).  The template variables listed below will be replaced in each template.
 
 
 
@@ -44,7 +45,7 @@ Templates are files that define the content of your stack. You can have any numb
     {% endif %}
 {% endif %}
 
-<a href='{{ site.baseurl }}{{ template.url }}'>{{ template.name }}</a> &mdash; {{ template.description }}</li>
+<a href='{% include docs-root.html %}{{ template.url }}'>{{ template.name }}</a> &mdash; {{ template.description }}</li>
 
 {% endfor %}
 </ul>
