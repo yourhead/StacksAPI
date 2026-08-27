@@ -1,7 +1,15 @@
-{%- if site.github.repository_nwo == 'yourhead/StacksAPI' -%}
-https://api.yourhead.com
-{%- elsif site.github.owner_name and site.github.repository_name -%}
-https://{{ site.github.owner_name }}.github.io/{{ site.github.repository_name }}
+{%- assign docs_depth = 0 -%}
+{%- assign docs_parts = page.url | split: '/' -%}
+{%- for docs_part in docs_parts -%}
+  {%- unless docs_part == '' -%}
+    {%- assign docs_depth = docs_depth | plus: 1 -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- if docs_depth == 0 -%}
+.
 {%- else -%}
-{{- site.url -}}
+  {%- for docs_level in (1..docs_depth) -%}
+..
+    {%- unless forloop.last -%}/{%- endunless -%}
+  {%- endfor -%}
 {%- endif -%}
