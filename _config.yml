@@ -47,9 +47,14 @@ collections:
 # Default layouts for various things
 defaults:
   - scope:
+      path: "themes"
+    values:
+      api_section: theme
+  - scope:
       path: ""
       type: "controls"
     values:
+      api_section: stack
       layout: "control"
       back: 
         - plist: "controls"
@@ -58,6 +63,7 @@ defaults:
       path: ""
       type: "keys"
     values:
+      api_section: stack
       layout: "key"
       back: 
         - top: "/plist"
@@ -65,6 +71,7 @@ defaults:
       path: ""
       type: "templates"
     values:
+      api_section: stack
       layout: "template"
       back: 
         - top: "/templates"

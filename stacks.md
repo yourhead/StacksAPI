@@ -1,6 +1,7 @@
 ---
 title: Stack API
 layout: page
+api_section: stack
 back:
   - top: /
 links:
