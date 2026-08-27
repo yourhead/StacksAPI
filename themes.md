@@ -65,4 +65,4 @@ A theme can provide:
 - Reusable partial templates.
 - A parent theme whose templates can be selectively overridden.
 
-Start with [Getting Started](/themes/getting-started), then use the remaining pages as a practical reference.
+Start with [Getting Started]({% include docs-root.html %}/themes/getting-started), then use the remaining pages as a practical reference.

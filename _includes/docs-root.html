@@ -1,5 +1,7 @@
-{%- if site.github.url -%}
-{{- site.github.url | replace_first: 'http://', 'https://' -}}
+{%- if site.github.repository_nwo == 'yourhead/StacksAPI' -%}
+https://api.yourhead.com
+{%- elsif site.github.owner_name and site.github.repository_name -%}
+https://{{ site.github.owner_name }}.github.io/{{ site.github.repository_name }}
 {%- else -%}
 {{- site.url -}}
 {%- endif -%}

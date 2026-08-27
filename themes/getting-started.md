@@ -134,4 +134,4 @@ Also verify pages at different nesting levels. Paths that work on the home page 
 
 ## A fully independent theme
 
-A theme does not have to use Base. It may supply its own `page`, `head`, `body`, `css` and `js` templates. If doing so, compare it carefully with [Blank Theme](/themes/reference-themes) and preserve every required `content.*` insertion point and generated CSS/JavaScript path.
+A theme does not have to use Base. It may supply its own `page`, `head`, `body`, `css` and `js` templates. If doing so, compare it carefully with [Blank Theme]({% include docs-root.html %}/themes/reference-themes) and preserve every required `content.*` insertion point and generated CSS/JavaScript path.
