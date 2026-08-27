@@ -45,7 +45,7 @@ Templates are files that define the content of your stack. You can have any numb
     {% endif %}
 {% endif %}
 
-<a href='{{ site.baseurl }}{{ template.url }}'>{{ template.name }}</a> &mdash; {{ template.description }}</li>
+<a href='{% include docs-root.html %}{{ template.url }}'>{{ template.name }}</a> &mdash; {{ template.description }}</li>
 
 {% endfor %}
 </ul>

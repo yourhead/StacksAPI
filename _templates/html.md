@@ -26,5 +26,4 @@ or
 
 A plain text container. This is the core of an HTML stack.
 
-Text may be escaped for the various languages associated with the web.  You use the `-ecocodeHTML` switch to ampersand encode all the HTML entities.  There are [many formats and more details are list here]({{site.baseurl}}/stringEscaping).
-
+Text may be escaped for the various languages associated with the web.  You use the `-ecocodeHTML` switch to ampersand encode all the HTML entities.  There are [many formats and more details are list here]({% include docs-root.html %}/stringEscaping).

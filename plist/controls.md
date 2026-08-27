@@ -49,7 +49,7 @@ Most controls can now display a subtitle.  Subtitles provide more contextual inf
     {% endif %}
 {% endif %}
 
-<a href='{{ site.baseurl }}{{ control.url }}'>{{ control.name }}</a> &mdash; {{ control.description }}</li>
+<a href='{% include docs-root.html %}{{ control.url }}'>{{ control.name }}</a> &mdash; {{ control.description }}</li>
 
 {% endfor %}
 </ul>
