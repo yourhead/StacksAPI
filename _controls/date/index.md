@@ -9,7 +9,7 @@ properties:
 
   - title: Default Value
     key: default
-    type: string containing a date
+    type: date (containing a date, eg: 2023-07-09T12:27:13Z)
     default: now
     markdown: true
 

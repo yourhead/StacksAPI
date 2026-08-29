@@ -1,6 +1,7 @@
 ---
 title: String Escaping
 layout: page
+api_section: stack
 back:
   - top: /templates
 links:
@@ -55,4 +56,3 @@ text (Attribute): this is a test &#34; &#39; &#60; &#62; $
 text (XML):       this is a test &#34; &#39; &#60; &#62; $
 text (Filename):  this-is-a-test-0022-0027-003C-003E-0024
 ```
-

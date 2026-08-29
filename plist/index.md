@@ -1,6 +1,7 @@
 ---
 title: The Property List
 layout: page
+api_section: stack
 back:
   - top: /bundle
 links:
@@ -40,7 +41,7 @@ The Info.plist file within a stack defines the basic attributes of the stack lik
     {% endif %}
 {% endif %}
 
-<a href='{{ site.baseurl }}{{ property.url }}'>{{ property.name }}</a> &mdash; <code>{{ property.key }}</code> &mdash; {{ property.description }}</li>
+<a href='{% include docs-root.html %}{{ property.url }}'>{{ property.name }}</a> &mdash; <code>{{ property.key }}</code> &mdash; {{ property.description }}</li>
 
 {% endfor %}
 </ul>

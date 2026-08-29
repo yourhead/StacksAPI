@@ -25,9 +25,8 @@
 	{% assign base = "/" %}
 {% endif %}
 
-<li><a href='{{ site.baseurl}}{{base}}{{ l.url }}'>{{ l.title }}</a>{% if l.description %}<br><span class='description'>{{ l.description }}<br><br></span>{% endif %} </li>
+<li><a href='{% include docs-root.html %}{{base}}{{ l.url }}'>{{ l.title }}</a>{% if l.description %}<br><span class='description'>{{ l.description }}<br><br></span>{% endif %} </li>
 
 {% endfor %}
 </ul>
 {% endif %}
-

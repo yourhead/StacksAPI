@@ -15,6 +15,8 @@ layout: default
 
 <div class='row'>
 	<section>
+		{% if page.api_section == 'stack' %}<p class="api-section-label">Stack API</p>{% endif %}
+		{% if page.api_section == 'theme' %}<p class="api-section-label">Theme API</p>{% endif %}
 		<h2>{{ page.title}}</h2>
 		{{ content }}
 	</section>
