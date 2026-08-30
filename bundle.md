@@ -14,7 +14,7 @@ links:
 ---
 
 Overview
-Each stack stack is a bundled folder. The folder contains all the template files, assets, and a property list that defines how the stack will behave.
+Each stack is a bundled folder. The folder contains all the template files, assets, and a property list that defines how the stack will behave.
 
 ### The Bundle Structure
 The bundle of a stack follows the standard Mac OS X bundle structure. It looks like this:
@@ -27,7 +27,7 @@ The bundle of a stack follows the standard Mac OS X bundle structure. It looks l
       - `large_<icon-name>@2x.png` - a large-mode Stacks library icon for retina screens (128px x 128px)
       - `medium_<icon-name>.png` - a medium-mode Stacks library icon for non-retina screens (32px x 32px)
       - `medium_<icon-name>@2x.png` - a medium-mode Stacks library icon for retina screens (64px x 64px)
-      - `small_<icon-name>.png` - a a small-mode Stacks library icon for non-retina screens (16px x 16px)
+      - `small_<icon-name>.png` - a small-mode Stacks library icon for non-retina screens (16px x 16px)
       - `small_<icon-name>@2x.png` - a small-mode Stacks library icon for retina screens (32px x 32px)
       - [`<asset_files>` or `<asset_folders>` (link) ]({% include docs-root.html %}/keys/assets/) - asset files will be published with your stack. assets are NOT template processed. you can include any number of assets. they can be any type of file. assets may also be an entire folder of files. the entire folder will be published as-is with hierarchy intact.
       - [`<template_files>` (link) ]({% include docs-root.html %}/keys/templates) - template files are processed for [template variables]({% include docs-root.html %}/templates). templates contain the content of your stack displayed in edit mode, as well as the files that are published with your stack. the only difference between a template and an asset is that templates are processed for template variables.

@@ -19,7 +19,7 @@ available: 13
 ### Description
 
 This is replaced with the version number of macOS that is running Stacks.
-This the the human readable version number as apposed to the build number.
+This is the human readable version number as opposed to the build number.
 
 At the time of this writing the current version of macOS Ventura is "13.2.0".
 
@@ -67,6 +67,5 @@ It should be noted that macOS/Mac OS X, versions and naming both shift in an une
 | macOS Big Sur        |  11.0.0        |
 | macOS Monterey       |  12.0.0        |
 | macOS Ventura        |  13.0.0        |
-
 
 

@@ -30,10 +30,10 @@ properties:
 
 A color well. 
 
-When clicked the RapidWeaver shared color pallet is displayed. The selected color is converted to RGB and returned as a hex string or rgba color value.
+When clicked the RapidWeaver shared color palette is displayed. The selected color is converted to RGB and returned as a hex string or rgba color value.
 
 ### Opacity
-The color control now allows you to enable opacity when selecting colors.  To ensure backward compatability it defaults to being disabled.
+The color control now allows you to enable opacity when selecting colors.  To ensure backward compatibility it defaults to being disabled.
 
 Colors that include an opacity will be output (in templates) as rgba color values.  Colors without an opacity will be output as HTML hex colors.
 

@@ -13,7 +13,7 @@ links:
 ---
 
 
-To enable the Stacks 3.5 preprocessor and disable old-style preprocssor set this key to YES.  It is strongly recommended that you use enable the new preprocessor as it is significantly faster.
+To enable the Stacks 3.5 preprocessor and disable old-style preprocessor set this key to YES.  It is strongly recommended that you enable the new preprocessor as it is significantly faster.
 
  > NB: Opting in to the new-style preprocessor removes support for all deprecated API.
 

@@ -23,4 +23,4 @@ Because this content is copied into the project file, you should try to keep it 
  - The content **CANNOT** rely on any other portion of your stack. It must be completely self contained.
 
 
-> If the Missing HTML plist entry is NOT provided Stacks will automatically generate a short message for you. This message may contain some of the other information your stack provides, like the [Info URL]({% include docs-root.html %}/keys/infoURL). However, it's best give users a friendly message to help them get their stacks installed again or get in touch with your support email to get a new download link.
+> If the Missing HTML plist entry is NOT provided Stacks will automatically generate a short message for you. This message may contain some of the other information your stack provides, like the [Info URL]({% include docs-root.html %}/keys/infoURL). However, it's best to give users a friendly message to help them get their stacks installed again or get in touch with your support email to get a new download link.

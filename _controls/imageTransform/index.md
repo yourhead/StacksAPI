@@ -32,7 +32,7 @@ properties:
     key: imageScale
     type: Number
     default: 100
-    description: When the Scale Mode property is set to 1 (Scale to Fill), you may either define a scale percent, width/height maximums, or both. If both or set, then the Max Width and Max Height properties take precedence.
+    description: When the Scale Mode property is set to 1 (Scale to Fill), you may either define a scale percent, width/height maximums, or both. If both are set, then the Max Width and Max Height properties take precedence.
 
 
 
