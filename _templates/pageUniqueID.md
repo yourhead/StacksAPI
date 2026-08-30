@@ -21,4 +21,4 @@ links:
 
 ### Description
 
-This template will be replaced by the RapidWeaver internal page ID for this page. This value is used to generate some HTML IDs/Classes so this tempalte is useful for specifying selectors in CSS and JS.
+This template will be replaced by the RapidWeaver internal page ID for this page. This value is used to generate some HTML IDs/Classes so this template is useful for specifying selectors in CSS and JS.

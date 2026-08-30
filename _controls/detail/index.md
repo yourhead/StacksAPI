@@ -11,7 +11,7 @@ properties:
     key: default
     type: boolean
     default: False (not pushed in)
-    description: The value of the details button when it's the stack is placed on the page.
+    description: The value of the details button when the stack is placed on the page.
 
   - title: ID
     key: id
@@ -28,5 +28,4 @@ properties:
 
 ---
 
-A toggle button specifically for showing more details. It behaves exactly like a checkbox (and it's value **can** be used in template variables just like a checkbox) but it has a UI that is simple. It does not display a title, but does have a tooltip for explanation.
-
+A toggle button specifically for showing more details. It behaves exactly like a checkbox (and its value **can** be used in template variables just like a checkbox) but it has a UI that is simple. It does not display a title, but does have a tooltip for explanation.

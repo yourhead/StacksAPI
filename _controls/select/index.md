@@ -1,7 +1,7 @@
 ---
 name: Popup Menu
 type: select
-description: A Popup menu to for choosing from a list of items.
+description: A Popup menu for choosing from a list of items.
 available: 3
 generics: yes
 properties:

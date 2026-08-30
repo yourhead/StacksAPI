@@ -18,7 +18,7 @@ available: 10
 
 ### Description
 
-Every custom stack has a specific class added to the inner wrapper div. the class is created using the stack's ID, but but has some small changes made to avoid characters that are not permitted inside a class (e.g. '.' is replaced with an underscore).
+Every custom stack has a specific class added to the inner wrapper div. the class is created using the stack's ID, but has some small changes made to avoid characters that are not permitted inside a class (e.g. '.' is replaced with an underscore).
 
 This class is useful for isolating your CSS to apply specifically to your stack.
 

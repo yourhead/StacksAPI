@@ -32,7 +32,7 @@ Templates ARE processed for template variables. Some templates are included in e
 
 Each line in the templates array should be a dictionary. And each dictionary should represent a single template file that should be processed.
 
-> Each template file and each tempalte variable within each file adds a significant performance cost to your stack. To ensure your stack has the best peformance strive to include as few template files as possible with as few templates variables as possible.
+> Each template file and each template variable within each file adds a significant performance cost to your stack. To ensure your stack has the best performance strive to include as few template files as possible with as few templates variables as possible.
 
 The template dictionary can include the following keys:
 
@@ -51,7 +51,7 @@ This can be any of the following:
 ##### Scope -- key: `scope`
 The scope of a template determins where on the page/file it will be published, as well as which template variables will be processed.
 
-- `each` -- *default* -- The each scope publishes content for each stack instance on the page. All tempalte variables will be processed.
+- `each` -- *default* -- The each scope publishes content for each stack instance on the page. All template variables will be processed.
 - `page` -- The page scope publishes content ONLY ONCE for all stack instances on the page. Some template variables will be processed. Page-Scoped template variables will be processed, as well as any variable that is static for the entire page (e.g. version numbers and file-paths). Each template variable lists the scopes that it will be published in.
 
 ###### Limited Scopes -- These scopes are limited to specific types of content
