@@ -39,15 +39,15 @@ properties:
 
   - title: Default Value
     key: default
-    type: string
+    type: number
     default: 0
     markdown: true
 
   - title: Clear Value
     key: clearValue
-    type: string
-    default: '""'
-    description: When all the content is cleared out of a text input area (the user deletes all the text), the control will automatically fill with this value. This is useful for applications where a non-empty string is required.
+    type: number
+    default: 0
+    description: When the slider value is cleared, the control will automatically use this value.
 
     
 
