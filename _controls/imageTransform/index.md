@@ -32,7 +32,7 @@ properties:
     key: imageScale
     type: Number
     default: 100
-    description: When the Scale Mode property is set to 1 (Scale to Fill), you may either define a scale percent, width/height maximums, or both. If both or set, then the Max Width and Max Height properties take precedence.
+    description: When the Scale Mode property is set to 1 (Scale to Fill), you may either define a scale percent, width/height maximums, or both. If both are set, then the Max Width and Max Height properties take precedence.
 
 
 
@@ -95,25 +95,23 @@ properties:
     description: The color of the shadow.  Light colors can be used for a glow effect. Shadows are rendered into the image (not CSS).
 
   - title: Shadow Opacity
-    key: imageShadowColor
-    type: "string: HTML RGB Hex string"
+    key: imageShadowOpacity
+    type: number
     description: The opacity of the shadow. Opacity of `0` is fully transparent and will disable the shadow. Shadows are rendered into the image (not CSS).
 
   - title: Shadow Blur
-    key: imageShadowColor
-    type: "string: HTML RGB Hex string"
+    key: imageShadowBlur
+    type: number
     description: The amount of blur added to the shadow.  Shadows are rendered into the image (not CSS).
 
   - title: Shadow Offset X
-    key: imageShadowColor
-    type: "string: HTML RGB Hex string"
+    key: imageShadowOffsetX
+    type: number
     description: The offset of the shadow in the horizontal direction.  Shadows are rendered into the image (not CSS).
 
   - title: Shadow Offset Y
-    key: imageShadowColor
-    type: "string: HTML RGB Hex string"
-    default: Black
-    required: yes
+    key: imageShadowOffsetY
+    type: number
     description: The offset of the shadow in the vertical direction. Shadows are rendered into the image (not CSS).
 
 
