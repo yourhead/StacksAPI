@@ -30,7 +30,7 @@ properties:
     key: units
     type: string
     default: No units are displayed.
-    description: The units string is displayed next to the slider value. The units is strictly for the user interface, it will not be included in template output value.
+    description: The units string is displayed next to the number value. The units string is only for the user interface and will not be included in template output.
 
   - title: Default Value
     key: default
@@ -42,19 +42,19 @@ properties:
     key: clearValue
     type: string
     default: '""'
-    description: When all the content is cleared out of a text input area (the user deletes all the text), the control will automatically fill with this value. This is useful for applications where a non-empty string is required.
+    description: When the user deletes all the text from the input, the control will automatically fill with this value. This is useful when a non-empty string is required.
 
     
 
 ---
 
-A text entry field that validates only numbers in an allowed range. There are up/down arrows next to text entry to increment/decrement the number.
+A text entry field that only accepts numbers within an allowed range. Up/down arrows next to the field increment or decrement the number.
 
 
 {% include newstuff.html %}
 ### Number Control Array
 
-Number controls can be used in arrays.  Each has its own subtitle and default, all other values are shared.
+Number controls can be used in arrays. Each number control has its own subtitle and default; all other values are shared.
 
 > NB: number-3 requires Stacks API v8 (Stacks v3.1+), 2 & 4 require v7 (Stacks v3.0+), single control requires v2.
 
