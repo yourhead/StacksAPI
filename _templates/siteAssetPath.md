@@ -22,9 +22,9 @@ links:
 
 ### Description
 
-Returns the path to the assets directory shared by all pages of the site. This will be needed to link to assets that have been included as site assets.
+Returns the path to the assets directory shared by all pages of the site. Use it to link to assets that have been included as site assets.
 
- > Note: This path may different between edit/preview/publish modes.
+ > Note: This path may differ between edit/preview/publish modes.
 
 [Detailed Asset File Reference]({% include docs-root.html %}/keys/assets)
 
@@ -34,7 +34,6 @@ Returns the path to the assets directory shared by all pages of the site. This w
 ```
 <a href='%siteAssetPath%/document.pdf' >Download PDF Document</a>
 ```
-
 
 
 

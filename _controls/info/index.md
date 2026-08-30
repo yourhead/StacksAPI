@@ -14,9 +14,8 @@ Static informational text.
 
 The Title is the only part of this control that is displayed.
 
-Usually keeping controls to a minimum and using descriptive titles and tooltips is enough to make the use of your stack obvious. Occasionally there's a need for a bit more text. If you find you need this control often, it's a sign that your stack is too confusing. 
+Usually, keeping controls to a minimum and using descriptive titles and tooltips is enough to make your stack easy to understand. Occasionally, a bit more text is useful. If you need this control often, consider simplifying your stack's controls.
 
 **Never explain something confusing. Just make it less confusing.**
 
 *Please use this sparingly.*
-

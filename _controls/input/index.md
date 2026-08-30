@@ -19,7 +19,7 @@ properties:
     key: clearValue
     type: string
     default: '""'
-    description: When all the content is cleared out of a text input area (the user deletes all the text), the control will automatically fill with this value. This is useful for applications where a non-empty string is required.
+    description: When the user deletes all the text from the input, the control will automatically fill with this value. This is useful when a non-empty string is required.
     
 ---
 
@@ -32,16 +32,15 @@ Like all string value properties, you can retrieve an encoded value with escapes
 {% include newstuff.html %}
 ### Text Input Array
 
-Text Input can be used in arrays.  Each has its own subtitle and default, all other values are shared.
+Text Input can be used in arrays. Each input has its own subtitle and default; all other values are shared.
 
 > NB: input-3 requires Stacks API v8 (Stacks v3.1+), 2 & 4 require v7 (Stacks v3.0+), single control requires v1.
 
 Text Input array types are:
 
 - `input` : a regular text input.
-- `input-2` : two text input.
-- `input-3` : three text input.
-- `input-4` : four text input.
-
+- `input-2` : two text inputs.
+- `input-3` : three text inputs.
+- `input-4` : four text inputs.
 
 
