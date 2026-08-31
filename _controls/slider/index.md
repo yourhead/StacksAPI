@@ -35,7 +35,7 @@ properties:
     key: units
     type: string
     default: No units are displayed.
-    description: The units string is displayed next to the slider value. The units is strictly for the user interface, it will not be included in template output value.
+    description: The units string is displayed next to the slider value. The units string is only for the user interface and will not be included in template output.
 
   - title: Default Value
     key: default

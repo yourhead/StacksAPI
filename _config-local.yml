@@ -7,7 +7,7 @@ reloader:             YES
 # Everything below here should be identical in both local and github setups
 
 safe:                true      # enable safe mode to match github pages
-permalink:           pretty    # make prettty link
+permalink:           pretty    # make pretty link
 relative_permalinks: false
 highlighter:         rouge
 
@@ -27,7 +27,7 @@ git_branch:          gh-pages
 
 
 
-# sass needs to be be setup for some lame reason
+# sass needs to be setup for some lame reason
 sass:
   sass_dir:          _sass
   style:             :compressed
@@ -67,5 +67,4 @@ defaults:
       layout: "template"
       back: 
         - top: "/templates"
-
 

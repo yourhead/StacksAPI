@@ -62,7 +62,7 @@ If no scope is included, the scope defaults to `site`. Built-In libraries always
 ##### Type -- (custom libraries only) -- key: `type`
 The scope of a template determins where on the page/file it will be published, as well as which template variables will be processed. All custom libraries must include a type.
 
-- `css` -- The each scope publishes content for each stack instance on the page. All tempalte variables will be processed.
+- `css` -- The each scope publishes content for each stack instance on the page. All template variables will be processed.
 - `js` -- The page scope publishes content ONLY ONCE for all stack instances on the page. Some template variables will be processed. Page-Scoped template variables will be processed, as well as any variable that is static for the entire page (e.g. version numbers and file-paths). Each template variable lists the scopes that it will be published in.
 
 ##### Minimum/Maximum Versions -- (jQuery only) -- key: `minVersion` and `maxVersion`

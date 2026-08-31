@@ -23,9 +23,9 @@ links:
 
 ### Description
 
-This template will be replaced by the path to Stacks' assets directory for the page. This will be needed to link to assets that have been included in plist.
+This template is replaced by the path to Stacks' assets directory for the page. Use it to link to assets that have been included in the plist.
 
- > Note: This path may different between edit/preview/publish modes.
+ > Note: This path may differ between edit/preview/publish modes.
 
 [Detailed Asset File Reference]({% include docs-root.html %}/keys/assets)
 
@@ -34,7 +34,6 @@ This template will be replaced by the path to Stacks' assets directory for the p
 ```
 <a href='%assetPath%/document.pdf' >Download PDF Document</a>
 ```
-
 
 
 

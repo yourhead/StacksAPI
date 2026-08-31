@@ -34,7 +34,7 @@ Enable content specifically for Edit, Preview, or Publish Mode.
 
 Some content is not appropriate for display in Edit mode and other content is not appropriate for being published. You can limit the display of the content to a specific mode by using conditionals. You can use conditionals in any type of template (HTML, CSS, JS, etc.). Using a conditional to disable the display of certain elements with CSS is a good way to keep the user focused on the content that needs to be edited.
 
-> Note: Prior to Stacks 3.5 the sytax of the preprocessor macros was slightly different. Each macro was bounded by only one percent sign and one square-bracket. Old-style conditionals are still acceptable but are deprecated.
+> Note: Prior to Stacks 3.5 the syntax of the preprocessor macros was slightly different. Each macro was bounded by only one percent sign and one square-bracket. Old-style conditionals are still acceptable but are deprecated.
 
 #### Example 1: disable fancy CSS in edit mode for speed.
 
@@ -73,7 +73,6 @@ Some content is not appropriate for display in Edit mode and other content is no
   <span>This will appear in preview mode!</span>
 %%[[endif]]%%
 ```
-
 
 
 

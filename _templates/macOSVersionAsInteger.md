@@ -21,8 +21,8 @@ available: 13
 This is replaced with an integer value based on the currently running version of macOS.
 This is not meant to be a human readable version and should *never* be displayed as output to the user anywhere inside Stacks.
 
-The primary use case for this template is within a condtional statement to enable or disable some other code. This integer follows
-a simple pattern that such that each version of macOS has a corresponding, easy to predict integer value. The integer value always 
+The primary use case for this template is within a conditional statement to enable or disable some other code. This integer follows
+a simple pattern such that each version of macOS has a corresponding, easy to predict integer value. The integer value always
 increases and never decreases (monotonically increasing). Here's how it works:
 
 Each component of the version number corresponds to two digits in the integer. So the version number of `13.5.12`, which has components
@@ -57,7 +57,7 @@ You are running macOS Ventura, the latest macOS version.
 
 #### Difficult to Parse
 
-Although it's possible to parse this integer to assertain a specific component of
+Although it's possible to parse this integer to ascertain a specific component of
 the macOS version, there may be simpler templates that can do the job faster. The
 macOS version components are available separated out into three integers.
 This may be easier, simpler, and more performant than trying to perform math on this template.
@@ -81,7 +81,7 @@ Below is a list of the versions, names, and associated integer values.
 
 #### The macOS Names and Versions
 
-| macOS Name           | Version Number | Inteter Value |
+| macOS Name           | Version Number | Integer Value |
 | :---                 |     ---:       |          ---: |
 | Mac OS X Sierra      |  10.12.0       |        101200 |
 | Mac OS X High Sierra |  10.13.0       |        101300 |
@@ -90,6 +90,4 @@ Below is a list of the versions, names, and associated integer values.
 | macOS Big Sur        |  11.0.0        |        110000 |
 | macOS Monterey       |  12.0.0        |        120000 |
 | macOS Ventura        |  13.0.0        |        130000 |
-
-
 

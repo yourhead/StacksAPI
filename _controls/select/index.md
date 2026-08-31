@@ -1,7 +1,7 @@
 ---
 name: Popup Menu
 type: select
-description: A Popup menu to for choosing from a list of items.
+description: A Popup menu for choosing from a list of items.
 available: 3
 generics: yes
 properties:
@@ -29,4 +29,4 @@ properties:
 ---
 
 A popup menu for selecting a single item from a short list. 
-Popup menus are a good way to choose from a short list of items. If there are only two items in the list a [checkbox](../../checkbox/index/) is probably more appropriate. If the list of items is long (more than 15 or so) then it may be more appropriate to just ask the user to type in the value in a [Text Input](../../input/index) field.
+Popup menus are a good way to choose from a short list of items. If there are only two items in the list a [checkbox]({% include docs-root.html %}/controls/checkbox/) is probably more appropriate. If the list of items is long (more than 15 or so) then it may be more appropriate to just ask the user to type in the value in a [Text Input]({% include docs-root.html %}/controls/input/) field.

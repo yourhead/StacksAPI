@@ -19,7 +19,7 @@ available: 13
 ### Description
 
 This is replaced with the major component of the macOS version. The major component is the first of the three
-components of the macOS version. As an example, the current version as of this writing is macOS `13.0.2`, so the *major* compoent
+components of the macOS version. As an example, the current version as of this writing is macOS `13.0.2`, so the *major* component
 is `13`, the *minor* component is `0`, and the *patch* component is `2`. This template would be replaced by `13`.
 
 This is not meant to be a human readable value, if you need the full human readable macOS version you should use 
@@ -70,5 +70,4 @@ Below is a list of the versions, names, and associated components.
 | macOS Big Sur        |  11.0.0        | 11    | 00    | 00    |
 | macOS Monterey       |  12.0.0        | 12    | 00    | 00    |
 | macOS Ventura        |  13.0.0        | 13    | 00    | 00    |
-
 

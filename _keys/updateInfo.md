@@ -11,7 +11,7 @@ links:
 
 ---
 
-Before begining an update Stacks will use the [Secure Update Public Key](../updateInfoPublicKey) to verify that the [Secure Update Signature](../updateInfoSignature) matches the Secure Update Data. This ensures that the data is unaltered from the data that you provided.  If Stacks cannot verify the signature no request will be made.
+Before beginning an update Stacks will use the [Secure Update Public Key](../updateInfoPublicKey) to verify that the [Secure Update Signature](../updateInfoSignature) matches the Secure Update Data. This ensures that the data is unaltered from the data that you provided.  If Stacks cannot verify the signature no request will be made.
 
 The data can contain any information that you want. It should be a valid JSON dictionary object.
 
