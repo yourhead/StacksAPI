@@ -35,7 +35,7 @@ There is a complete example of using a custom library on GitHub: [Velocity Stack
 
 Each line in the libraries array should be a dictionary. And each dictionary should represent a single library that should be called and/or published.
 
-> Warning: Libraries are shared between all stacks. You should use caution and be a good developer citizen when choosing to include common libraries: check with other developers on the Stacks Slack Channel before including a popular library. If you include some code intended to be used by only your stacks, give the library an appropriatly unique name: e.g. `com.yourcompany.yourlibrary`
+> Warning: Libraries are shared between all stacks. You should use caution and be a good developer citizen when choosing to include common libraries: check with other developers on the [Stacks Discord](https://yourhead.com/discord) before including a popular library. If you include some code intended to be used by only your stacks, give the library an appropriatly unique name: e.g. `com.yourcompany.yourlibrary`
 
 The library dictionary can include the following keys:
 

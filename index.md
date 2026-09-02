@@ -28,7 +28,6 @@ Both APIs are part of the Stacks developer platform. A theme provides the page s
 
 ### Developer community
 
-Stack developers discuss building, marketing and selling Stacks products in the public Slack community.
+Stacks developers discuss building, marketing and selling Stacks products in our free public Discord server. Join the chat to ask questions, share ideas and compare notes with other developers.
 
-- [Sign up for Slack](http://slack.yourhead.com)
-- [Open the YourHead Slack](http://yourhead.slack.com)
+- [Join the YourHead Discord](https://yourhead.com/discord)
