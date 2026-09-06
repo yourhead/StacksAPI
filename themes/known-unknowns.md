@@ -1,6 +1,7 @@
 ---
 title: Theme API — Known Unknowns
 layout: page
+api_section: theme
 back:
   - top: /themes
 links:

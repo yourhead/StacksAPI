@@ -1,8 +1,20 @@
 <h1 class="site-title">
-  <a href="{% include docs-root.html %}/" title="Home">
-    <img src="{% include docs-root.html %}/assets/images/stacks-app-icon-64.png" width="64" height="64" alt="">
-    <span>{{ site.title }}</span>
-  </a>
+  {% if page.api_section == 'stack' %}
+    <a href="{% include docs-root.html %}/stacks/" title="Stack API">
+      <img src="{% include docs-root.html %}/assets/images/stack-api-icon-64.png" width="64" height="64" alt="">
+      <span>Stack API</span>
+    </a>
+  {% elsif page.api_section == 'theme' %}
+    <a href="{% include docs-root.html %}/themes/" title="Theme API">
+      <img src="{% include docs-root.html %}/assets/images/theme-api-icon-64.png" width="64" height="64" alt="">
+      <span>Theme API</span>
+    </a>
+  {% else %}
+    <a href="{% include docs-root.html %}/" title="Home">
+      <img src="{% include docs-root.html %}/assets/images/stacks-app-icon-64.png" width="64" height="64" alt="">
+      <span>{{ site.title }}</span>
+    </a>
+  {% endif %}
 </h1>
 <p>{{ site.tagline }}<br>
 <small>Stacks API v{{ site.version }} for Stacks {{ site.stacksVersion }}</small>

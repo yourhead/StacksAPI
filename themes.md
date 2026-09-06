@@ -2,6 +2,7 @@
 title: Theme API
 layout: page
 api_section: theme
+page_icon: theme
 back:
   - top: /
 links:

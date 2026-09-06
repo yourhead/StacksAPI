@@ -1,6 +1,7 @@
 ---
 title: Theme Info.plist
 layout: page
+api_section: theme
 back:
   - top: /themes
 links:

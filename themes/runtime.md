@@ -1,6 +1,7 @@
 ---
 title: Theme Runtime Properties
 layout: page
+api_section: theme
 back:
   - top: /themes
 links:
