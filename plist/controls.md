@@ -19,7 +19,7 @@ Most controls can now display a subtitle.  Subtitles provide more contextual inf
 
 > Note: Four-across control arrays have very limited space for subtitles.
 
-{% assign groups = (site.controls | sort: 'group') %}
+{% assign groups = site.controls | sort: 'group' %}
 {% assign currentGroup = 'basic' %}
 
 

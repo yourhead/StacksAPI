@@ -1,4 +1,9 @@
-<h1><a href="{% include docs-root.html %}/" title="Home">{{ site.title }}</a></h1>
+<h1 class="site-title">
+  <a href="{% include docs-root.html %}/" title="Home">
+    <img src="{% include docs-root.html %}/assets/images/stacks-app-icon-64.png" width="64" height="64" alt="">
+    <span>{{ site.title }}</span>
+  </a>
+</h1>
 <p>{{ site.tagline }}<br>
 <small>Stacks API v{{ site.version }} for Stacks {{ site.stacksVersion }}</small>
 </p>
