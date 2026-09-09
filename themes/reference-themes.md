@@ -1,6 +1,7 @@
 ---
 title: Bundled Reference Themes
 layout: page
+api_section: theme
 back:
   - top: /themes
 links:

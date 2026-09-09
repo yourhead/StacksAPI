@@ -14,7 +14,7 @@ The Info.plist file within a stack defines the basic attributes of the stack lik
 
 
 
-{% assign groups = (site.keys | sort: 'group') %}
+{% assign groups = site.keys | sort: 'group' %}
 {% assign currentGroup = 'basic' %}
 
 <ul>

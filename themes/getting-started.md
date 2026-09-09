@@ -1,6 +1,7 @@
 ---
 title: Theme API — Getting Started
 layout: page
+api_section: theme
 back:
   - top: /themes
 links:

@@ -2,6 +2,7 @@
 title: Stack API
 layout: page
 api_section: stack
+page_icon: stack
 back:
   - top: /
 links:

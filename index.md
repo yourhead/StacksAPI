@@ -6,28 +6,26 @@ links:
   - top: /themes
 ---
 
-Stacks can be extended in two complementary ways. Choose the API that matches what you want to build.
+<div class="api-choices">
+  <div class="api-choice-group">
+    <a class="api-choice" href="{% include docs-root.html %}/stacks/">
+      <picture>
+        <source media="(max-width: 720px)" srcset="{% include docs-root.html %}/assets/images/stack-api-icon-64.png 1x, {% include docs-root.html %}/assets/images/stack-api-icon-128.png 2x">
+        <img src="{% include docs-root.html %}/assets/images/stack-api-icon-128.png" srcset="{% include docs-root.html %}/assets/images/stack-api-icon-64.png 64w, {% include docs-root.html %}/assets/images/stack-api-icon-128.png 128w" sizes="(max-width: 720px) 64px, 128px" width="128" height="128" alt="">
+      </picture>
+      <span>Stack API</span>
+    </a>
+    <p>Build page components, controls, layouts and reusable stack bundles.</p>
+  </div>
 
-### [Stack API]({% include docs-root.html %}/stacks/)
-
-Build reusable components that people add to a page: content, controls, containers, layouts and other page-building elements.
-
-Use the Stack API documentation for `.stack` and `.devstack` bundles, `Info.plist` properties, inspector controls, templates, assets and libraries.
-
-[Enter the Stack API →]({% include docs-root.html %}/stacks/)
-
-### [Theme API]({% include docs-root.html %}/themes/)
-
-Build the document-level presentation around a page: HTML structure, metadata, navigation, content placement, stylesheets, scripts and theme controls.
-
-Use the Theme API documentation for `.stackstheme` and `.devstackstheme` bundles, named templates, runtime objects and theme inheritance.
-
-[Enter the Theme API →]({% include docs-root.html %}/themes/)
-
-Both APIs are part of the Stacks developer platform. A theme provides the page shell while stacks provide the components placed within it.
-
-### Developer community
-
-Stacks developers discuss building, marketing and selling Stacks products in our free public Discord server. Join the chat to ask questions, share ideas and compare notes with other developers.
-
-- [Join the YourHead Discord](https://yourhead.com/discord)
+  <div class="api-choice-group">
+    <a class="api-choice" href="{% include docs-root.html %}/themes/">
+      <picture>
+        <source media="(max-width: 720px)" srcset="{% include docs-root.html %}/assets/images/theme-api-icon-64.png 1x, {% include docs-root.html %}/assets/images/theme-api-icon-128.png 2x">
+        <img src="{% include docs-root.html %}/assets/images/theme-api-icon-128.png" srcset="{% include docs-root.html %}/assets/images/theme-api-icon-64.png 64w, {% include docs-root.html %}/assets/images/theme-api-icon-128.png 128w" sizes="(max-width: 720px) 64px, 128px" width="128" height="128" alt="">
+      </picture>
+      <span>Theme API</span>
+    </a>
+    <p>Build the page shell, templates, styles and document-level presentation.</p>
+  </div>
+</div>

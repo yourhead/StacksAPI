@@ -15,8 +15,8 @@ layout: default
 
 <div class='row'>
 	<section>
-		{% if page.api_section == 'stack' %}<p class="api-section-label">Stack API</p>{% endif %}
-		{% if page.api_section == 'theme' %}<p class="api-section-label">Theme API</p>{% endif %}
+		{% if page.page_icon == 'stack' %}<img class="page-icon" src="{% include docs-root.html %}/assets/images/stack-api-icon-128.png" width="128" height="128" alt="">{% endif %}
+		{% if page.page_icon == 'theme' %}<img class="page-icon" src="{% include docs-root.html %}/assets/images/theme-api-icon-128.png" width="128" height="128" alt="">{% endif %}
 		<h2>{{ page.title}}</h2>
 		{{ content }}
 	</section>

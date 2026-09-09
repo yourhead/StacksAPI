@@ -15,7 +15,7 @@ Templates are files that define the content of your stack. You can have any numb
 
 
 
-{% assign groups = (site.templates | sort: 'group') %}
+{% assign groups = site.templates | sort: 'group' %}
 {% assign currentGroup = 'basic' %}
 
 
